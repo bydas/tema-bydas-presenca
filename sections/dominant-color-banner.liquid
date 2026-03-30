@@ -1,0 +1,107 @@
+{% if product.featured_image %}
+  <section class="dominant-color-banner-section" id="DominantColorBanner-{{ section.id }}">
+    <div
+      class="dominant-color-banner"
+      data-dominant-color-banner
+      data-section-id="{{ section.id }}"
+    ></div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const banner = document.querySelector('.dominant-color-banner-section');
+        if (!banner) return;
+
+        function loadFAC() {
+          if (window.FastAverageColor) return Promise.resolve();
+          return new Promise((resolve, reject) => {
+            const s = document.createElement('script');
+            s.src = 'https://cdn.jsdelivr.net/npm/fast-average-color@9.5.0/dist/index.browser.min.js';
+            s.async = true;
+            s.onload = resolve;
+            s.onerror = reject;
+            document.head.appendChild(s);
+          });
+        }
+
+        function getActiveImageUrl() {
+          const root = document.querySelector('.product__media-list');
+          if (!root) return null;
+
+          const activeImg = root.querySelector('.product__media-item.is-active img');
+          if (!activeImg) return null;
+          return activeImg.currentSrc || activeImg.src || null;
+        }
+
+        let raf = 0;
+        let lastUrl = null;
+
+        function updateBannerColor() {
+          cancelAnimationFrame(raf);
+          raf = requestAnimationFrame(async () => {
+            const url = getActiveImageUrl();
+            if (!url || url === lastUrl) return;
+            lastUrl = url;
+
+            try {
+              await loadFAC();
+              const fac = new window.FastAverageColor();
+              const img = new Image();
+              img.crossOrigin = 'anonymous';
+              img.src = url;
+
+              img.onload = async () => {
+                try {
+                  const color = await fac.getColorAsync(img, { algorithm: 'dominant' });
+                  const threshold = 245;
+
+                  const isValidColor = color.value.some((v) => v < threshold);
+
+                  if (isValidColor) {
+                    banner.style.backgroundColor = color.rgba;
+                    banner.style.setProperty('--dominant-color', color.rgba);
+                  }
+                } catch (e) {
+                  console.error(e);
+                }
+              };
+            } catch (e) {
+              console.error(e);
+            }
+          });
+        }
+
+        updateBannerColor();
+
+        const gallery = document.getElementById('MediaGallery-{{ section.id }}');
+        if (gallery) {
+          gallery.addEventListener('click', updateBannerColor, { passive: true });
+          gallery.addEventListener('keyup', updateBannerColor, { passive: true });
+
+          const obs = new MutationObserver(updateBannerColor);
+          obs.observe(gallery, { subtree: true, attributes: true, attributeFilter: ['class', 'src'] });
+        }
+
+        document.addEventListener('variantChange', updateBannerColor);
+        document.addEventListener('product:variant-change', updateBannerColor);
+      });
+    </script>
+  </section>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Plano de fundo",
+  "limit": 1,
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "Plano de fundo",
+      "category": "t:sections.featured-product.settings.product.label"
+    }
+  ]
+}
+{% endschema %}

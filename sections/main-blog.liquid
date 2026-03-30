@@ -1,0 +1,224 @@
+{{ 'component-article-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'section-main-blog.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    {% if blog.handle == 'autores' %}padding: 1.5rem;{% endif %}
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+  
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+
+    .blog-articles {
+      grid-template-columns: {% if blog.handle == 'autores' %}repeat(auto-fit, minmax(400px, 1fr)){% else %}repeat(3, 1fr){% endif %};
+      column-gap: var(--grid-desktop-horizontal-spacing);
+      row-gap: var(--grid-desktop-vertical-spacing);
+    }
+
+    {% if blog.handle == 'autores' %}
+      .card--standard .card__inner {
+        height: 400px;
+      }
+    {% endif %}
+  }
+
+  .article-card__image-wrapper.card__media .media img {
+    object-fit: cover !important;
+  }
+
+  @media screen and (max-width: 749px) {
+    {% if blog.handle == 'autores' %}
+      .blog-articles {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      }
+
+      .card--standard .card__inner {
+        height: 200px;
+      }
+
+      p.article-card__excerpt.rte-width {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+      }
+    {% endif %}
+  }
+{%- endstyle -%}
+
+{%- paginate blog.articles by 24 -%}
+  <div class="main-blog {% unless blog.handle == 'autores' %}page-width{% endunless %} section-{{ section.id }}-padding">
+    {% if blog.handle == 'autores' %}
+      <ul class="pagination__list list-unstyled" id="pagination_sort_letter" role="list"></ul>
+
+      <script>
+        fetch('https://presenca.apps.bydas.com?action=get_letter_tags')
+          .then((res) => res.json())
+          .then((data) => {
+            const letters = Array.isArray(data) ? data : [];
+            const container = document.getElementById('pagination_sort_letter');
+
+            if (!container) return;
+
+            const currentUrl = window.location.pathname.toLowerCase();
+            const isTaggedPage = currentUrl.includes('/tagged/letra_');
+
+            const generateHtml = (label, showAll = false) => {
+              const tagPath = `/tagged/letra_${encodeURIComponent(label.toLowerCase())}`;
+              const href = showAll ? `{{ blog.url }}` : `{{ blog.url }}${tagPath}`;
+
+              const isCurrent = showAll ? !isTaggedPage : currentUrl.includes(tagPath);
+
+              return `
+                <li ${showAll && 'class="show-all"'}>
+                  <a
+                    role="link"
+                    class="pagination__item${isCurrent ? ' pagination__item--current light' : ''}"
+                    ${isCurrent ? 'aria-current="page"' : ''}
+                    href="${href}"
+                  >
+                    ${showAll ? `{{ 'sections.featured_blog.view_all' | t }}` : label.toUpperCase()}
+                  </a>
+                </li>
+              `;
+            };
+
+            const containerInsert = (l, s = false) => container.insertAdjacentHTML('beforeend', generateHtml(l, s));
+
+            letters.forEach((l) => containerInsert(l));
+            containerInsert('', true);
+          })
+          .catch(console.error);
+      </script>
+    {% endif %}
+
+    <h1 class="h1 title--primary{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+      {{ blog.title | escape }}
+    </h1>
+
+    <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
+      {%- for article in blog.articles -%}
+        <div
+          class="blog-articles__article article{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+          {% if settings.animations_reveal_on_scroll %}
+            data-cascade
+            style="--animation-order: {{ forloop.index }};"
+          {% endif %}
+        >
+          {%- render 'article-card',
+            article: article,
+            media_height: section.settings.image_height,
+            media_aspect_ratio: article.image.aspect_ratio,
+            show_image: section.settings.show_image,
+            show_date: section.settings.show_date,
+            show_author: section.settings.show_author,
+            show_excerpt: true
+          -%}
+        </div>
+      {%- endfor -%}
+    </div>
+
+    {%- if paginate.pages > 1 -%}
+      {%- render 'pagination', paginate: paginate -%}
+    {%- endif -%}
+  </div>
+{%- endpaginate -%}
+
+{% schema %}
+{
+  "name": "t:sections.main-blog.name",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "select",
+      "id": "layout",
+      "options": [
+        {
+          "value": "grid",
+          "label": "t:sections.main-blog.settings.layout.options__1.label"
+        },
+        {
+          "value": "collage",
+          "label": "t:sections.main-blog.settings.layout.options__2.label"
+        }
+      ],
+      "default": "collage",
+      "label": "t:sections.main-blog.settings.layout.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_image",
+      "default": true,
+      "label": "t:sections.main-blog.settings.show_image.label"
+    },
+    {
+      "type": "select",
+      "id": "image_height",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "t:sections.main-blog.settings.image_height.options__1.label"
+        },
+        {
+          "value": "small",
+          "label": "t:sections.main-blog.settings.image_height.options__2.label"
+        },
+        {
+          "value": "medium",
+          "label": "t:sections.main-blog.settings.image_height.options__3.label"
+        },
+        {
+          "value": "large",
+          "label": "t:sections.main-blog.settings.image_height.options__4.label"
+        }
+      ],
+      "default": "medium",
+      "label": "t:sections.main-blog.settings.image_height.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_date",
+      "default": true,
+      "label": "t:sections.main-blog.settings.show_date.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_author",
+      "default": false,
+      "label": "t:sections.main-blog.settings.show_author.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ]
+}
+{% endschema %}

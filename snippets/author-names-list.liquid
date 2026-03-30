@@ -1,0 +1,37 @@
+{% doc %}
+  @param {string} author_names - "Lista de nomes dos autores"
+  @param {section} [section] - "Secção da lista de nomes dos autores"
+{% enddoc %}
+
+{% if author_names %}
+  {% assign author_names = author_names | split: ',' %}
+  {% comment %}
+    {% assign author_blog = blogs.autores %}
+  {% endcomment %}
+
+  <h5 class="author__names-container card__heading h5">
+    {% for author_name in author_names limit: 4 %}
+      {% unless author_name == blank %}
+        {% assign author_handle = author_name | handleize %}
+        {% comment %}
+          {% assign full_author_handle = 'autores/' | append: author_handle %}
+          {% assign alt_full_author_handle = full_author_handle | append: '-1' %}
+          {% assign author_article = author_blog.articles[full_author_handle]
+            | default: author_blog.articles[alt_full_author_handle]
+          %}
+        {% endcomment %}
+
+        <a
+          href="/blogs/autores/{{ author_handle }}"
+          id="CardLink-{{ section.id }}-main-product-author-{{ forloop.index }}"
+          class="full-unstyled-link card__author-name"
+          aria-labelledby="CardLink-{{ section.id }}-main-product-author-{{ forloop.index }}"
+          data-author-link="true"
+        >
+          {{- author_name | escape -}}
+        </a>
+        {%- unless forloop.last %}, {% endunless -%}
+      {% endunless %}
+    {% endfor %}
+  </h5>
+{% endif %}

@@ -1,0 +1,149 @@
+{% doc %}
+  @param {string} [author_name] - "O nome do autor"
+  @param {string[]} [author_names] - "Os nomes dos autores"
+  @param {section} section - "A secção utilizada"
+{% enddoc %}
+
+{% if author_name %}
+  {% assign author_list = author_name | split: ',' %}
+{% elsif author_names %}
+  {% assign author_list = author_names %}
+{% else %}
+  {% assign author_list = '' | split: ',' %}
+{% endif %}
+
+{% if author_list.size > 0 %}
+  {% assign first_author_name_handle = author_list.first | strip | handleize %}
+  {% assign first_alt_author_name_handle = 'colecao-' | append: first_author_name_handle %}
+  {% assign first_alt_author_name_handle_2 = 'colecao-' | append: first_alt_author_name_handle %}
+  {% assign first_alt_author_name_handle_3 = first_alt_author_name_handle | append: '-1' %}
+  {% assign unfiltered_products = collections[first_alt_author_name_handle].products
+    | default: collections[first_author_name_handle].products
+    | default: collections[first_alt_author_name_handle_2].products
+    | default: collections[first_alt_author_name_handle_3].products
+  %}
+
+  {% if unfiltered_products.size > 0 %}
+    {% for current_author in author_list %}
+      {% if forloop.first %}
+        {% continue %}
+      {% endif %}
+
+      {% assign author_name_handle = current_author | strip | handleize %}
+      {% assign alt_author_name_handle = 'colecao-' | append: author_name_handle %}
+      {% assign alt_author_name_handle_2 = 'colecao-' | append: alt_author_name_handle %}
+      {% assign alt_author_name_handle_3 = alt_author_name_handle | append: '-1' %}
+      {% assign author_collection_products = collections[alt_author_name_handle].products
+        | default: collections[author_name_handle].products
+        | default: collections[alt_author_name_handle_2].products
+        | default: collections[alt_author_name_handle_3].products
+      %}
+
+      {% if author_collection_products.size > 0 %}
+        {% assign unfiltered_products = unfiltered_products | concat: author_collection_products %}
+      {% endif %}
+    {% endfor %}
+
+    {% if product %}
+      {% assign unfiltered_products = unfiltered_products | reject: 'title', product.title %}
+    {% endif %}
+
+    {% assign unique_products = unfiltered_products | uniq | compact | where: 'available', true %}
+    {% assign ebooks_ids = '' %}
+
+    {% if template.name == 'article' %}
+      {% for unique_product in unique_products %}
+        {% if unique_product.tags contains 'TIPO_EBOOK' %}
+          {% assign cleared_id = unique_product.id | append: ',' %}
+          {% assign ebooks_ids = ebooks_ids | append: cleared_id %}
+        {% endif %}
+      {% endfor %}
+
+      {% assign ebooks_ids_array = ebooks_ids | split: ',' %}
+
+      {% for ebook_id in ebooks_ids_array %}
+        {% unless ebook_id == blank %}
+          {% assign ebook_id_int = ebook_id | plus: 0 %}
+          {% assign unique_products = unique_products | reject: 'id', ebook_id_int %}
+        {% endunless %}
+      {% endfor %}
+    {% endif %}
+
+    {% if unique_products.size > 0 %}
+      {% assign author_slider_id = 'Slider-' | append: section.id | append: '-author-' %}
+
+      {% if author_list.size > 0 %}
+        {% for current_author_name in author_list %}
+          {% assign author_name_handle = current_author_name | handleize %}
+          {% assign author_slider_id = author_slider_id | append: author_name_handle %}
+        {% endfor %}
+      {% else %}
+        {% assign author_name_handle = author_list.first | handleize %}
+        {% assign author_slider_id = author_slider_id | append: author_name_handle %}
+      {% endif %}
+
+      <slider-component class="slider-mobile-gutter{% if section.settings.full_width %} slider-component-full-width{% endif %} slider-component-desktop{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        <div class="topic-section title-wrapper--self-padded-tablet-down">
+          <h1 class="title inline-richtext h1">
+            {% if template.name == 'article' %}
+              Livro{% if unique_products.size > 1 %}s{% endif %} de {{ article.title }}
+            {% else %}
+              {% if author_list.size > 1 %}Dos mesmos autores{% else %}Do mesmo autor{% endif %}
+            {% endif %}
+          </h1>
+        </div>
+
+        <ul
+          id="{{ author_slider_id }}"
+          data-id="{{ section.id }}"
+          class="grid product-grid contains-card contains-card--product{% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down slider slider--desktop slider--tablet grid--peek"
+          role="list"
+          aria-label="{{ 'general.slider.name' | t }}"
+        >
+          {% for author_product in unique_products limit: 16 %}
+            <li
+              id="Slide-{{ section.id }}-author-{{ author_list | join: '-' | handleize }}-{{ forloop.index }}"
+              class="grid__item slider__slide{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+              {% if settings.animations_reveal_on_scroll %}
+                data-cascade
+                style="--animation-order: {{ forloop.index }};"
+              {% endif %}
+            >
+              {% render 'card-product',
+                card_product: author_product,
+                media_aspect_ratio: section.settings.image_ratio,
+                image_shape: section.settings.image_shape,
+                show_secondary_image: section.settings.show_secondary_image,
+                show_vendor: section.settings.show_vendor,
+                show_rating: section.settings.show_rating,
+                section_id: section.id,
+                quick_add: section.settings.quick_add
+              %}
+            </li>
+          {% endfor %}
+        </ul>
+
+        <div class="slider-buttons">
+          <button
+            type="button"
+            class="slider-button slider-button--prev"
+            name="previous"
+            aria-label="{{ 'general.slider.previous_slide' | t }}"
+            aria-controls="{{ author_slider_id }}"
+          >
+            <span class="svg-wrapper">{{- 'icon-caret.svg' | inline_asset_content -}}</span>
+          </button>
+          <button
+            type="button"
+            class="slider-button slider-button--next"
+            name="next"
+            aria-label="{{ 'general.slider.next_slide' | t }}"
+            aria-controls="{{ author_slider_id }}"
+          >
+            <span class="svg-wrapper">{{- 'icon-caret.svg' | inline_asset_content -}}</span>
+          </button>
+        </div>
+      </slider-component>
+    {% endif %}
+  {% endif %}
+{% endif %}
