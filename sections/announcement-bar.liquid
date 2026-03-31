@@ -12,48 +12,27 @@
   if section.blocks.size > 0
     assign announcement_bar = true
   endif
-
-  assign bg_color = null
-
-  if template contains 'collection' and collection.metafields.custom.background_color != blank
-    assign bg_color = collection.metafields.custom.background_color
-  endif
-
-  if bg_color == null
-    assign menu = linklists['novo-menu-principal']
-
-    for link in menu.links
-      if link.type == 'collection_link'
-        assign collection_object = link.object
-
-        if request.path == link.url
-          assign bg_color = collection_object.metafields.custom.background_color
-          break
-        endif
-
-        for child_link in link.links
-          if request.path == child_link.url
-            assign bg_color = collection_object.metafields.custom.background_color
-            break
-          endif
-        endfor
-
-        if bg_color != null
-          break
-        endif
-      endif
-    endfor
-  endif
 -%}
+
+{% assign background_color = blank %}
+
+{%- for link in section.settings.menu.links -%}
+  {%- if link.links != blank -%}
+    {% if collections[link.handle].metafields.custom.background_color %}
+      {% assign background_color = collections[link.handle].metafields.custom.background_color %}
+      {% break %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
 
 {% if social_icons %}
   {{ 'component-list-social.css' | asset_url | stylesheet_tag }}
 {% endif %}
 
 <style>
-  {% if bg_color %}
+  {% if background_color != blank %}
     .utility-bar {
-      background: {{ bg_color }} !important;
+      background: {{ background_color }} !important;
     }
   {% endif %}
 </style>
