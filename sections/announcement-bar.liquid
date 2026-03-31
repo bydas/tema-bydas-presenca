@@ -19,7 +19,7 @@
 {% endif %}
 
 <style>
-  {% if collection.metafields.custom.background_color != blank %}
+  {% if collection.metafields.custom.background_color %}
     .utility-bar {
       background: {{ collection.metafields.custom.background_color }} !important;
     }
