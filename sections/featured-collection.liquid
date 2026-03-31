@@ -116,10 +116,14 @@
 
         {%- if section.settings.collection.products.size > 0 -%}
           {% assign lazy_load = false %}
+          {% assign fetch_priority = false %}
           {% paginate section.settings.collection.products by section.settings.products_to_show %}
             {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
               {% if lazy_load == false and forloop.index > max_columns_to_show %}
                 {% assign lazy_load = true %}
+              {% endif %}
+              {% if fetch_priority == false and forloop.first %}
+                {% assign fetch_priority = true %}
               {% endif %}
               <li
                 id="Slide-{{ section.id }}-{{ forloop.index }}"
@@ -134,6 +138,7 @@
                   media_aspect_ratio: section.settings.image_ratio,
                   image_shape: section.settings.image_shape,
                   lazy_load: lazy_load,
+                  fetch_priority: fetch_priority,
                   show_secondary_image: section.settings.show_secondary_image,
                   show_vendor: section.settings.show_vendor,
                   show_rating: section.settings.show_rating,
@@ -169,6 +174,7 @@
                 media_aspect_ratio: section.settings.image_ratio,
                 image_shape: section.settings.image_shape,
                 lazy_load: false,
+                fetch_priority: false,
                 placeholder_image: placeholder_image
               %}
             </li>

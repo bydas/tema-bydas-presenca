@@ -10,6 +10,7 @@
   - show_rating: {Boolean} Show the product rating. Default: false
   - extend_height: {Boolean} Card height extends to available container space. Default: true (optional)
   - lazy_load: {Boolean} Image should be lazy loaded. Default: true (optional)
+  - fetch_priority: {Boolean} The image should be retrieved with high priority. Default: false (optional)
   - skip_styles: {Boolean} Don't include component styles. Useful when rendering multiple product cards in a loop. Default: false (optional)
   - quick_add: {Boolean} Show the quick add button.
   - section_id: {String} The ID of the section that contains this card.
@@ -151,6 +152,7 @@
               <img
                 srcset="
                   {%- if card_product.featured_media.width >= 165 -%}{{ card_product.featured_media | image_url: width: 165 }} 165w,{%- endif -%}
+                  {%- if card_product.featured_media.width >= 200 -%}{{ card_product.featured_media | image_url: width: 200 }} 200w,{%- endif -%}
                   {%- if card_product.featured_media.width >= 360 -%}{{ card_product.featured_media | image_url: width: 360 }} 360w,{%- endif -%}
                   {%- if card_product.featured_media.width >= 533 -%}{{ card_product.featured_media | image_url: width: 533 }} 533w,{%- endif -%}
                   {%- if card_product.featured_media.width >= 720 -%}{{ card_product.featured_media | image_url: width: 720 }} 720w,{%- endif -%}
@@ -158,12 +160,15 @@
                   {%- if card_product.featured_media.width >= 1066 -%}{{ card_product.featured_media | image_url: width: 1066 }} 1066w,{%- endif -%}
                   {{ card_product.featured_media | image_url }} {{ card_product.featured_media.width }}w
                 "
-                src="{{ card_product.featured_media | image_url: width: 533 }}"
+                src="{{ card_product.featured_media | image_url: width: 360 }}"
                 sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                 alt="{{ card_product.featured_media.alt | escape }}"
                 class="motion-reduce"
                 {% unless lazy_load == false %}
                   loading="lazy"
+                {% endunless %}
+                {% unless fetch_priority == false %}
+                  fetchpriority="high"
                 {% endunless %}
                 width="{{ card_product.featured_media.width }}"
                 height="{{ card_product.featured_media.height }}"
@@ -174,6 +179,7 @@
                 <img
                   srcset="
                     {%- if card_product.media[1].width >= 165 -%}{{ card_product.media[1] | image_url: width: 165 }} 165w,{%- endif -%}
+                    {%- if card_product.media[1].width >= 200 -%}{{ card_product.media[1] | image_url: width: 200 }} 200w,{%- endif -%}
                     {%- if card_product.media[1].width >= 360 -%}{{ card_product.media[1] | image_url: width: 360 }} 360w,{%- endif -%}
                     {%- if card_product.media[1].width >= 533 -%}{{ card_product.media[1] | image_url: width: 533 }} 533w,{%- endif -%}
                     {%- if card_product.media[1].width >= 720 -%}{{ card_product.media[1] | image_url: width: 720 }} 720w,{%- endif -%}
@@ -181,7 +187,7 @@
                     {%- if card_product.media[1].width >= 1066 -%}{{ card_product.media[1] | image_url: width: 1066 }} 1066w,{%- endif -%}
                     {{ card_product.media[1] | image_url }} {{ card_product.media[1].width }}w
                   "
-                  src="{{ card_product.media[1] | image_url: width: 533 }}"
+                  src="{{ card_product.media[1] | image_url: width: 360 }}"
                   sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                   alt="{{ card_product.media[1].alt | escape }}"
                   class="motion-reduce"
@@ -471,6 +477,7 @@
                               <img
                                 srcset="
                                   {%- if card_product.featured_media.width >= 165 -%}{{ card_product.featured_media | image_url: width: 165 }} 165w,{%- endif -%}
+                                  {%- if card_product.featured_media.width >= 200 -%}{{ card_product.featured_media | image_url: width: 200 }} 200w,{%- endif -%}
                                   {%- if card_product.featured_media.width >= 360 -%}{{ card_product.featured_media | image_url: width: 360 }} 360w,{%- endif -%}
                                   {%- if card_product.featured_media.width >= 533 -%}{{ card_product.featured_media | image_url: width: 533 }} 533w,{%- endif -%}
                                   {%- if card_product.featured_media.width >= 720 -%}{{ card_product.featured_media | image_url: width: 720 }} 720w,{%- endif -%}
@@ -478,12 +485,15 @@
                                   {%- if card_product.featured_media.width >= 1066 -%}{{ card_product.featured_media | image_url: width: 1066 }} 1066w,{%- endif -%}
                                   {{ card_product.featured_media | image_url }} {{ card_product.featured_media.width }}w
                                 "
-                                src="{{ card_product.featured_media | image_url: width: 533 }}"
+                                src="{{ card_product.featured_media | image_url: width: 360 }}"
                                 sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                                 alt="{{ card_product.featured_media.alt | escape }}"
                                 class="motion-reduce"
                                 {% unless lazy_load == false %}
                                   loading="lazy"
+                                {% endunless %}
+                                {% unless fetch_priority == false %}
+                                  fetchpriority="high"
                                 {% endunless %}
                                 width="{{ card_product.featured_media.width }}"
                                 height="{{ card_product.featured_media.height }}"
