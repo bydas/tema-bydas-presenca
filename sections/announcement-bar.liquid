@@ -14,25 +14,14 @@
   endif
 -%}
 
-{% assign background_color = blank %}
-
-{%- for link in section.settings.menu.links -%}
-  {%- if link.links != blank -%}
-    {% if collections[link.handle].metafields.custom.background_color %}
-      {% assign background_color = collections[link.handle].metafields.custom.background_color %}
-      {% break %}
-    {% endif %}
-  {% endif %}
-{% endfor %}
-
 {% if social_icons %}
   {{ 'component-list-social.css' | asset_url | stylesheet_tag }}
 {% endif %}
 
 <style>
-  {% if background_color != blank %}
+  {% if collection.metafields.custom.background_color != blank %}
     .utility-bar {
-      background: {{ background_color }} !important;
+      background: {{ collection.metafields.custom.background_color }} !important;
     }
   {% endif %}
 </style>
