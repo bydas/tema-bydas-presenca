@@ -12,19 +12,47 @@
   if section.blocks.size > 0
     assign announcement_bar = true
   endif
+
+  assign menu = linklists['novo-menu-principal']
+  assign show_color = false
+  assign color = blank
+
+  for link in menu.links
+    if link.type == 'collection_link'
+      assign collection_obj = link.object
+      if collection_obj.metafields.custom.background_color != blank
+        assign current_path = request.path
+        if current_path == link.url or current_path == collection_obj.url
+          assign show_color = true
+          assign color = collection_obj.metafields.custom.background_color
+        else
+          for child_link in link.links
+            if current_path == child_link.url
+              assign show_color = true
+              assign color = collection_obj.metafields.custom.background_color
+              break
+            endif
+          endfor
+        endif
+      endif
+    endif
+    if show_color
+      break
+    endif
+  endfor
 -%}
 
 {% if social_icons %}
   {{ 'component-list-social.css' | asset_url | stylesheet_tag }}
 {% endif %}
 
-<style>
-  {% if collection.metafields.custom.background_color %}
+{% if show_color %}
+  <style>
     .utility-bar {
-      background: {{ collection.metafields.custom.background_color }} !important;
+      background: {{ color }} !important;
     }
-  {% endif %}
-</style>
+  </style>
+{% endif %}
 
 <div
   class="utility-bar color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator and section.blocks.size > 0 %} utility-bar--bottom-border{% elsif section.settings.show_line_separator and section.settings.show_social and social_icons%} utility-bar--bottom-border-social-only{% endif %}{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header-localization{% endif %}"
