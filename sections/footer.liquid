@@ -136,7 +136,7 @@
                         {%- render 'social-icons', class: 'footer__list-social' -%}
                       {%- endif -%}
                     </div>
-                  {%- when 'image' -%}
+                  {% when 'image' %}
                     <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
                       {%- if block.settings.image != blank -%}
                         {%- assign image_size_2x = block.settings.image_width | times: 2 | at_most: 5760 -%}
@@ -145,17 +145,29 @@
                           style="max-width: min(100%, {{ block.settings.image_width }}px);"
                         >
                           {% if block.settings.url %}
+                            {%- capture image_link_text -%}
+                              {%- if block.settings.link_text != blank -%}
+                                {{ block.settings.link_text }}
+                              {%- else -%}
+                                {%- if block.settings.image.alt != blank -%}
+                                  {{ block.settings.image.alt }}
+                                {%- else -%}
+                                  Ver imagem
+                                {%- endif -%}
+                              {%- endif -%}
+                            {%- endcapture -%}
                             <a
                               href="{{ block.settings.url }}"
                               {% if block.settings.open_link_new_tab %}
                                 target="_blank"
                               {% endif %}
+                              aria-label="{{ image_link_text | strip | escape }}{% if block.settings.open_link_new_tab %} (abre nova janela){% endif %}"
                             >
                           {% endif %}
                           <img
                             srcset="{{ block.settings.image | image_url: width: block.settings.image_width }}, {{ block.settings.image | image_url: width: image_size_2x }} 2x"
                             src="{{ block.settings.image | image_url: width: 760 }}"
-                            alt="{{ block.settings.image.alt | escape }}"
+                            alt="{{ block.settings.image.alt | escape }}{% if block.settings.open_link_new_tab and block.settings.image.alt != blank %} (abre nova janela){% endif %}"
                             loading="lazy"
                             width="{{ block.settings.image.width }}"
                             height="{{ block.settings.image.height }}"
@@ -473,6 +485,12 @@
           "id": "open_link_new_tab",
           "label": "Abrir link em nova aba",
           "default": false
+        },
+        {
+          "type": "text",
+          "id": "link_text",
+          "label": "Texto descritivo do link",
+          "info": "Texto que será lido por leitores de ecrã. Deixe em branco para usar o texto alternativo da imagem."
         }
       ]
     }
