@@ -144,6 +144,8 @@
                 endif
               -%}
 
+              <span class="visually-hidden">Ver produto: {{ block.settings.image_link }}</span>
+
               {%- if block.settings.image_link != blank -%}
                 <a
                   href="{{ block.settings.image_link }}"
