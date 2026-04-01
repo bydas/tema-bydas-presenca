@@ -34,6 +34,18 @@
         target="_blank"
         >Bertrand</a
       >
+
+      {% if product.tags contains 'TIPO_EBOOK' %}
+        {% assign regular_product = product.handle | remove: 'ebook-' %}
+        <a class="button button--secondary" href="/products/{{ regular_product }}">Ver formato físico</a>
+      {% elsif product.tags contains 'EBOOK_AVAILABLE' %}
+        {% assign ebook_product_handle = 'ebook-' | append: product.handle %}
+        {% assign ebook_product = all_products[ebook_product_handle] %}
+
+        {% if ebook_product.available == true %}
+          <a class="button button--secondary" href="/products/{{ ebook_product_handle }}">Ver formato eBook</a>
+        {% endif %}
+      {% endif %}
     </div>
   {% else %}
     {%- if product != blank -%}
@@ -138,18 +150,6 @@
         </div>
       </div>
     {%- endif -%}
-  {% endif %}
-
-  {% if product.tags contains 'TIPO_EBOOK' %}
-    {% assign regular_product = product.handle | remove: 'ebook-' %}
-    <a class="button button--secondary" href="/products/{{ regular_product }}">Ver formato físico</a>
-  {% elsif product.tags contains 'EBOOK_AVAILABLE' %}
-    {% assign ebook_product_handle = 'ebook-' | append: product.handle %}
-    {% assign ebook_product = all_products[ebook_product_handle] %}
-
-    {% if ebook_product.available == true %}
-      <a class="button button--secondary" href="/products/{{ ebook_product_handle }}">Ver formato eBook</a>
-    {% endif %}
   {% endif %}
 
   {%- if show_pickup_availability -%}
