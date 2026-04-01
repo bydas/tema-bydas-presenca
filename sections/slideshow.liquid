@@ -168,26 +168,26 @@
                   <source
                     media="(max-width: 749px)"
                     srcset="
-                      {{ mobile_image | image_url: width: 375 }} 375w,
-                      {{ mobile_image | image_url: width: 550 }} 550w,
-                      {{ mobile_image | image_url: width: 750 }} 750w
+                      {{ mobile_image | image_url: width: 375, format: 'webp' }} 375w,
+                      {{ mobile_image | image_url: width: 550, format: 'webp' }} 550w,
+                      {{ mobile_image | image_url: width: 750, format: 'webp' }} 750w
                     "
                     sizes="100vw"
                   >
                   <source
                     media="(min-width: 750px)"
                     srcset="
-                      {{ desktop_image | image_url: width: 1100 }} 1100w,
-                      {{ desktop_image | image_url: width: 1500 }} 1500w,
-                      {{ desktop_image | image_url: width: 1780 }} 1780w,
-                      {{ desktop_image | image_url: width: 2000 }} 2000w,
-                      {{ desktop_image | image_url: width: 3000 }} 3000w,
-                      {{ desktop_image | image_url: width: 3840 }} 3840w
+                      {{ desktop_image | image_url: width: 1100, format: 'webp' }} 1100w,
+                      {{ desktop_image | image_url: width: 1500, format: 'webp' }} 1500w,
+                      {{ desktop_image | image_url: width: 1780, format: 'webp' }} 1780w,
+                      {{ desktop_image | image_url: width: 2000, format: 'webp' }} 2000w,
+                      {{ desktop_image | image_url: width: 3000, format: 'webp' }} 3000w,
+                      {{ desktop_image | image_url: width: 3840, format: 'webp' }} 3840w
                     "
                     sizes="100vw"
                   >
                   <img
-                    src="{{ desktop_image | image_url: width: 1500 }}"
+                    src="{{ desktop_image | image_url: width: 1500, format: 'webp' }}"
                     alt="{% if desktop_image.alt != blank %}{{ desktop_image.alt | escape }}{% else %}{{ slide_link_text | strip | escape }}{% endif %}"
                     width="{{ desktop_image.width }}"
                     height="{{ height }}"
@@ -215,7 +215,7 @@
                 {%- if forloop.first %}
                   {{
                     desktop_image
-                    | image_url: width: 1500
+                    | image_url: width: 1500, format: 'webp'
                     | image_tag:
                       height: height,
                       sizes: sizes,
@@ -226,7 +226,7 @@
                 {%- else -%}
                   {{
                     desktop_image
-                    | image_url: width: 1500
+                    | image_url: width: 1500, format: 'webp'
                     | image_tag:
                       loading: 'lazy',
                       height: height,
