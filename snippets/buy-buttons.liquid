@@ -28,6 +28,12 @@
         target="_blank"
         >WOOK</a
       >
+      <a
+        class="button"
+        href="{{ product.metafields.custom.linkbertrand.value.url | default: 'https://www.bertrand.pt/' }}"
+        target="_blank"
+        >Bertrand</a
+      >
     </div>
   {% else %}
     {%- if product != blank -%}
