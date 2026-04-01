@@ -10,6 +10,10 @@
               #HeaderMenu-{{ link.handle }} * {
                 text-decoration-color: {{ collections[link.handle].metafields.custom.background_color }} !important;
               }
+
+              #HeaderMenu-{{ link.handle }}-categorias-todo-o-catalogo {
+                color: {{ collections[link.handle].metafields.custom.background_color }} !important;
+              }
             </style>
           {% endif %}
           <header-menu>
@@ -34,7 +38,6 @@
                 tabindex="-1"
               >
                 <div class="mega-menu__columns page-width">
-                  <!-- Coluna 1: Links sem sublinks -->
                   <ul class="mega-menu__list mega-menu__list--first-column">
                     {%- for childlink in link.links -%}
                       {%- if childlink.links == blank -%}
@@ -54,7 +57,6 @@
                     {%- endfor -%}
                   </ul>
 
-                  <!-- Coluna 2: Links com sublinks -->
                   <ul class="mega-menu__list mega-menu__list--second-column">
                     {%- for childlink in link.links -%}
                       {%- if childlink.links != blank -%}
