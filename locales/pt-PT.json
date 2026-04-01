@@ -549,10 +549,5 @@
       "expanded": "Formulário de destinatário do cartão de oferta expandido",
       "collapsed": "Formulário de destinatário do cartão de oferta fechado"
     }
-  },
-  "customer_accounts": {
-    "order_details": {
-      "marketing_checkbox_label": "Subscreva a nossa newsletter e receba 5€ para usar na sua primeira compra. Fique a par de todas as nossas NOVIDADES, CAMPANHAS, sugestões de leitura, eventos e passatempos exclusivos."
-    }
   }
 }
