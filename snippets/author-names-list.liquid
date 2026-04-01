@@ -9,7 +9,7 @@
     {% assign author_blog = blogs.autores %}
   {% endcomment %}
 
-  <h5 class="author__names-container card__heading h5">
+  <span class="author__names-container card__heading h5">
     {% for author_name in author_names limit: 4 %}
       {% unless author_name == blank %}
         {% assign author_handle = author_name | handleize %}
@@ -33,5 +33,5 @@
         {%- unless forloop.last %}, {% endunless -%}
       {% endunless %}
     {% endfor %}
-  </h5>
+  </span>
 {% endif %}
