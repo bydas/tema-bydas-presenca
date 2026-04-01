@@ -144,15 +144,22 @@
                 endif
               -%}
 
-              <span class="visually-hidden">Ver produto: {{ block.settings.image_link }}</span>
-
               {%- if block.settings.image_link != blank -%}
+                {%- capture slide_link_text -%}
+                  {%- if block.settings.heading != blank -%}
+                    {{ block.settings.heading | strip_html }}
+                  {%- else -%}
+                    Ver slide {{ forloop.index }}
+                  {%- endif -%}
+                {%- endcapture -%}
+
                 <a
                   href="{{ block.settings.image_link }}"
                   class="slideshow__image-link"
                   {% if block.settings.open_link_new_tab %}
                     target="_blank"
                   {% endif %}
+                  aria-label="{{ slide_link_text | strip | escape }}"
                 >
               {%- endif -%}
 
@@ -181,7 +188,7 @@
                   >
                   <img
                     src="{{ desktop_image | image_url: width: 1500 }}"
-                    alt="{{ desktop_image.alt | escape }}"
+                    alt="{% if desktop_image.alt != blank %}{{ desktop_image.alt | escape }}{% else %}{{ slide_link_text | strip | escape }}{% endif %}"
                     width="{{ desktop_image.width }}"
                     height="{{ height }}"
                     {% if forloop.first %}
