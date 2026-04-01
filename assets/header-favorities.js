@@ -81,9 +81,7 @@
                 const count = extractCountFromResponse(data, this._url);
 
                 updateWishlistCount(count);
-            } catch (e) {
-                console.error('[Swym XHR] Erro ao processar resposta:', e);
-            }
+            } catch (e) {}
             });
         }
 
