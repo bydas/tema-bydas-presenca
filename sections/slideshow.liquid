@@ -193,6 +193,7 @@
                     height="{{ height }}"
                     {% if forloop.first %}
                       fetchpriority="{{ fetch_priority }}"
+                      loading="eager"
                     {% else %}
                       loading="lazy"
                     {% endif %}
