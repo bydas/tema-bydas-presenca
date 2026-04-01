@@ -26,8 +26,11 @@
 {% endcomment %}
 
 {%- liquid
+  assign fetchpriority = 'auto'
+
   unless lazy_load == false
     assign lazy = 'lazy'
+    assign fetchpriority = 'high'
   endunless
 
   assign desktop_columns = 1
@@ -84,6 +87,7 @@
         | image_tag:
           class: image_class,
           loading: lazy,
+          fetchpriority: fetchpriority,
           sizes: sizes,
           widths: '246, 493, 600, 713, 823, 990, 1100, 1206, 1346, 1426, 1646, 1946'
       }}
