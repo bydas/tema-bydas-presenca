@@ -20,7 +20,7 @@
     "spacing_sections": 0,
     "spacing_grid_horizontal": 16,
     "spacing_grid_vertical": 16,
-    "animations_reveal_on_scroll": true,
+    "animations_reveal_on_scroll": false,
     "animations_hover_elements": "none",
     "buttons_border_thickness": 1,
     "buttons_border_opacity": 100,
@@ -279,9 +279,9 @@
           "background": "#f3f3f3",
           "background_gradient": "",
           "text": "#000000",
-          "button": "#00BCB4",
+          "button": "#00bcb4",
           "button_label": "#ffffff",
-          "secondary_button_label": "#00BCB4",
+          "secondary_button_label": "#00bcb4",
           "shadow": "#000000"
         }
       }
