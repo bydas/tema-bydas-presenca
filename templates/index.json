@@ -15,10 +15,33 @@
         "slide_bypDBF": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Presenca_Banners_Site_Onde_esta_o_ladrao_de_folhas_DSK.jpg",
-            "image_mobile": "shopify://shop_images/Presenca_Banners_Site_Onde_esta_o_ladrao_de_folhas_MB.jpg",
+            "image": "shopify://shop_images/13_Ganhei_uma_Vida_Quando_te_Perdi_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/13_Ganhei_uma_Vida_Quando_te_Perdi_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/onde-esta-o-ladrao-de-folhas",
+            "image_link": "shopify://products/ganhei-uma-vida-quando-te-perdi-edicao-especial",
+            "open_link_new_tab": false,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
+        "slide_LniBY7": {
+          "type": "slide",
+          "name": "Banner Campanhas",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/13_Ganhei_uma_Vida_Quando_te_Perdi_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/13_Ganhei_uma_Vida_Quando_te_Perdi_Mobile.jpg",
+            "image_overlay_opacity": 0,
+            "image_link": "shopify://products/ganhei-uma-vida-quando-te-perdi-edicao-especial",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -36,10 +59,10 @@
         "slide_P7jztK": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/17_Jogar_a_Dois_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/17_Jogar_a_Dois_Mobile.jpg",
+            "image": "shopify://shop_images/Presenca_Banners_Site_Elena_sabe_DSK.jpg",
+            "image_mobile": "shopify://shop_images/Presenca_Banners_Site_Elena_sabe_MB.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/jogar-a-dois",
+            "image_link": "shopify://products/elena-sabe",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -57,10 +80,10 @@
         "slide_9RNWLH": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/16_A_Parteira_Desktop_09d4ba13-43be-42dd-9004-6d01704b99c6.jpg",
-            "image_mobile": "shopify://shop_images/16_A_Parteira_Mobile.jpg",
+            "image": "shopify://shop_images/Presenca_Banners_Site_Os_erros_que_cometemos_DSK.jpg",
+            "image_mobile": "shopify://shop_images/Presenca_Banners_Site_Os_erros_que_cometemos_MB.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/a-parteira",
+            "image_link": "shopify://products/os-erros-que-cometemos",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -78,10 +101,10 @@
         "slide_icJWTn": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/18_A_Filha_do_Samurai_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/18_A_Filha_do_Samurai_Mobile.jpg",
+            "image": "shopify://shop_images/Crocodetetives_-_por_agua_abaixo_DSK.jpg",
+            "image_mobile": "shopify://shop_images/Crocodetetives_-_por_agua_abaixo_MB.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/a-filha-do-samurai",
+            "image_link": "shopify://products/crocodetetives-por-agua-abaixo-2",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -99,10 +122,10 @@
         "slide_3WXTYL": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/19_Amor_Negociado_Desktop_1687d3b4-2f7b-41b3-b9a6-8a6f538a9026.jpg",
-            "image_mobile": "shopify://shop_images/19_Amor_Negociado_Mobile_ae69ad91-118b-4550-a13f-790ac9438c3f.jpg",
+            "image": "shopify://shop_images/12_Obrigada_Professora_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/12_Obrigada_Professora_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/amor-negociado",
+            "image_link": "shopify://products/obrigado-professora",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -120,10 +143,10 @@
         "slide_xHT3bP": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Presenca_Banners_Site_As_quatro_estacoes_da_familia_Gato_DSK.jpg",
-            "image_mobile": "shopify://shop_images/Presenca_Banners_Site_As_quatro_estacoes_da_familia_Gato_MB.jpg",
+            "image": "shopify://shop_images/Presenca_Banners_Site_A_onda_DSK.jpg",
+            "image_mobile": "shopify://shop_images/Presenca_Banners_Site_A_onda_MB.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/as-quatro-estacoes-da-familia-gato",
+            "image_link": "shopify://products/a-onda",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -141,10 +164,10 @@
         "slide_9DGE9B": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Presenca_Banners_Site_Vision_DSK.jpg",
-            "image_mobile": "shopify://shop_images/Presenca_Banners_Site_Vision_MB.jpg",
+            "image": "shopify://shop_images/14_A_Consciencia_nao_Morre_Mobile.jpg",
+            "image_mobile": "shopify://shop_images/14_A_Consciencia_nao_Morre_Desktop.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/vision-onde-comecamos",
+            "image_link": "shopify://products/a-consciencia-nao-morre",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -162,10 +185,10 @@
         "slide_PQfNNM": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Presenca_Banners_Site_LOL_-_as_melhores_313_DSK.jpg",
-            "image_mobile": "shopify://shop_images/Presenca_Banners_Site_LOL_-_as_melhores_313_MB.jpg",
+            "image": "shopify://shop_images/Presenca_Banners_Site_Compromisso_e_Traicao_DSK.jpg",
+            "image_mobile": "shopify://shop_images/Presenca_Banners_Site_Compromisso_e_Traicao_MB.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/lol-as-melhores-313-piadas-para-rir-sem-parar",
+            "image_link": "shopify://products/compromisso-e-traicao",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -183,10 +206,10 @@
         "slide_NLnpqb": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Presenca_Banners_Site_Tu_nasceste_para_colorir_a_vida_DSK.jpg",
-            "image_mobile": "shopify://shop_images/Presenca_Banners_Site_Tu_nasceste_para_colorir_a_vida_MB.jpg",
+            "image": "shopify://shop_images/11_La_Vamos_nos_para_uma_festa_de_Anos_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/11_La_Vamos_nos_para_uma_festa_de_Anos_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/tu-nasceste-para-colorir-a-vida",
+            "image_link": "shopify://products/la-vamos-nos-para-uma-festa-de-anos",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -204,6 +227,7 @@
       },
       "block_order": [
         "slide_bypDBF",
+        "slide_LniBY7",
         "slide_P7jztK",
         "slide_9RNWLH",
         "slide_icJWTn",
@@ -213,7 +237,7 @@
         "slide_PQfNNM",
         "slide_NLnpqb"
       ],
-      "name": "t:sections.slideshow.presets.name",
+      "name": "Banner Header",
       "settings": {
         "layout": "full_bleed",
         "layout_mobile": "full_bleed",
@@ -228,6 +252,7 @@
     "featured_collection": {
       "type": "featured-collection",
       "custom_css": [],
+      "name": "Coleção Novidades",
       "settings": {
         "collection": "novidades",
         "products_to_show": 16,
@@ -282,7 +307,7 @@
       "block_order": [
         "slide_6FhL4m"
       ],
-      "name": "t:sections.slideshow.presets.name",
+      "name": "Banner 5€",
       "settings": {
         "layout": "grid",
         "layout_mobile": "full_bleed",
@@ -347,8 +372,8 @@
         "slide_QpMMqV": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Presenca_Banners_Site_Nao_abras_esta_mala_de_atividades_DSK_24d727ff-9644-4181-b49f-31b31ff1716d.jpg",
-            "image_mobile": "shopify://shop_images/Presenca_Banners_Site_Nao_abras_esta_mala_de_atividades_MB_c0341f65-9cad-4c52-ad86-4e285d41dd03.jpg",
+            "image": "shopify://shop_images/O_Leao_Que_Temos_Ca_Dentro_Banner_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/O_Leao_Que_Temos_Ca_Dentro_Banner_Mobile.jpg",
             "image_overlay_opacity": 0,
             "image_link": "shopify://products/nao-abras-esta-mala-de-atividades",
             "open_link_new_tab": false,
@@ -369,7 +394,7 @@
       "block_order": [
         "slide_QpMMqV"
       ],
-      "name": "t:sections.slideshow.presets.name",
+      "name": "Banner fixo 1",
       "settings": {
         "layout": "grid",
         "layout_mobile": "full_bleed",
@@ -383,8 +408,9 @@
     },
     "featured_collection_QwW7Y9": {
       "type": "featured-collection",
+      "name": "Carrossel Temático",
       "settings": {
-        "collection": "serie-nao-abras-este-livro",
+        "collection": "serie-o-leao-que-temos-ca-dentro",
         "products_to_show": 16,
         "title": "<a href=\"/collections/pre-venda\" title=\"Pré-Vendas\">{{ section.settings.collection.title }}</a>",
         "heading_alignment": "left",
@@ -411,6 +437,7 @@
     },
     "featured_collection_HVgeey": {
       "type": "featured-collection",
+      "name": "Carrossel Pré-vendas",
       "settings": {
         "collection": "pre-venda",
         "products_to_show": 16,
@@ -439,7 +466,7 @@
     },
     "featured_blog_dnwXmG": {
       "type": "featured-blog",
-      "name": "t:sections.featured-blog.presets.name",
+      "name": "Agenda",
       "settings": {
         "blog": "agenda",
         "post_limit": 3,
@@ -483,7 +510,7 @@
       "block_order": [
         "slide_J6Dyr4"
       ],
-      "name": "t:sections.slideshow.presets.name",
+      "name": "Banner fixo 2",
       "settings": {
         "layout": "grid",
         "layout_mobile": "full_bleed",
@@ -497,6 +524,7 @@
     },
     "featured_collection_HPdNTU": {
       "type": "featured-collection",
+      "name": "Carrossel Temático",
       "settings": {
         "collection": "serie-colortok",
         "products_to_show": 16,
@@ -521,6 +549,24 @@
         "swipe_on_mobile": true,
         "padding_top": 48,
         "padding_bottom": 0
+      }
+    },
+    "featured_blog_DCcCgx": {
+      "type": "featured-blog",
+      "name": "Sugestões de leitura",
+      "settings": {
+        "blog": "sugestoes-de-leitura",
+        "post_limit": 3,
+        "heading": "<a href=\"/blogs/sugestoes-de-leitura\" title=\"Sugestões de Leitura\">{{ section.settings.blog.title }}</a>",
+        "heading_size": "h1",
+        "columns_desktop": 3,
+        "show_view_all": false,
+        "show_image": true,
+        "show_date": false,
+        "show_author": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 24
       }
     },
     "featured_article_cC3KU4": {
@@ -569,24 +615,6 @@
         "max_height_mobile": 10
       }
     },
-    "featured_blog_DCcCgx": {
-      "type": "featured-blog",
-      "name": "t:sections.featured-blog.presets.name",
-      "settings": {
-        "blog": "sugestoes-de-leitura",
-        "post_limit": 3,
-        "heading": "<a href=\"/blogs/sugestoes-de-leitura\" title=\"Sugestões de Leitura\">{{ section.settings.blog.title }}</a>",
-        "heading_size": "h1",
-        "columns_desktop": 3,
-        "show_view_all": false,
-        "show_image": true,
-        "show_date": false,
-        "show_author": false,
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 24
-      }
-    },
     "17701286961defe988": {
       "type": "apps",
       "blocks": {
@@ -628,8 +656,8 @@
     "featured_blog_dnwXmG",
     "slideshow_qAxrAq",
     "featured_collection_HPdNTU",
-    "featured_article_cC3KU4",
     "featured_blog_DCcCgx",
+    "featured_article_cC3KU4",
     "17701286961defe988"
   ]
 }
