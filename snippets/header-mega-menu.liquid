@@ -3,19 +3,19 @@
     {%- for link in section.settings.menu.links -%}
       <li>
         {%- if link.links != blank -%}
-          {% if collections[link.handle].metafields.custom.background_color %}
-            <style>
-              #HeaderMenu-{{ link.handle }},
-              #HeaderMenu-{{ link.handle }}:hover,
-              #HeaderMenu-{{ link.handle }} * {
-                text-decoration-color: {{ collections[link.handle].metafields.custom.background_color }} !important;
-              }
+          {% assign color = collections[link.handle].metafields.custom.background_color | default: '#a9c138' %}
 
-              #HeaderMenu-{{ link.handle }}-categorias-todo-o-catalogo {
-                color: {{ collections[link.handle].metafields.custom.background_color }} !important;
-              }
-            </style>
-          {% endif %}
+          <style>
+            #HeaderMenu-{{ link.handle }},
+            #HeaderMenu-{{ link.handle }}:hover,
+            #HeaderMenu-{{ link.handle }} * {
+              text-decoration-color: {{ color }} !important;
+            }
+
+            #HeaderMenu-{{ link.handle }}-categorias-todo-o-catalogo {
+              color: {{ color }} !important;
+            }
+          </style>
           <header-menu>
             <details id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
               <summary
