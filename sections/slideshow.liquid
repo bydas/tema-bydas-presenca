@@ -215,7 +215,7 @@
                 {%- if forloop.first %}
                   {{
                     desktop_image
-                    | image_url: width: 3840
+                    | image_url: width: 1500
                     | image_tag:
                       height: height,
                       sizes: sizes,
@@ -226,7 +226,7 @@
                 {%- else -%}
                   {{
                     desktop_image
-                    | image_url: width: 3840
+                    | image_url: width: 1500
                     | image_tag:
                       loading: 'lazy',
                       height: height,
