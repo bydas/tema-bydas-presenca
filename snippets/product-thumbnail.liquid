@@ -28,10 +28,11 @@
 {%- liquid
   assign fetchpriority = 'auto'
 
-  unless lazy_load == false
-    assign lazy = 'lazy'
+  if lazy_load == false
     assign fetchpriority = 'high'
-  endunless
+  else
+    assign lazy = 'lazy'
+  endif
 
   assign desktop_columns = 1
   if desktop_layout == 'columns' and media_count > 1
