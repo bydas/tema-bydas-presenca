@@ -164,8 +164,8 @@
         "slide_9DGE9B": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/14_A_Consciencia_nao_Morre_Mobile.jpg",
-            "image_mobile": "shopify://shop_images/14_A_Consciencia_nao_Morre_Desktop.jpg",
+            "image": "shopify://shop_images/14_A_Consciencia_nao_Morre_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/14_A_Consciencia_nao_Morre_Mobile.jpg",
             "image_overlay_opacity": 0,
             "image_link": "shopify://products/a-consciencia-nao-morre",
             "open_link_new_tab": false,
