@@ -48,7 +48,8 @@
             "image_width": 500,
             "alignment": "center",
             "url": "https://www.presenca.pt/pages/construir-o-futuro",
-            "open_link_new_tab": true
+            "open_link_new_tab": true,
+            "link_text": "Abrir página Construir o Futuro"
           }
         },
         "image_LgRbhi": {
@@ -58,7 +59,8 @@
             "image_width": 125,
             "alignment": "center",
             "url": "https://www.livroreclamacoes.pt/Inicio/",
-            "open_link_new_tab": true
+            "open_link_new_tab": true,
+            "link_text": "Abrir website Livro de Reclamações"
           }
         }
       },
