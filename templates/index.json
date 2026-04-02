@@ -324,7 +324,7 @@
       "settings": {
         "collection": "campanha",
         "products_to_show": 16,
-        "title": "{{ section.settings.collection.title }}",
+        "title": "<a href=\"/collections/campanha\" title=\"3 livros por 12 €\">{{ section.settings.collection.title }}</a>",
         "heading_alignment": "left",
         "heading_size": "h1",
         "description": "",
@@ -440,7 +440,7 @@
       "settings": {
         "collection": "serie-o-leao-que-temos-ca-dentro",
         "products_to_show": 16,
-        "title": "<a href=\"/collections/pre-venda\" title=\"Pré-Vendas\">{{ section.settings.collection.title }}</a>",
+        "title": "<a href=\"/collections/serie-o-leao-que-temos-ca-dentro\" title=\"«O Leão Que Temos Cá Dentro»\">{{ section.settings.collection.title }}</a>",
         "heading_alignment": "left",
         "heading_size": "h1",
         "description": "",
