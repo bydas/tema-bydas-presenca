@@ -1,0 +1,12 @@
+.error-message {
+    display: flex;
+    align-items: center;
+}
+
+.status-message {
+    display: block;
+}
+
+.status-message.hidden {
+    display: none;
+}

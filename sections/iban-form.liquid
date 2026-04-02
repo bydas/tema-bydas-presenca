@@ -1,4 +1,4 @@
-{{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
+{{ 'section-iban-form.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -12,6 +12,10 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  #IbanFormContainer-{{ section.id }}:not(.hidden) {
+    display: block;
+  }
 {%- endstyle -%}
 
 <div class="color-{{ section.settings.color_scheme }} gradient">
@@ -24,12 +28,12 @@
       <h2 class="visually-hidden">{{ 'templates.contact.form.title' | t }}</h2>
     {%- endif -%}
 
-    <div id="IbanInitError-{{ section.id }}" class="form__message" style="display: none;">
+    <div id="IbanInitError-{{ section.id }}" class="form__message error-message hidden">
       <span class="svg-wrapper">{{ 'icon-error.svg' | inline_asset_content }}</span>
       <span></span>
     </div>
 
-    <div id="IbanFormContainer-{{ section.id }}" style="display: none;">
+    <div id="IbanFormContainer-{{ section.id }}" class="hidden">
       {%- liquid
         assign iban_form_class = 'isolate'
         if settings.animations_reveal_on_scroll
@@ -37,7 +41,7 @@
         endif
       -%}
       <form id="IbanForm-{{ section.id }}" class="{{ iban_form_class }}">
-        <div id="IbanFormStatus-{{ section.id }}" class="form-status" style="display: none;"></div>
+        <div id="IbanFormStatus-{{ section.id }}" class="form-status status-message hidden"></div>
 
         <div class="field">
           <input
@@ -81,10 +85,9 @@
       if (initErrorDiv) {
         const spanMsg = initErrorDiv.querySelector('span:last-child');
         if (spanMsg) spanMsg.textContent = message;
-        initErrorDiv.style.display = 'flex';
-        initErrorDiv.style.alignItems = 'center';
+        initErrorDiv.classList.remove('hidden');
       }
-      if (formContainer) formContainer.style.display = 'none';
+      if (formContainer) formContainer.classList.add('hidden');
     }
 
     if (!orderId) {
@@ -92,22 +95,27 @@
     } else if (isNaN(parseInt(orderId))) {
       showInitError('Encomenda não encontrada. ID inválido.');
     } else {
-      if (formContainer) formContainer.style.display = 'block';
+      if (formContainer) formContainer.classList.remove('hidden');
     }
 
     if (!form) return;
 
     function showStatus(message, isError = false) {
-      statusDiv.style.display = 'block';
+      // Limpa conteúdo anterior e garante que está visível
       statusDiv.innerHTML = '';
+      statusDiv.classList.remove('hidden');
 
       const svgWrapper = document.createElement('span');
       svgWrapper.className = 'svg-wrapper';
       if (isError) {
         svgWrapper.innerHTML = `{{ 'icon-error.svg' | inline_asset_content }}`;
         statusDiv.classList.add('form__message');
+        statusDiv.classList.remove('form-status-list');
       } else {
         svgWrapper.innerHTML = `{{ 'icon-success.svg' | inline_asset_content }}`;
+        statusDiv.classList.add('form-status-list', 'form__message');
+        statusDiv.classList.remove('form__message'); // evita duplicidade? melhor manter só o necessário
+        // Ajuste: para sucesso, mantém form-status-list e form__message
         statusDiv.classList.add('form-status-list', 'form__message');
       }
 
@@ -122,13 +130,16 @@
 
       if (!isError) {
         setTimeout(() => {
-          statusDiv.style.display = 'none';
+          statusDiv.classList.add('hidden');
+          // Limpa classes extras para próximo uso
+          statusDiv.classList.remove('form__message', 'form-status-list');
+          statusDiv.innerHTML = '';
         }, 5000);
       }
     }
 
     function clearStatus() {
-      statusDiv.style.display = 'none';
+      statusDiv.classList.add('hidden');
       statusDiv.classList.remove('form__message', 'form-status-list');
       statusDiv.innerHTML = '';
     }
@@ -161,7 +172,7 @@
         const response = await fetch(apiUrl);
 
         if (response.ok) {
-          const data = await response.text();
+          await response.text(); // descarta o conteúdo, apenas para consumir
           showStatus('IBAN enviado com sucesso!');
           form.reset();
         } else {
