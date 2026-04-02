@@ -324,7 +324,7 @@
       "settings": {
         "collection": "campanha",
         "products_to_show": 16,
-        "title": "<a href=\"/collections/pre-venda\" title=\"Pré-Vendas\">{{ section.settings.collection.title }}</a>",
+        "title": "{{ section.settings.collection.title }}",
         "heading_alignment": "left",
         "heading_size": "h1",
         "description": "",
