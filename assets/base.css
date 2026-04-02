@@ -12,6 +12,10 @@ swym-storefront-layout .swym-storefront-layout-backdrop {
   background: rgba(var(--color-foreground),.5) !important;
 }
 
+.swym-wishlist-collections-v2-container {
+  z-index: 2 !important;
+}
+
 .shopify-policy__container {
   padding: 20px;
 }
