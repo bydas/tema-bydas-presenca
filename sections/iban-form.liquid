@@ -1,0 +1,247 @@
+{{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="contact page-width page-width--narrow section-{{ section.id }}-padding">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="title title-wrapper--no-top-margin inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        {{ section.settings.heading }}
+      </h2>
+    {%- else -%}
+      <h2 class="visually-hidden">{{ 'templates.contact.form.title' | t }}</h2>
+    {%- endif -%}
+
+    <div id="IbanInitError-{{ section.id }}" class="form__message" style="display: none;">
+      <span class="svg-wrapper">{{ 'icon-error.svg' | inline_asset_content }}</span>
+      <span></span>
+    </div>
+
+    <div id="IbanFormContainer-{{ section.id }}" style="display: none;">
+      {%- liquid
+        assign iban_form_class = 'isolate'
+        if settings.animations_reveal_on_scroll
+          assign iban_form_class = 'isolate scroll-trigger animate--slide-in'
+        endif
+      -%}
+      <form id="IbanForm-{{ section.id }}" class="{{ iban_form_class }}">
+        <div id="IbanFormStatus-{{ section.id }}" class="form-status" style="display: none;"></div>
+
+        <div class="field">
+          <input
+            class="field__input"
+            type="text"
+            id="IbanField-{{ section.id }}"
+            name="iban"
+            value=""
+            placeholder="IBAN"
+            required
+            pattern="[A-Za-z0-9 ]+"
+            autocomplete="off"
+          >
+          <label class="field__label" for="IbanField-{{ section.id }}"> IBAN <span aria-hidden="true">*</span> </label>
+        </div>
+
+        <div class="contact__button">
+          <button type="submit" class="button" id="IbanSubmit-{{ section.id }}">
+            {{ 'templates.contact.form.send' | t }}
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function() {
+    const sectionId = {{ section.id | json }};
+    const initErrorDiv = document.getElementById(`IbanInitError-${sectionId}`);
+    const formContainer = document.getElementById(`IbanFormContainer-${sectionId}`);
+    const form = document.getElementById(`IbanForm-${sectionId}`);
+    const statusDiv = document.getElementById(`IbanFormStatus-${sectionId}`);
+    const submitBtn = document.getElementById(`IbanSubmit-${sectionId}`);
+    const ibanInput = document.getElementById(`IbanField-${sectionId}`);
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const orderId = urlParams.get('id');
+
+    function showInitError(message) {
+      if (initErrorDiv) {
+        const spanMsg = initErrorDiv.querySelector('span:last-child');
+        if (spanMsg) spanMsg.textContent = message;
+        initErrorDiv.style.display = 'flex';
+      }
+      if (formContainer) formContainer.style.display = 'none';
+    }
+
+    if (!orderId) {
+      showInitError('Encomenda não encontrada. ID não fornecido.');
+    } else if (isNaN(parseInt(orderId))) {
+      showInitError('Encomenda não encontrada. ID inválido.');
+    } else {
+      if (formContainer) formContainer.style.display = 'block';
+    }
+
+    if (!form) return;
+
+    function showStatus(message, isError = false) {
+      statusDiv.style.display = 'block';
+      statusDiv.innerHTML = '';
+
+      const svgWrapper = document.createElement('span');
+      svgWrapper.className = 'svg-wrapper';
+      if (isError) {
+        svgWrapper.innerHTML = `{{ 'icon-error.svg' | inline_asset_content }}`;
+        statusDiv.classList.add('form__message');
+      } else {
+        svgWrapper.innerHTML = `{{ 'icon-success.svg' | inline_asset_content }}`;
+        statusDiv.classList.add('form-status-list', 'form__message');
+      }
+
+      const messageSpan = document.createElement('span');
+      messageSpan.textContent = message;
+
+      statusDiv.appendChild(svgWrapper);
+      statusDiv.appendChild(messageSpan);
+
+      statusDiv.setAttribute('tabindex', '-1');
+      statusDiv.focus();
+
+      if (!isError) {
+        setTimeout(() => {
+          statusDiv.style.display = 'none';
+        }, 5000);
+      }
+    }
+
+    function clearStatus() {
+      statusDiv.style.display = 'none';
+      statusDiv.classList.remove('form__message', 'form-status-list');
+      statusDiv.innerHTML = '';
+    }
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      clearStatus();
+
+      const iban = ibanInput.value.trim();
+      if (!iban) {
+        showStatus('Por favor, preencha o campo IBAN.', true);
+        ibanInput.focus();
+        return;
+      }
+
+      const ibanClean = iban.replace(/\s/g, '');
+      if (ibanClean.length < 15 || ibanClean.length > 34) {
+        showStatus('O IBAN informado parece inválido. Verifique o número de caracteres.', true);
+        ibanInput.focus();
+        return;
+      }
+
+      const apiUrl = `https://presenca.apps.bydas.com?action=iban&id=${encodeURIComponent(orderId)}&iban=${encodeURIComponent(ibanClean)}`;
+
+      submitBtn.disabled = true;
+      const originalButtonText = submitBtn.textContent;
+      submitBtn.textContent = 'Enviando...';
+
+      try {
+        const response = await fetch(apiUrl);
+
+        if (response.ok) {
+          const data = await response.text();
+          showStatus('IBAN enviado com sucesso!');
+          form.reset();
+        } else {
+          const errorText = await response.text().catch(() => 'Erro no servidor');
+          showStatus(`Falha no envio: ${errorText}`, true);
+        }
+      } catch (error) {
+        console.error('Erro no fetch:', error);
+        showStatus('Erro de rede. Verifique sua conexão ou tente novamente.', true);
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalButtonText;
+      }
+    });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Formulário IBAN",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "default": "Submeter IBAN",
+      "label": "Título"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        { "value": "h2", "label": "Pequeno" },
+        { "value": "h1", "label": "Médio" },
+        { "value": "h0", "label": "Grande" },
+        { "value": "hxl", "label": "Extra Grande" },
+        { "value": "hxxl", "label": "Muito Grande" }
+      ],
+      "default": "h1",
+      "label": "Tamanho do título"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Esquema de cores",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Espaçamento da seção"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding superior",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding inferior",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "Formulário IBAN",
+      "category": "Formulários"
+    }
+  ]
+}
+{% endschema %}
