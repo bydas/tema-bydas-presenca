@@ -101,7 +101,6 @@
     if (!form) return;
 
     function showStatus(message, isError = false) {
-      // Limpa conteúdo anterior e garante que está visível
       statusDiv.innerHTML = '';
       statusDiv.classList.remove('hidden');
 
@@ -114,8 +113,7 @@
       } else {
         svgWrapper.innerHTML = `{{ 'icon-success.svg' | inline_asset_content }}`;
         statusDiv.classList.add('form-status-list', 'form__message');
-        statusDiv.classList.remove('form__message'); // evita duplicidade? melhor manter só o necessário
-        // Ajuste: para sucesso, mantém form-status-list e form__message
+        statusDiv.classList.remove('form__message');
         statusDiv.classList.add('form-status-list', 'form__message');
       }
 
@@ -131,7 +129,6 @@
       if (!isError) {
         setTimeout(() => {
           statusDiv.classList.add('hidden');
-          // Limpa classes extras para próximo uso
           statusDiv.classList.remove('form__message', 'form-status-list');
           statusDiv.innerHTML = '';
         }, 5000);
@@ -172,7 +169,7 @@
         const response = await fetch(apiUrl);
 
         if (response.ok) {
-          await response.text(); // descarta o conteúdo, apenas para consumir
+          await response.text();
           showStatus('IBAN enviado com sucesso!');
           form.reset();
         } else {
