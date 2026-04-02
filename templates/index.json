@@ -284,8 +284,8 @@
         "slide_6FhL4m": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/TEMA_1_5_NEWSLETTER_BN_DESKTOP_9234e12b-d54c-4b7d-a189-59c1769dac6b.jpg",
-            "image_mobile": "shopify://shop_images/TEMA_1_5_NEWSLETTER_BN_MOBILE_9960fecd-ce1c-4817-b3d6-8aac870317a9.jpg",
+            "image": "shopify://shop_images/27_Subscricao_Newsletter_1.jpg",
+            "image_mobile": "shopify://shop_images/37_Subscricao_Newsletter_Square_image_1.jpg",
             "image_overlay_opacity": 0,
             "image_link": "shopify://pages/newsletter",
             "open_link_new_tab": false,
