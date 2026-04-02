@@ -38,10 +38,10 @@
           "name": "Banner Campanhas",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/13_Ganhei_uma_Vida_Quando_te_Perdi_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/13_Ganhei_uma_Vida_Quando_te_Perdi_Mobile.jpg",
+            "image": "shopify://shop_images/Banner_Desktop_2_4a331e85-77db-4f91-9828-91d880366c2c.jpg",
+            "image_mobile": "shopify://shop_images/Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/ganhei-uma-vida-quando-te-perdi-edicao-especial",
+            "image_link": "shopify://collections/campanha",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
