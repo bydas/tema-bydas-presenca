@@ -82,6 +82,7 @@
         const spanMsg = initErrorDiv.querySelector('span:last-child');
         if (spanMsg) spanMsg.textContent = message;
         initErrorDiv.style.display = 'flex';
+        initErrorDiv.style.alignItems = 'center';
       }
       if (formContainer) formContainer.style.display = 'none';
     }
