@@ -10,3 +10,7 @@
 .status-message.hidden {
     display: none;
 }
+
+.contact__button {
+    margin-top: 5rem;
+}
