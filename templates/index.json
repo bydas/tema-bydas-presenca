@@ -422,6 +422,7 @@
       "block_order": [
         "slide_QpMMqV"
       ],
+      "disabled": true,
       "name": "Banner fixo 1",
       "settings": {
         "layout": "grid",
@@ -436,6 +437,7 @@
     },
     "featured_collection_QwW7Y9": {
       "type": "featured-collection",
+      "disabled": true,
       "name": "Carrossel Temático",
       "settings": {
         "collection": "serie-o-leao-que-temos-ca-dentro",
