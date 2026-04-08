@@ -68,7 +68,7 @@
                 {%- if card_collection.featured_image.width >= 1000 -%}{{ card_collection.featured_image | image_url: width: 1000, format: 'webp' }} 1000w,{%- endif -%}
                 {%- if card_collection.featured_image.width >= 1500 -%}{{ card_collection.featured_image | image_url: width: 1500, format: 'webp' }} 1500w,{%- endif -%}
                 {%- if card_collection.featured_image.width >= 3000 -%}{{ card_collection.featured_image | image_url: width: 3000, format: 'webp' }} 3000w,{%- endif -%}
-                {{ card_collection.featured_image | image_url: format: 'webp' }} {{ card_collection.featured_image.width }}w
+                {{ card_collection.featured_image | image_url }} {{ card_collection.featured_image.width }}w
               "
               src="{{ card_collection.featured_image | image_url: width: 1500, format: 'webp' }}"
               sizes="
