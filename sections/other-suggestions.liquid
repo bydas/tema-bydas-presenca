@@ -24,31 +24,7 @@
     endfor
   endif
 
-  assign filtered_products_recommendations = ''
-
-  paginate collections[subcategory_handle].products by 50
-    for product in collections[subcategory_handle].products
-      unless product.handle == product.handle or product.available == false
-        assign filtered_products_recommendations = filtered_products_recommendations | append: product.handle | append: ','
-      endunless
-    endfor
-  endpaginate
-
-  assign handles_array = filtered_products_recommendations | split: ','
-
-  assign products_array = ''
-  for handle in handles_array
-    if handle != blank
-      assign prod = all_products[handle]
-      if prod != blank
-        assign products_array = products_array | append: ',' | append: prod
-      endif
-    endif
-  endfor
-  assign products_array = products_array | remove_first: ',' | split: ','
-  assign sorted_products = products_array | sort: 'published_at' | reverse
-  assign filtered_products_recommendations = sorted_products | slice: 0, 16
-
+  assign filtered_products_recommendations = collections[subcategory_handle].products | reject: 'handle', product.handle | reject: 'available', false | sort: 'published_at' | reverse | compact
   assign ebooks_ids_to_remove = ''
 
   for recommendation in filtered_products_recommendations
