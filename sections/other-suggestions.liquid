@@ -24,7 +24,7 @@
     endfor
   endif
 
-  assign filtered_products_recommendations = collections[subcategory_handle].products | reject: 'handle', product.handle | reject: 'available', false | sort: 'published_at' | reverse | compact
+  assign filtered_products_recommendations = collections[subcategory_handle].products | reject: 'handle', product.handle | reject: 'available', false | sort: 'updated_at' | reverse | compact
   assign ebooks_ids_to_remove = ''
 
   for recommendation in filtered_products_recommendations
