@@ -23,8 +23,7 @@ class CartDrawer extends HTMLElement {
         'Seu carrinho contém itens de pré-venda.\nEles serão expedidos apenas após a data de lançamento.'
       );
       if (userConfirmed) {
-        const form = this.querySelector('#CartDrawer-Form');
-        if (form) form.submit();
+        checkoutButton.click();
       }
     }
   }
