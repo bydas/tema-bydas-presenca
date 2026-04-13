@@ -295,3 +295,29 @@ if (!customElements.get('cart-note')) {
     }
   );
 }
+
+(function () {
+  let hasConfirmed = false;
+
+  document.body.addEventListener('click', (event) => {
+    if (hasConfirmed) return;
+
+    const checkoutButton = event.target.closest('#checkout');
+    if (!checkoutButton) return;
+
+    event.preventDefault();
+
+    const cartItemsContainer = document.querySelector('cart-items');
+    const hasPreSale = cartItemsContainer && cartItemsContainer.querySelector('[data-pre-sale="true"]') !== null;
+
+    if (hasPreSale) {
+      const userConfirmed = confirm(
+        'Seu carrinho contém itens de pré-venda.\nEles serão expedidos apenas após a data de lançamento.'
+      );
+      if (userConfirmed) {
+        hasConfirmed = true;
+        checkoutButton.click();
+      }
+    }
+  });
+})();
