@@ -2,9 +2,40 @@ class CartDrawer extends HTMLElement {
   constructor() {
     super();
 
+    this.hasConfirmed = false;
+
     this.addEventListener('keyup', (evt) => evt.code === 'Escape' && this.close());
     this.querySelector('#CartDrawer-Overlay').addEventListener('click', this.close.bind(this));
     this.setHeaderCartIconAccessibility();
+    this.addEventListener('click', this.onCheckoutClick.bind(this));
+  }
+
+  onCheckoutClick(event) {
+    const checkoutButton = event.target.closest('#CartDrawer-Checkout');
+    if (!checkoutButton) return;
+
+    if (this.hasConfirmed) return;
+
+    event.preventDefault();
+    this.handlePreSaleCheckout(event, checkoutButton);
+  }
+
+  handlePreSaleCheckout(event, checkoutButton) {
+    const hasPreSale = this.querySelector('[data-pre-sale="true"]') !== null;
+
+    if (hasPreSale) {
+      const userConfirmed = confirm(
+        'Seu carrinho contém itens de pré-venda.\nEles serão expedidos apenas após a data de lançamento.'
+      );
+      if (userConfirmed) {
+        this.hasConfirmed = true;
+        const form = this.querySelector('#CartDrawer-Form');
+        if (form) form.submit();
+      }
+    } else {
+      const form = this.querySelector('#CartDrawer-Form');
+      if (form) form.submit();
+    }
   }
 
   setHeaderCartIconAccessibility() {
