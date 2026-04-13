@@ -34,10 +34,8 @@
         target="_blank"
         >Bertrand</a
       >
-      {% if product.tags contains 'TIPO_EBOOK' %}
-        {% assign regular_product = product.handle | remove: 'ebook-' %}
-        <a class="button button--secondary" href="/products/{{ regular_product }}">Ver formato físico</a>
-      {% endif %}
+      {% assign regular_product = product.handle | remove: 'ebook-' %}
+      <a class="button button--secondary" href="/products/{{ regular_product }}">Ver formato físico</a>
     </div>
   {% else %}
     {%- if product != blank -%}
