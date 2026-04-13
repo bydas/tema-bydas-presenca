@@ -187,6 +187,12 @@
   {%- endif -%}
 </div>
 
+{% assign release_date = product.metafields.custom.release_date %}
+
+{% if release_date != blank %}
+  <h3 class="subtitle h3">{{ release_date }}</h3>
+{% endif %}
+
 <div class="grouped-buttons">
   {% assign excerpt_url = product.metafields.global.excerpt | strip | url_encode %}
   {% assign extra_story = product.metafields.custom.conto_extra %}
