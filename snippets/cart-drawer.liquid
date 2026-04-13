@@ -125,6 +125,9 @@
                         {% if item.parent_relationship.parent != null %}
                           aria-label="{{- 'products.product.nested_label' | t: title: item.product.title, parent_title: item.parent_relationship.parent.title | escape -}}"
                         {% endif %}
+                        {%- if item.product.tags contains 'PRÉ-VENDA' %} 
+                          data-pre-sale="true"
+                        {% endif %}
                       >
                         <td
                           class="cart-item__media"
