@@ -189,7 +189,7 @@
 
 {% assign release_date = product.metafields.custom.release_date %}
 
-{% if release_date != blank %}
+{% if release_date != blank and product.tags contains 'PRÉ-VENDA' %}
   <h4 class="subtitle h4">{{ release_date }}</h4>
 {% endif %}
 
