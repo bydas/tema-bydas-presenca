@@ -133,6 +133,27 @@
   </div>
 </div>
 
+<script>
+  (function () {
+    document.body.addEventListener('click', (event) => {
+      const checkoutButton = event.target.closest('#checkout');
+      if (!checkoutButton) return;
+
+      const cartItemsContainer = document.querySelector('cart-items');
+      const hasPreSale = cartItemsContainer && cartItemsContainer.querySelector('[data-pre-sale="true"]') !== null;
+      if (!hasPreSale) return;
+
+      event.preventDefault();
+
+      const userConfirmed = confirm(
+        'Contém livros em pré-venda no carrinho. A encomenda será expedida após a data de lançamento.'
+      );
+
+      if (userConfirmed) window.location.href = '/checkout';
+    });
+  })();
+</script>
+
 {% schema %}
 {
   "name": "t:sections.main-cart-footer.name",
@@ -147,7 +168,7 @@
     {
       "type": "header",
       "content": "t:sections.all.padding.section_padding_heading"
-    },    
+    },
     {
       "type": "range",
       "id": "padding_top",

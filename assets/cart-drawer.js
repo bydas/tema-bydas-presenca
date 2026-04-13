@@ -5,6 +5,25 @@ class CartDrawer extends HTMLElement {
     this.addEventListener('keyup', (evt) => evt.code === 'Escape' && this.close());
     this.querySelector('#CartDrawer-Overlay').addEventListener('click', this.close.bind(this));
     this.setHeaderCartIconAccessibility();
+    this.setupPreSaleCheckout();
+  }
+
+  setupPreSaleCheckout() {
+    this.addEventListener('click', (event) => {
+      const checkoutButton = event.target.closest('#CartDrawer-Checkout');
+      if (!checkoutButton) return;
+
+      const hasPreSale = this.querySelector('[data-pre-sale="true"]') !== null;
+      if (!hasPreSale) return;
+
+      event.preventDefault();
+
+      const userConfirmed = confirm(
+        'Contém livros em pré-venda no carrinho. A encomenda será expedida após a data de lançamento.'
+      );
+
+      if (userConfirmed) window.location.href = '/checkout';
+    });
   }
 
   setHeaderCartIconAccessibility() {
