@@ -11,10 +11,10 @@ class CartDrawer extends HTMLElement {
   }
 
   onCheckoutClick(event) {
+    if (this.hasConfirmed) return;
+
     const checkoutButton = event.target.closest('#CartDrawer-Checkout');
     if (!checkoutButton) return;
-
-    if (this.hasConfirmed) return;
 
     event.preventDefault();
     this.handlePreSaleCheckout(event, checkoutButton);
@@ -29,12 +29,8 @@ class CartDrawer extends HTMLElement {
       );
       if (userConfirmed) {
         this.hasConfirmed = true;
-        const form = this.querySelector('#CartDrawer-Form');
-        if (form) form.submit();
+        checkoutButton.click();
       }
-    } else {
-      const form = this.querySelector('#CartDrawer-Form');
-      if (form) form.submit();
     }
   }
 
