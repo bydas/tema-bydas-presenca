@@ -17,7 +17,7 @@ swym-storefront-layout .swym-storefront-layout-backdrop {
 }
 
 .swym-wishlist-collections-v2-container {
-  z-index: 2 !important;
+  z-index: 1 !important;
 }
 
 .shopify-policy__container {
