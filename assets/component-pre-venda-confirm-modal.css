@@ -1,0 +1,64 @@
+#customConfirmModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+.custom-confirm-content {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.02);
+    text-align: center;
+}
+
+.custom-confirm-message {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+    color: #1f2937;
+}
+
+.custom-confirm-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.custom-confirm-buttons button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.custom-confirm-ok {
+    background-color: #2563eb;
+    color: white;
+}
+
+.custom-confirm-ok:hover {
+    background-color: #1d4ed8;
+}
+
+.custom-confirm-cancel {
+    background-color: #e5e7eb;
+    color: #1f2937;
+}
+
+.custom-confirm-cancel:hover {
+    background-color: #d1d5db;
+}
