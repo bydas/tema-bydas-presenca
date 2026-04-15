@@ -162,6 +162,38 @@
         }
       }
     },
+    "pre_venda_section": {
+      "name": "Pre-sale confirmation modal",
+      "colors_header": "Modal colors",
+      "ok_button_header": "OK button",
+      "cancel_button_header": "Cancel button"
+    },
+    "pre_venda_settings": {
+      "bg_color": {
+        "label": "Modal background"
+      },
+      "message_color": {
+        "label": "Message text color"
+      },
+      "ok_bg": {
+        "label": "Background color"
+      },
+      "ok_text_color": {
+        "label": "Text color"
+      },
+      "ok_bg_hover": {
+        "label": "Background color (hover)"
+      },
+      "cancel_bg": {
+        "label": "Background color"
+      },
+      "cancel_text_color": {
+        "label": "Text color"
+      },
+      "cancel_bg_hover": {
+        "label": "Background color (hover)"
+      }
+    },
     "brand_information": {
       "name": "Brand information",
       "settings": {

@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "settings_schema": {
     "colors": {
@@ -319,6 +328,38 @@
           "label": "Favicon",
           "info": "Se muestra en 32 x 32 px"
         }
+      }
+    },
+    "pre_venda_section": {
+      "name": "Modal de confirmación de preventa",
+      "colors_header": "Colores del modal",
+      "ok_button_header": "Botón Aceptar",
+      "cancel_button_header": "Botón Cancelar"
+    },
+    "pre_venda_settings": {
+      "bg_color": {
+        "label": "Fondo del modal"
+      },
+      "message_color": {
+        "label": "Color del texto del mensaje"
+      },
+      "ok_bg": {
+        "label": "Color de fondo"
+      },
+      "ok_text_color": {
+        "label": "Color del texto"
+      },
+      "ok_bg_hover": {
+        "label": "Color de fondo (hover)"
+      },
+      "cancel_bg": {
+        "label": "Color de fondo"
+      },
+      "cancel_text_color": {
+        "label": "Color del texto"
+      },
+      "cancel_bg_hover": {
+        "label": "Color de fondo (hover)"
       }
     },
     "brand_information": {

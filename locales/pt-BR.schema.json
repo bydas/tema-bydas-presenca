@@ -330,6 +330,38 @@
         }
       }
     },
+    "pre_venda_section": {
+      "name": "Modal de confirmação de pré-venda",
+      "colors_header": "Cores do modal",
+      "ok_button_header": "Botão OK",
+      "cancel_button_header": "Botão Cancelar"
+    },
+    "pre_venda_settings": {
+      "bg_color": {
+        "label": "Fundo do modal"
+      },
+      "message_color": {
+        "label": "Cor do texto da mensagem"
+      },
+      "ok_bg": {
+        "label": "Cor de fundo"
+      },
+      "ok_text_color": {
+        "label": "Cor do texto"
+      },
+      "ok_bg_hover": {
+        "label": "Cor de fundo (hover)"
+      },
+      "cancel_bg": {
+        "label": "Cor de fundo"
+      },
+      "cancel_text_color": {
+        "label": "Cor do texto"
+      },
+      "cancel_bg_hover": {
+        "label": "Cor de fundo (hover)"
+      }
+    },
     "brand_information": {
       "name": "Informações da marca",
       "settings": {

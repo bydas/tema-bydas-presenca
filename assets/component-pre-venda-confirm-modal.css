@@ -12,7 +12,6 @@
 }
 
 .custom-confirm-content {
-    background: white;
     padding: 1.5rem;
     border-radius: 12px;
     max-width: 400px;
@@ -25,7 +24,6 @@
     font-size: 1.35rem;
     margin-bottom: 1.5rem;
     line-height: 1.5;
-    color: #1f2937;
 }
 
 .custom-confirm-buttons {
@@ -42,24 +40,6 @@
     font-weight: 500;
     cursor: pointer;
     transition: background 0.2s;
-}
-
-.custom-confirm-ok {
-    background-color: #2563eb;
-    color: white;
-}
-
-.custom-confirm-ok:hover {
-    background-color: #1d4ed8;
-}
-
-.custom-confirm-cancel {
-    background-color: #e5e7eb;
-    color: #1f2937;
-}
-
-.custom-confirm-cancel:hover {
-    background-color: #d1d5db;
 }
 
 @media screen and (min-width: 768px) {

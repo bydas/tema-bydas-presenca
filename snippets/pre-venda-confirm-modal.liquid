@@ -1,5 +1,33 @@
 {{ 'component-pre-venda-confirm-modal.css' | asset_url | stylesheet_tag }}
 
+<style>
+  .custom-confirm-content {
+    background: {{ settings.pre_venda_bg_color | default: '#ffffff' }};
+  }
+
+  .custom-confirm-message {
+    color: {{ settings.pre_venda_message_color | default: '#1f2937' }};
+  }
+
+  .custom-confirm-ok {
+    background-color: {{ settings.pre_venda_ok_bg | default: '#2563eb' }};
+    color: {{ settings.pre_venda_ok_text_color | default: '#ffffff' }};
+  }
+
+  .custom-confirm-ok:hover {
+    background-color: {{ settings.pre_venda_ok_bg_hover | default: '#1d4ed8' }};
+  }
+
+  .custom-confirm-cancel {
+    background-color: {{ settings.pre_venda_cancel_bg | default: '#e5e7eb' }};
+    color: {{ settings.pre_venda_cancel_text_color | default: '#1f2937' }};
+  }
+
+  .custom-confirm-cancel:hover {
+    background-color: {{ settings.pre_venda_cancel_bg_hover | default: '#d1d5db' }};
+  }
+</style>
+
 <div id="customConfirmModal">
   <div class="custom-confirm-content">
     <div class="custom-confirm-message" id="customConfirmMessage"></div>
