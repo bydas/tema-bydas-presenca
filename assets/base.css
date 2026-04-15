@@ -12,6 +12,10 @@ swym-storefront-layout .swym-storefront-layout-backdrop {
   background: rgba(var(--color-foreground),.5) !important;
 }
 
+.article-card-wrapper .swym-wishlist-collections-v2-container {
+  display: none;
+}
+
 .swym-wishlist-collections-v2-container {
   z-index: 2 !important;
 }
