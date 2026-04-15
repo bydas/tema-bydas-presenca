@@ -12,13 +12,13 @@
     "slideshow_Mh9AA4": {
       "type": "slideshow",
       "blocks": {
-        "slide_bypDBF": {
+        "slide_P7jztK": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Presenca_Banners_Site_Aventuras_de_uma_rapariga_como_tu_DSK_05896078-d42b-4e94-8c6a-0bc87cb6e2a5.jpg",
-            "image_mobile": "shopify://shop_images/Presenca_Banners_Site_Aventuras_de_uma_rapariga_como_tu_MB_e2f2fabb-a846-4cd0-bdd3-133d51cf4872.jpg",
+            "image": "shopify://shop_images/Presenca_Banners_Site_22_voltas_DSK.jpg",
+            "image_mobile": "shopify://shop_images/Presenca_Banners_Site_22_voltas_MB.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/aventuras-de-uma-rapariga-como-tu-8-nao-me-roubem-as-amigas",
+            "image_link": "shopify://products/22-voltas",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -41,27 +41,6 @@
             "image_mobile": "shopify://shop_images/Mobile.jpg",
             "image_overlay_opacity": 0,
             "image_link": "shopify://collections/campanha",
-            "open_link_new_tab": false,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
-          }
-        },
-        "slide_P7jztK": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Presenca_Banners_Site_22_voltas_DSK.jpg",
-            "image_mobile": "shopify://shop_images/Presenca_Banners_Site_22_voltas_MB.jpg",
-            "image_overlay_opacity": 0,
-            "image_link": "shopify://products/22-voltas",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -222,19 +201,40 @@
             "text_alignment_mobile": "center",
             "color_scheme": ""
           }
+        },
+        "slide_bypDBF": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Presenca_Banners_Site_Elena_sabe_DSK.jpg",
+            "image_mobile": "shopify://shop_images/Presenca_Banners_Site_Elena_sabe_MB.jpg",
+            "image_overlay_opacity": 0,
+            "image_link": "shopify://products/elena-sabe",
+            "open_link_new_tab": false,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
         }
       },
       "block_order": [
-        "slide_bypDBF",
-        "slide_LniBY7",
         "slide_P7jztK",
+        "slide_LniBY7",
         "slide_9RNWLH",
         "slide_icJWTn",
         "slide_3WXTYL",
         "slide_xHT3bP",
         "slide_9DGE9B",
         "slide_PQfNNM",
-        "slide_NLnpqb"
+        "slide_NLnpqb",
+        "slide_bypDBF"
       ],
       "name": "Banner Header",
       "settings": {
