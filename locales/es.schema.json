@@ -331,7 +331,7 @@
       }
     },
     "pre_venda_section": {
-      "name": "Modal de confirmación de preventa",
+      "name": "Modal de preventa",
       "colors_header": "Colores del modal",
       "ok_button_header": "Botón Aceptar",
       "cancel_button_header": "Botón Cancelar"

@@ -163,7 +163,7 @@
       }
     },
     "pre_venda_section": {
-      "name": "Pre-sale confirmation modal",
+      "name": "Pre-sale modal",
       "colors_header": "Modal colors",
       "ok_button_header": "OK button",
       "cancel_button_header": "Cancel button"
