@@ -1,0 +1,16 @@
+{{ 'component-pre-venda-confirm-modal.css' | asset_url | stylesheet_tag }}
+
+<div id="customConfirmModal">
+  <div class="custom-confirm-content">
+    <div class="custom-confirm-message" id="customConfirmMessage"></div>
+
+    <div class="custom-confirm-buttons">
+      <button id="customConfirmOk" class="custom-confirm-ok">
+        {{ 'sections.quick_order_list.ok' | t }}
+      </button>
+      <button id="customConfirmCancel" class="custom-confirm-cancel">
+        {{ 'sections.quick_order_list.cancel' | t }}
+      </button>
+    </div>
+  </div>
+</div>
