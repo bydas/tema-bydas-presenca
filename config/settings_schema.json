@@ -1459,66 +1459,66 @@
     ]
   },
   {
-    "name": "t:pre_venda_section.name",
+    "name": "t:settings_schema.pre_venda_section.name",
     "settings": [
       {
         "type": "header",
-        "content": "t:pre_venda_section.colors_header"
+        "content": "t:settings_schema.pre_venda_section.colors_header"
       },
       {
         "type": "color",
         "id": "pre_venda_bg_color",
-        "label": "t:pre_venda_settings.bg_color.label",
+        "label": "t:settings_schema.pre_venda_settings.bg_color.label",
         "default": "#ffffff"
       },
       {
         "type": "color",
         "id": "pre_venda_message_color",
-        "label": "t:pre_venda_settings.message_color.label",
+        "label": "t:settings_schema.pre_venda_settings.message_color.label",
         "default": "#1f2937"
       },
       {
         "type": "header",
-        "content": "t:pre_venda_section.ok_button_header"
+        "content": "t:settings_schema.pre_venda_section.ok_button_header"
       },
       {
         "type": "color",
         "id": "pre_venda_ok_bg",
-        "label": "t:pre_venda_settings.ok_bg.label",
+        "label": "t:settings_schema.pre_venda_settings.ok_bg.label",
         "default": "#2563eb"
       },
       {
         "type": "color",
         "id": "pre_venda_ok_text_color",
-        "label": "t:pre_venda_settings.ok_text_color.label",
+        "label": "t:settings_schema.pre_venda_settings.ok_text_color.label",
         "default": "#ffffff"
       },
       {
         "type": "color",
         "id": "pre_venda_ok_bg_hover",
-        "label": "t:pre_venda_settings.ok_bg_hover.label",
+        "label": "t:settings_schema.pre_venda_settings.ok_bg_hover.label",
         "default": "#1d4ed8"
       },
       {
         "type": "header",
-        "content": "t:pre_venda_section.cancel_button_header"
+        "content": "t:settings_schema.pre_venda_section.cancel_button_header"
       },
       {
         "type": "color",
         "id": "pre_venda_cancel_bg",
-        "label": "t:pre_venda_settings.cancel_bg.label",
+        "label": "t:settings_schema.pre_venda_settings.cancel_bg.label",
         "default": "#e5e7eb"
       },
       {
         "type": "color",
         "id": "pre_venda_cancel_text_color",
-        "label": "t:pre_venda_settings.cancel_text_color.label",
+        "label": "t:settings_schema.pre_venda_settings.cancel_text_color.label",
         "default": "#1f2937"
       },
       {
         "type": "color",
         "id": "pre_venda_cancel_bg_hover",
-        "label": "t:pre_venda_settings.cancel_bg_hover.label",
+        "label": "t:settings_schema.pre_venda_settings.cancel_bg_hover.label",
         "default": "#d1d5db"
       }
     ]
