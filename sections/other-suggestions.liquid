@@ -115,8 +115,6 @@
       const productWidth = product.featuredImage?.width ?? 0;
       const productHeight = product.featuredImage?.height ?? 0;
       const aspectRatio = productWidth / productHeight;
-
-      console.log(aspectRatio);
       
       const discountPercentage = compareAtPrice && priceAmount ? 
         Math.round(((compareAtPrice - priceAmount) / compareAtPrice) * 100) : 0;
@@ -173,7 +171,7 @@
 
               <div 
                 class="card__inner color-{{ settings.card_color_scheme }} gradient ratio" 
-                style="--ratio-percent: 150.75%;"
+                style="--ratio-percent: ${1 / aspectRatio * 100}%;"
               >
                 <div class="card__media">
                   <div class="media media--transparent media--hover-effect">
