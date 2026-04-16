@@ -112,6 +112,9 @@
       const variantId = extractVariantId(product.variants.edges[0]?.node.id);
       const productUrl = `/products/${product.handle}`;
       const productTags = product.variants.edges[0]?.tags ?? [];
+      const productWidth = product.featuredImage?.width ?? 0;
+      const productHeight = product.featuredImage?.height ?? 0;
+      const aspectRatio = productWidth / productHeight;
       
       const discountPercentage = compareAtPrice && priceAmount ? 
         Math.round(((compareAtPrice - priceAmount) / compareAtPrice) * 100) : 0;
@@ -127,7 +130,7 @@
           <div class="card-wrapper product-card-wrapper underline-links-hover">
             <div 
               class="card card--standard card--media" 
-              style="--ratio-percent: 150.75%; position: relative;"
+              style="--ratio-percent: ${1 / aspectRatio * 100}%; position: relative;"
             >
               ${!productTags.includes('TIPO_EBOOK') ? `
                 <div class="card__quick-add-icon" style="bottom: 135px;">
