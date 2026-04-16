@@ -115,6 +115,8 @@
       const productWidth = product.featuredImage?.width ?? 0;
       const productHeight = product.featuredImage?.height ?? 0;
       const aspectRatio = productWidth / productHeight;
+
+      console.log(aspectRatio);
       
       const discountPercentage = compareAtPrice && priceAmount ? 
         Math.round(((compareAtPrice - priceAmount) / compareAtPrice) * 100) : 0;
