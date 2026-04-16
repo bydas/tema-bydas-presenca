@@ -114,7 +114,7 @@
       const productTags = product.variants.edges[0]?.tags ?? [];
       const productWidth = product.featuredImage?.width ?? 0;
       const productHeight = product.featuredImage?.height ?? 0;
-      const aspectRatio = productWidth / productHeight;
+      const aspectRatio = (productWidth / productHeight) * 100;
       
       const discountPercentage = compareAtPrice && priceAmount ? 
         Math.round(((compareAtPrice - priceAmount) / compareAtPrice) * 100) : 0;
@@ -130,7 +130,7 @@
           <div class="card-wrapper product-card-wrapper underline-links-hover">
             <div 
               class="card card--standard card--media" 
-              style="--ratio-percent: ${1 / aspectRatio * 100}%; position: relative;"
+              style="--ratio-percent: ${aspectRatio}%; position: relative;"
             >
               ${!productTags.includes('TIPO_EBOOK') ? `
                 <div class="card__quick-add-icon" style="bottom: 135px;">
@@ -171,7 +171,7 @@
 
               <div 
                 class="card__inner color-{{ settings.card_color_scheme }} gradient ratio" 
-                style="--ratio-percent: ${1 / aspectRatio * 100}%;"
+                style="--ratio-percent: ${aspectRatio}%;"
               >
                 <div class="card__media">
                   <div class="media media--transparent media--hover-effect">
