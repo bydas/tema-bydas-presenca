@@ -36,6 +36,7 @@
         "slide_LniBY7": {
           "type": "slide",
           "name": "Banner Campanhas",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Banner_Desktop_2_4a331e85-77db-4f91-9828-91d880366c2c.jpg",
             "image_mobile": "shopify://shop_images/Mobile.jpg",
