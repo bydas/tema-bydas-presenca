@@ -167,7 +167,7 @@
                 {%- endif -%}
 
                 {%- if detalhes_html != blank -%}
-                  {%- assign topics_to_remove = 'Título Original,Peso' | split: ',' -%}
+                  {%- assign topics_to_remove = 'Título Original,Peso,Autor,Autores' | split: ',' -%}
                   {%- assign items = detalhes_html | split: '<li' -%}
                   {%- assign filtered_items = '' -%}
 
