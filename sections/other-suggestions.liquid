@@ -111,6 +111,7 @@
       const available = product.variants.edges[0]?.node.availableForSale;
       const variantId = extractVariantId(product.variants.edges[0]?.node.id);
       const productUrl = `/products/${product.handle}`;
+      const productTags = product.variants.edges[0]?.tags ?? [];
       
       const discountPercentage = compareAtPrice && priceAmount ? 
         Math.round(((compareAtPrice - priceAmount) / compareAtPrice) * 100) : 0;
@@ -128,41 +129,42 @@
               class="card card--standard card--media" 
               style="--ratio-percent: 150.75%; position: relative;"
             >
-              <div class="card__quick-add-icon" style="bottom: 135px;">
-                <product-form data-section-id="${sectionId}">
-                  <form 
-                    method="post" 
-                    action="/cart/add" 
-                    id="quick-add-${sectionId}-${productId}" 
-                    accept-charset="UTF-8" 
-                    class="form" 
-                    enctype="multipart/form-data" 
-                    novalidate="novalidate" 
-                    data-type="add-to-cart-form"
-                  >
-                    <input type="hidden" name="form_type" value="product">
-                    <input type="hidden" name="utf8" value="✓">
-                    <input type="hidden" name="id" value="${variantId}">
-
-                    <button 
-                      id="QuickAddIcon-${sectionId}-${productId}" 
-                      type="submit" 
-                      name="add" 
-                      class="quick-add__icon-button" 
-                      aria-live="polite" 
-                      aria-haspopup="dialog"
+              ${!productTags.includes('TIPO_EBOOK') && (
+                <div class="card__quick-add-icon" style="bottom: 135px;">
+                  <product-form data-section-id="${sectionId}">
+                    <form 
+                      method="post" 
+                      action="/cart/add" 
+                      id="quick-add-${sectionId}-${productId}" 
+                      accept-charset="UTF-8" 
+                      class="form" 
+                      enctype="multipart/form-data" 
+                      novalidate="novalidate" 
+                      data-type="add-to-cart-form"
                     >
-                      {{ 'icon-new-cart.svg' | inline_asset_content }}
-                      <span class="visually-hidden">{{ 'products.product.choose_options' | t }}</span>
-                      {%- render 'loading-spinner' -%}
-                    </button>
+                      <input type="hidden" name="form_type" value="product">
+                      <input type="hidden" name="utf8" value="✓">
+                      <input type="hidden" name="id" value="${variantId}">
 
-                    <input type="hidden" name="product-id" value="${productId}">
-                    <input type="hidden" name="section-id" value="${sectionId}">
-                  </form>
-                </product-form>
-              </div>
+                      <button 
+                        id="QuickAddIcon-${sectionId}-${productId}" 
+                        type="submit" 
+                        name="add" 
+                        class="quick-add__icon-button" 
+                        aria-live="polite" 
+                        aria-haspopup="dialog"
+                      >
+                        {{ 'icon-new-cart.svg' | inline_asset_content }}
+                        <span class="visually-hidden">{{ 'products.product.choose_options' | t }}</span>
+                        {%- render 'loading-spinner' -%}
+                      </button>
 
+                      <input type="hidden" name="product-id" value="${productId}">
+                      <input type="hidden" name="section-id" value="${sectionId}">
+                    </form>
+                  </product-form>
+                </div>
+              )}
               <div 
                 class="card__inner color-{{ settings.card_color_scheme }} gradient ratio" 
                 style="--ratio-percent: 150.75%;"
