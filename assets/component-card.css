@@ -585,7 +585,7 @@ h5.card__heading a {
   font-size: 1.6rem;
 }
 
-.product__info-wrapper .author__names-container.card__heading {
+.product:not(.product--no-media) .product__info-wrapper .author__names-container.card__heading {
   text-align: unset !important;
   margin-top: 1rem;
 }
