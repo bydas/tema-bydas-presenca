@@ -325,6 +325,39 @@
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
+    {% render 'pre-venda-confirm-modal' %}
+
+    <script>
+      window.customConfirm = (message) => {
+        return new Promise((resolve) => {
+          const modal = document.getElementById('customConfirmModal');
+          const messageEl = document.getElementById('customConfirmMessage');
+          const okBtn = document.getElementById('customConfirmOk');
+          const cancelBtn = document.getElementById('customConfirmCancel');
+
+          messageEl.textContent = message;
+          modal.style.display = 'flex';
+
+          const cleanup = (result) => {
+            modal.style.display = 'none';
+            okBtn.removeEventListener('click', handleOk);
+            cancelBtn.removeEventListener('click', handleCancel);
+            resolve(result);
+          };
+
+          const handleOk = () => cleanup(true);
+          const handleCancel = () => cleanup(false);
+
+          okBtn.addEventListener('click', handleOk);
+          cancelBtn.addEventListener('click', handleCancel);
+
+          modal.addEventListener('click', (e) => {
+            if (e.target === modal) cleanup(false);
+          });
+        });
+      };
+    </script>
+
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>
