@@ -480,7 +480,7 @@
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 48,
-        "padding_bottom": 0
+        "padding_bottom": 48
       }
     },
     "slideshow_qAxrAq": {
@@ -549,7 +549,7 @@
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 48,
-        "padding_bottom": 0
+        "padding_bottom": 48
       }
     },
     "featured_blog_DCcCgx": {
