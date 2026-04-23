@@ -460,7 +460,7 @@
       "settings": {
         "collection": "populares-no-tiktok",
         "products_to_show": 16,
-        "title": "<a href=\"/collections/colecao-dav-pilkey\" title=\"Homem-cão e Supergatinho\">{{ section.settings.collection.title }}</a>",
+        "title": "<a href=\"/collections/populares-no-tiktok\" title=\"Populares no TikTok\">{{ section.settings.collection.title }}</a>",
         "heading_alignment": "left",
         "heading_size": "h1",
         "description": "",
