@@ -12,13 +12,14 @@
     "slideshow_Mh9AA4": {
       "type": "slideshow",
       "blocks": {
-        "slide_P7jztK": {
+        "slide_LniBY7": {
           "type": "slide",
+          "name": "Banner Campanhas",
           "settings": {
-            "image": "shopify://shop_images/Presenca_Banners_Site_22_voltas_DSK.jpg",
-            "image_mobile": "shopify://shop_images/Presenca_Banners_Site_22_voltas_MB.jpg",
+            "image": "shopify://shop_images/1_Campanha_30__Livros_Desktop_0ce8be9a-9f5f-4e08-970a-548036141714.jpg",
+            "image_mobile": "shopify://shop_images/1_Campanha_30__Livros_Mobile_c408aaf4-1c3c-487d-b3b5-739d24d3e241.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/22-voltas",
+            "image_link": "shopify://collections/campanha",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -33,15 +34,13 @@
             "color_scheme": ""
           }
         },
-        "slide_LniBY7": {
+        "slide_P7jztK": {
           "type": "slide",
-          "name": "Banner Campanhas",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Banner_Desktop_2_4a331e85-77db-4f91-9828-91d880366c2c.jpg",
-            "image_mobile": "shopify://shop_images/Mobile.jpg",
+            "image": "shopify://shop_images/Presenca_Banners_Site_22_voltas_DSK.jpg",
+            "image_mobile": "shopify://shop_images/Presenca_Banners_Site_22_voltas_MB.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://collections/campanha",
+            "image_link": "shopify://products/22-voltas",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -226,8 +225,8 @@
         }
       },
       "block_order": [
-        "slide_P7jztK",
         "slide_LniBY7",
+        "slide_P7jztK",
         "slide_9RNWLH",
         "slide_icJWTn",
         "slide_3WXTYL",
@@ -249,15 +248,14 @@
         "accessibility_info": "Apresentação de produtos e categorias da nossa marca"
       }
     },
-    "featured_collection": {
+    "featured_collection_cqtiwV": {
       "type": "featured-collection",
-      "custom_css": [],
-      "name": "Coleção Novidades",
+      "name": "Carrossel Campanha",
       "settings": {
-        "collection": "novidades",
+        "collection": "livros-com-30",
         "products_to_show": 16,
-        "title": "<a href=\"/collections/novidades\" title=\"Novidades\">{{ section.settings.collection.title }}</a>",
-        "heading_alignment": "center",
+        "title": "<a href=\"/collections/campanha\" title=\"3 livros por 12 €\">{{ section.settings.collection.title }}</a>",
+        "heading_alignment": "left",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
@@ -319,15 +317,15 @@
         "accessibility_info": "Apresentação de produtos e categorias da nossa marca"
       }
     },
-    "featured_collection_cqtiwV": {
+    "featured_collection": {
       "type": "featured-collection",
-      "disabled": true,
-      "name": "Carrossel Campanha",
+      "custom_css": [],
+      "name": "Coleção Novidades",
       "settings": {
-        "collection": "campanha",
+        "collection": "novidades",
         "products_to_show": 16,
-        "title": "<a href=\"/collections/campanha\" title=\"3 livros por 12 €\">{{ section.settings.collection.title }}</a>",
-        "heading_alignment": "left",
+        "title": "<a href=\"/collections/novidades\" title=\"Novidades\">{{ section.settings.collection.title }}</a>",
+        "heading_alignment": "center",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
@@ -680,9 +678,9 @@
   },
   "order": [
     "slideshow_Mh9AA4",
-    "featured_collection",
-    "slideshow_8zUK6k",
     "featured_collection_cqtiwV",
+    "slideshow_8zUK6k",
+    "featured_collection",
     "featured_product_bqgTVp",
     "slideshow_VhxkXA",
     "featured_collection_QwW7Y9",
