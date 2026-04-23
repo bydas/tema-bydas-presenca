@@ -523,13 +523,13 @@
         "accessibility_info": "Apresentação de produtos e categorias da nossa marca"
       }
     },
-    "featured_collection_QwW7Y9": {
+    "featured_collection_N8qNYR": {
       "type": "featured-collection",
-      "name": "Presença Comics",
+      "name": "Populares no TikTok",
       "settings": {
         "collection": "presenca-comics",
         "products_to_show": 16,
-        "title": "<a href=\"/collections/serie-o-leao-que-temos-ca-dentro\" title=\"«O Leão Que Temos Cá Dentro»\">{{ section.settings.collection.title }}</a>",
+        "title": "<a href=\"/collections/presenca-comics\" title=\"Presença Comics\">{{ section.settings.collection.title }}</a>",
         "heading_alignment": "left",
         "heading_size": "h1",
         "description": "",
@@ -549,7 +549,7 @@
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 48,
-        "padding_bottom": 48
+        "padding_bottom": 0
       }
     },
     "featured_blog_DCcCgx": {
@@ -685,7 +685,7 @@
     "featured_blog_dnwXmG",
     "featured_collection_HPdNTU",
     "slideshow_qAxrAq",
-    "featured_collection_QwW7Y9",
+    "featured_collection_N8qNYR",
     "featured_blog_DCcCgx",
     "featured_collection_HVgeey",
     "featured_article_cC3KU4",
