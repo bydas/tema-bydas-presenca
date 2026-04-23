@@ -436,65 +436,6 @@
         "accessibility_info": "Apresentação de produtos e categorias da nossa marca"
       }
     },
-    "featured_collection_QwW7Y9": {
-      "type": "featured-collection",
-      "disabled": true,
-      "name": "Carrossel Temático",
-      "settings": {
-        "collection": "serie-o-leao-que-temos-ca-dentro",
-        "products_to_show": 16,
-        "title": "<a href=\"/collections/serie-o-leao-que-temos-ca-dentro\" title=\"«O Leão Que Temos Cá Dentro»\">{{ section.settings.collection.title }}</a>",
-        "heading_alignment": "left",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "columns_desktop": 6,
-        "enable_desktop_slider": true,
-        "show_view_all": true,
-        "view_all_style": "link",
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "standard",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 48,
-        "padding_bottom": 48
-      }
-    },
-    "featured_collection_HVgeey": {
-      "type": "featured-collection",
-      "name": "Carrossel Pré-vendas",
-      "settings": {
-        "collection": "pre-venda",
-        "products_to_show": 16,
-        "title": "<a href=\"/collections/pre-venda\" title=\"Pré-Vendas\">{{ section.settings.collection.title }}</a>",
-        "heading_alignment": "left",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "columns_desktop": 6,
-        "enable_desktop_slider": true,
-        "show_view_all": true,
-        "view_all_style": "link",
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "standard",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 48,
-        "padding_bottom": 48
-      }
-    },
     "featured_blog_dnwXmG": {
       "type": "featured-blog",
       "name": "Agenda",
@@ -513,13 +454,42 @@
         "padding_bottom": 48
       }
     },
+    "featured_collection_HPdNTU": {
+      "type": "featured-collection",
+      "name": "Carrossel Temático",
+      "settings": {
+        "collection": "populares-no-tiktok",
+        "products_to_show": 16,
+        "title": "<a href=\"/collections/colecao-dav-pilkey\" title=\"Homem-cão e Supergatinho\">{{ section.settings.collection.title }}</a>",
+        "heading_alignment": "left",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 6,
+        "enable_desktop_slider": true,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 48,
+        "padding_bottom": 0
+      }
+    },
     "slideshow_qAxrAq": {
       "type": "slideshow",
       "blocks": {
         "slide_J6Dyr4": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Presenca_Banners_Site_Ovos-Fofinhos_DSK.jpg",
+            "image": "shopify://shop_images/22_Presenca_Comics_Institucional.jpg",
             "image_mobile": "shopify://shop_images/Presenca_Banners_Site_Ovos-Fofinhos_MB.jpg",
             "image_overlay_opacity": 0,
             "image_link": "shopify://collections/serie-colortok",
@@ -553,13 +523,13 @@
         "accessibility_info": "Apresentação de produtos e categorias da nossa marca"
       }
     },
-    "featured_collection_HPdNTU": {
+    "featured_collection_QwW7Y9": {
       "type": "featured-collection",
       "name": "Carrossel Temático",
       "settings": {
-        "collection": "populares-no-tiktok",
+        "collection": "presenca-comics",
         "products_to_show": 16,
-        "title": "<a href=\"/collections/colecao-dav-pilkey\" title=\"Homem-cão e Supergatinho\">{{ section.settings.collection.title }}</a>",
+        "title": "<a href=\"/collections/serie-o-leao-que-temos-ca-dentro\" title=\"«O Leão Que Temos Cá Dentro»\">{{ section.settings.collection.title }}</a>",
         "heading_alignment": "left",
         "heading_size": "h1",
         "description": "",
@@ -579,7 +549,7 @@
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 48,
-        "padding_bottom": 0
+        "padding_bottom": 48
       }
     },
     "featured_blog_DCcCgx": {
@@ -598,6 +568,35 @@
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 24
+      }
+    },
+    "featured_collection_HVgeey": {
+      "type": "featured-collection",
+      "name": "Carrossel Pré-vendas",
+      "settings": {
+        "collection": "pre-venda",
+        "products_to_show": 16,
+        "title": "<a href=\"/collections/pre-venda\" title=\"Pré-Vendas\">{{ section.settings.collection.title }}</a>",
+        "heading_alignment": "left",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 6,
+        "enable_desktop_slider": true,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 48,
+        "padding_bottom": 48
       }
     },
     "featured_article_cC3KU4": {
@@ -683,12 +682,12 @@
     "featured_collection",
     "featured_product_bqgTVp",
     "slideshow_VhxkXA",
-    "featured_collection_QwW7Y9",
-    "featured_collection_HVgeey",
     "featured_blog_dnwXmG",
-    "slideshow_qAxrAq",
     "featured_collection_HPdNTU",
+    "slideshow_qAxrAq",
+    "featured_collection_QwW7Y9",
     "featured_blog_DCcCgx",
+    "featured_collection_HVgeey",
     "featured_article_cC3KU4",
     "17701286961defe988"
   ]
