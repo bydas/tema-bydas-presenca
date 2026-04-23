@@ -557,7 +557,7 @@
       "type": "featured-collection",
       "name": "Carrossel Temático",
       "settings": {
-        "collection": "serie-colortok",
+        "collection": "populares-no-tiktok",
         "products_to_show": 16,
         "title": "<a href=\"/collections/colecao-dav-pilkey\" title=\"Homem-cão e Supergatinho\">{{ section.settings.collection.title }}</a>",
         "heading_alignment": "left",
