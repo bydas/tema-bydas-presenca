@@ -134,6 +134,13 @@ media-gallery {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .product-form,
+  .buy-buttons-container .button {
+    width: 100%;
+  }
+}
+
 .topic-section {
   display: flex;
   flex-direction: column;
