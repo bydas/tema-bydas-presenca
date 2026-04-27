@@ -15,6 +15,7 @@
         "slide_LniBY7": {
           "type": "slide",
           "name": "Banner Campanhas",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/1_Campanha_30__Livros_Desktop_0ce8be9a-9f5f-4e08-970a-548036141714.jpg",
             "image_mobile": "shopify://shop_images/1_Campanha_30__Livros_Mobile_c408aaf4-1c3c-487d-b3b5-739d24d3e241.jpg",
