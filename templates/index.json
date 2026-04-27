@@ -554,24 +554,6 @@
         "accessibility_info": "Apresentação de produtos e categorias da nossa marca"
       }
     },
-    "featured_blog_DCcCgx": {
-      "type": "featured-blog",
-      "name": "Sugestões de leitura",
-      "settings": {
-        "blog": "sugestoes-de-leitura",
-        "post_limit": 3,
-        "heading": "<a href=\"/blogs/sugestoes-de-leitura\" title=\"Sugestões de Leitura\">{{ section.settings.blog.title }}</a>",
-        "heading_size": "h1",
-        "columns_desktop": 3,
-        "show_view_all": false,
-        "show_image": true,
-        "show_date": false,
-        "show_author": false,
-        "color_scheme": "",
-        "padding_top": 48,
-        "padding_bottom": 0
-      }
-    },
     "featured_collection_N8qNYR": {
       "type": "featured-collection",
       "name": "Presença Comics",
@@ -599,6 +581,24 @@
         "swipe_on_mobile": true,
         "padding_top": 48,
         "padding_bottom": 48
+      }
+    },
+    "featured_blog_DCcCgx": {
+      "type": "featured-blog",
+      "name": "Sugestões de leitura",
+      "settings": {
+        "blog": "sugestoes-de-leitura",
+        "post_limit": 3,
+        "heading": "<a href=\"/blogs/sugestoes-de-leitura\" title=\"Sugestões de Leitura\">{{ section.settings.blog.title }}</a>",
+        "heading_size": "h1",
+        "columns_desktop": 3,
+        "show_view_all": false,
+        "show_image": true,
+        "show_date": false,
+        "show_author": false,
+        "color_scheme": "",
+        "padding_top": 48,
+        "padding_bottom": 0
       }
     },
     "featured_article_cC3KU4": {
@@ -688,8 +688,8 @@
     "featured_blog_dnwXmG",
     "featured_collection_HPdNTU",
     "slideshow_qAxrAq",
-    "featured_blog_DCcCgx",
     "featured_collection_N8qNYR",
+    "featured_blog_DCcCgx",
     "featured_article_cC3KU4",
     "17701286961defe988"
   ]
