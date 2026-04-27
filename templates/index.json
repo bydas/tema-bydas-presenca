@@ -248,6 +248,36 @@
         "accessibility_info": "Apresentação de produtos e categorias da nossa marca"
       }
     },
+    "featured_collection": {
+      "type": "featured-collection",
+      "custom_css": [],
+      "name": "Coleção Novidades",
+      "settings": {
+        "collection": "novidades",
+        "products_to_show": 16,
+        "title": "<a href=\"/collections/novidades\" title=\"Novidades\">{{ section.settings.collection.title }}</a>",
+        "heading_alignment": "center",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 6,
+        "enable_desktop_slider": true,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
     "featured_collection_cqtiwV": {
       "type": "featured-collection",
       "name": "Carrossel Campanha",
@@ -317,15 +347,14 @@
         "accessibility_info": "Apresentação de produtos e categorias da nossa marca"
       }
     },
-    "featured_collection": {
+    "featured_collection_HVgeey": {
       "type": "featured-collection",
-      "custom_css": [],
-      "name": "Coleção Novidades",
+      "name": "Carrossel Pré-vendas",
       "settings": {
-        "collection": "novidades",
+        "collection": "pre-venda",
         "products_to_show": 16,
-        "title": "<a href=\"/collections/novidades\" title=\"Novidades\">{{ section.settings.collection.title }}</a>",
-        "heading_alignment": "center",
+        "title": "<a href=\"/collections/pre-venda\" title=\"Pré-Vendas\">{{ section.settings.collection.title }}</a>",
+        "heading_alignment": "left",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
@@ -451,11 +480,12 @@
         "show_author": false,
         "color_scheme": "",
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 48
       }
     },
     "featured_collection_HPdNTU": {
       "type": "featured-collection",
+      "disabled": true,
       "name": "Populares no TikTok",
       "settings": {
         "collection": "populares-no-tiktok",
@@ -523,35 +553,6 @@
         "accessibility_info": "Apresentação de produtos e categorias da nossa marca"
       }
     },
-    "featured_collection_N8qNYR": {
-      "type": "featured-collection",
-      "name": "Populares no TikTok",
-      "settings": {
-        "collection": "presenca-comics",
-        "products_to_show": 16,
-        "title": "<a href=\"/collections/presenca-comics\" title=\"Presença Comics\">{{ section.settings.collection.title }}</a>",
-        "heading_alignment": "left",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "columns_desktop": 6,
-        "enable_desktop_slider": true,
-        "show_view_all": true,
-        "view_all_style": "link",
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "standard",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 48,
-        "padding_bottom": 48
-      }
-    },
     "featured_blog_DCcCgx": {
       "type": "featured-blog",
       "name": "Sugestões de leitura",
@@ -570,13 +571,13 @@
         "padding_bottom": 24
       }
     },
-    "featured_collection_HVgeey": {
+    "featured_collection_N8qNYR": {
       "type": "featured-collection",
-      "name": "Carrossel Pré-vendas",
+      "name": "Presença Comics",
       "settings": {
-        "collection": "pre-venda",
+        "collection": "presenca-comics",
         "products_to_show": 16,
-        "title": "<a href=\"/collections/pre-venda\" title=\"Pré-Vendas\">{{ section.settings.collection.title }}</a>",
+        "title": "<a href=\"/collections/presenca-comics\" title=\"Presença Comics\">{{ section.settings.collection.title }}</a>",
         "heading_alignment": "left",
         "heading_size": "h1",
         "description": "",
@@ -677,17 +678,17 @@
   },
   "order": [
     "slideshow_Mh9AA4",
+    "featured_collection",
     "featured_collection_cqtiwV",
     "slideshow_8zUK6k",
-    "featured_collection",
+    "featured_collection_HVgeey",
     "featured_product_bqgTVp",
     "slideshow_VhxkXA",
     "featured_blog_dnwXmG",
     "featured_collection_HPdNTU",
     "slideshow_qAxrAq",
-    "featured_collection_N8qNYR",
     "featured_blog_DCcCgx",
-    "featured_collection_HVgeey",
+    "featured_collection_N8qNYR",
     "featured_article_cC3KU4",
     "17701286961defe988"
   ]
