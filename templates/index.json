@@ -521,7 +521,6 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/22_Presenca_Comics_Institucional.jpg",
-            "image_mobile": "shopify://shop_images/Presenca_Banners_Site_Ovos-Fofinhos_MB.jpg",
             "image_overlay_opacity": 0,
             "image_link": "shopify://collections/presenca-comics",
             "open_link_new_tab": false,
