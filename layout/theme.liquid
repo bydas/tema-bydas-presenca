@@ -436,161 +436,155 @@
     <script src="{{ 'header-favorities.js' | asset_url }}" defer></script>
 
     <script>
-      (function() {
-        // ----- DADOS DO PRODUTO (via Liquid) -----
-        const productMetafields = {
-          material: {{ product.metafields.custom.material_para_download | json }},
-          codigo: {{ product.metafields.custom.codigo_para_download | json }}
-        };
+  (function() {
+    // ----- DADOS DO PRODUTO (via Liquid) -----
+    // O metafield custom.material_para_download pode ser um objeto (único arquivo) ou array (lista)
+    const rawMaterial = {{ product.metafields.custom.material_para_download | json }};
+    const codigo = {{ product.metafields.custom.codigo_para_download | json }};
 
-        // Só ativa a funcionalidade SE ambos os metafields existirem e tiverem conteúdo
-        const hasValidMetafields = productMetafields.material && productMetafields.codigo &&
-                                  (Array.isArray(productMetafields.material) ? productMetafields.material.length > 0 : true) &&
-                                  productMetafields.codigo.trim() !== '';
+    // Função para extrair URLs de download de qualquer formato suportado
+    function extractFileUrls(materialField) {
+      // Se for vazio ou nulo
+      if (!materialField) return [];
 
-        if (!hasValidMetafields) {
-          console.log('Download com código: metafields ausentes ou vazios.');
-          return;
-        }
+      // Se for um array (lista de arquivos)
+      if (Array.isArray(materialField)) {
+        return materialField
+          .filter(item => item && typeof item === 'object' && item.url)
+          .map(item => item.url);
+      }
 
-        // ----- CRIA O MODAL DE CÓDIGO (estilo idêntico ao pre-venda-confirm-modal) -----
-        function createCodeModal() {
-          // Verifica se o modal já existe
-          if (document.getElementById('downloadCodeModal')) return;
+      // Se for um objeto (arquivo único)
+      if (typeof materialField === 'object' && materialField.url) {
+        return [materialField.url];
+      }
 
-          const modalHTML = `
-            <div id="downloadCodeModal" style="display: none; position: fixed; top:0; left:0; width:100%; height:100%; background-color: rgba(0,0,0,0.5); justify-content: center; align-items: center; z-index: 10000;">
-              <div class="custom-confirm-content" style="padding: 1.5rem; border-radius: 12px; max-width: 400px; width: 90%; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); text-align: center; background: ${getComputedStyle(document.documentElement).getPropertyValue('--color-background').trim() || '#ffffff'};">
-                <div class="custom-confirm-message" id="downloadCodeMessage" style="font-size: 1.35rem; margin-bottom: 1rem; line-height: 1.5; color: ${getComputedStyle(document.documentElement).getPropertyValue('--color-foreground').trim() || '#1f2937'};">
-                  Digite o código de acesso para baixar o material:
-                </div>
-                <input type="text" id="downloadCodeInput" style="width: 80%; padding: 10px; margin-bottom: 1.5rem; border: 1px solid #ccc; border-radius: 6px; font-size: 1rem; text-align: center;" placeholder="Código" autocomplete="off">
-                <div id="downloadCodeError" style="color: #dc2626; font-size: 0.875rem; margin-bottom: 1rem; display: none;"></div>
-                <div class="custom-confirm-buttons" style="display: flex; gap: 12px; justify-content: center;">
-                  <button id="downloadCodeOk" class="custom-confirm-ok" style="background-color: #2563eb; color: white; padding: 8px 20px; border: none; border-radius: 6px; font-size: 1.25rem; font-weight: 500; cursor: pointer;">OK</button>
-                  <button id="downloadCodeCancel" class="custom-confirm-cancel" style="background-color: #e5e7eb; color: #1f2937; padding: 8px 20px; border: none; border-radius: 6px; font-size: 1.25rem; font-weight: 500; cursor: pointer;">Cancelar</button>
-                </div>
-              </div>
+      // Fallback: se for string (possível URL direta)
+      if (typeof materialField === 'string' && materialField.trim() !== '') {
+        return [materialField.trim()];
+      }
+
+      return [];
+    }
+
+    const fileUrls = extractFileUrls(rawMaterial);
+    const hasValidMetafields = fileUrls.length > 0 && codigo && typeof codigo === 'string' && codigo.trim() !== '';
+
+    if (!hasValidMetafields) {
+      console.log('Download com código: metafields ausentes, vazios ou sem URLs válidas.');
+      return;
+    }
+
+    // ----- CRIA O MODAL DE CÓDIGO (estilo idêntico ao componente pre-venda-confirm-modal) -----
+    function createCodeModal() {
+      if (document.getElementById('downloadCodeModal')) return;
+
+      const modalHTML = `
+        <div id="downloadCodeModal" style="display: none; position: fixed; top:0; left:0; width:100%; height:100%; background-color: rgba(0,0,0,0.5); justify-content: center; align-items: center; z-index: 10000;">
+          <div class="custom-confirm-content" style="padding: 1.5rem; border-radius: 12px; max-width: 400px; width: 90%; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); text-align: center; background: ${getComputedStyle(document.documentElement).getPropertyValue('--color-background').trim() || '#ffffff'};">
+            <div class="custom-confirm-message" id="downloadCodeMessage" style="font-size: 1.35rem; margin-bottom: 1rem; line-height: 1.5; color: ${getComputedStyle(document.documentElement).getPropertyValue('--color-foreground').trim() || '#1f2937'};">
+              Digite o código de acesso para baixar o material:
             </div>
-          `;
-          document.body.insertAdjacentHTML('beforeend', modalHTML);
-        }
+            <input type="text" id="downloadCodeInput" style="width: 80%; padding: 10px; margin-bottom: 1.5rem; border: 1px solid #ccc; border-radius: 6px; font-size: 1rem; text-align: center;" placeholder="Código" autocomplete="off">
+            <div id="downloadCodeError" style="color: #dc2626; font-size: 0.875rem; margin-bottom: 1rem; display: none;"></div>
+            <div class="custom-confirm-buttons" style="display: flex; gap: 12px; justify-content: center;">
+              <button id="downloadCodeOk" class="custom-confirm-ok" style="background-color: #2563eb; color: white; padding: 8px 20px; border: none; border-radius: 6px; font-size: 1.25rem; font-weight: 500; cursor: pointer;">OK</button>
+              <button id="downloadCodeCancel" class="custom-confirm-cancel" style="background-color: #e5e7eb; color: #1f2937; padding: 8px 20px; border: none; border-radius: 6px; font-size: 1.25rem; font-weight: 500; cursor: pointer;">Cancelar</button>
+            </div>
+          </div>
+        </div>
+      `;
+      document.body.insertAdjacentHTML('beforeend', modalHTML);
+    }
 
-        // ----- FUNÇÃO PARA BAIXAR ARQUIVOS -----
-        function downloadFiles(fileList) {
-          let urls = [];
-          // Converte o metafield para array de URLs
-          if (typeof fileList === 'string') {
-            // Tenta interpretar como JSON
-            try {
-              const parsed = JSON.parse(fileList);
-              if (Array.isArray(parsed)) urls = parsed;
-              else if (typeof parsed === 'string') urls = [parsed];
-            } catch(e) {
-              // Se não for JSON, divide por quebra de linha ou vírgula
-              urls = fileList.split(/[\n,]+/).map(u => u.trim()).filter(u => u);
-            }
-          } else if (Array.isArray(fileList)) {
-            urls = fileList.filter(u => u);
-          } else {
-            console.error('Formato de material_para_download não suportado:', fileList);
-            alert('Não foi possível identificar os arquivos para download.');
-            return;
-          }
+    // ----- FUNÇÃO PARA BAIXAR ARQUIVOS -----
+    function downloadFiles(urls) {
+      if (urls.length === 0) {
+        alert('Nenhum arquivo disponível para download.');
+        return;
+      }
 
-          if (urls.length === 0) {
-            alert('Nenhum arquivo disponível para download.');
-            return;
-          }
+      urls.forEach((url, index) => {
+        // Cria um link temporário e simula clique
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = '';  // força o download quando o servidor permite
+        link.target = '_blank';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        // Pequeno delay entre múltiplos downloads
+        if (index < urls.length - 1) setTimeout(() => {}, 300);
+      });
+    }
 
-          // Dispara cada download
-          urls.forEach((url, index) => {
-            // Cria um link temporário e clica (funciona para arquivos na mesma origem ou com CORS adequado)
-            const link = document.createElement('a');
-            link.href = url;
-            link.download = '';  // força download quando possível
-            link.target = '_blank';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-            // Pequeno delay entre downloads para evitar bloqueio do navegador
-            if (index < urls.length - 1) setTimeout(() => {}, 300);
-          });
-        }
+    // ----- MOSTRA O MODAL E LIDA COM A VALIDAÇÃO -----
+    function promptForCode() {
+      const modal = document.getElementById('downloadCodeModal');
+      const input = document.getElementById('downloadCodeInput');
+      const errorDiv = document.getElementById('downloadCodeError');
+      const okBtn = document.getElementById('downloadCodeOk');
+      const cancelBtn = document.getElementById('downloadCodeCancel');
+      const messageDiv = document.getElementById('downloadCodeMessage');
 
-        // ----- MOSTRA O MODAL E LIDA COM A VALIDAÇÃO -----
-        function promptForCode() {
-          const modal = document.getElementById('downloadCodeModal');
-          const input = document.getElementById('downloadCodeInput');
-          const errorDiv = document.getElementById('downloadCodeError');
-          const okBtn = document.getElementById('downloadCodeOk');
-          const cancelBtn = document.getElementById('downloadCodeCancel');
-          const messageDiv = document.getElementById('downloadCodeMessage');
+      if (!modal) return;
 
-          if (!modal) return;
+      // Reset
+      input.value = '';
+      errorDiv.style.display = 'none';
+      messageDiv.textContent = 'Digite o código de acesso para baixar o material:';
+      modal.style.display = 'flex';
+      input.focus();
 
-          // Reset do estado
+      const closeModal = () => {
+        modal.style.display = 'none';
+      };
+
+      const validateAndDownload = () => {
+        const enteredCode = input.value.trim();
+        const expectedCode = codigo.trim();
+
+        if (enteredCode === expectedCode) {
+          closeModal();
+          downloadFiles(fileUrls);
+        } else {
+          errorDiv.textContent = 'Código incorreto. Verifique e tente novamente.';
+          errorDiv.style.display = 'block';
           input.value = '';
-          errorDiv.style.display = 'none';
-          messageDiv.textContent = 'Digite o código de acesso para baixar o material:';
-          modal.style.display = 'flex';
           input.focus();
-
-          const closeModal = () => {
-            modal.style.display = 'none';
-          };
-
-          const validateAndDownload = () => {
-            const enteredCode = input.value.trim();
-            const expectedCode = productMetafields.codigo.trim();
-
-            if (enteredCode === expectedCode) {
-              // Código correto: baixar arquivos
-              closeModal();
-              downloadFiles(productMetafields.material);
-            } else {
-              // Código incorreto: exibe erro
-              errorDiv.textContent = 'Código incorreto. Verifique e tente novamente.';
-              errorDiv.style.display = 'block';
-              input.value = '';
-              input.focus();
-            }
-          };
-
-          // Eventos dos botões
-          okBtn.onclick = validateAndDownload;
-          cancelBtn.onclick = closeModal;
-
-          // Fecha ao clicar fora do conteúdo
-          modal.onclick = (e) => {
-            if (e.target === modal) closeModal();
-          };
-
-          // Permite enviar com Enter
-          input.onkeypress = (e) => {
-            if (e.key === 'Enter') validateAndDownload();
-          };
         }
+      };
 
-        // ----- INICIALIZAÇÃO: CRIA MODAL E ASSOCIA EVENTOS AOS BOTÕES -----
-        document.addEventListener('DOMContentLoaded', function() {
-          createCodeModal();
+      okBtn.onclick = validateAndDownload;
+      cancelBtn.onclick = closeModal;
 
-          const buttons = document.querySelectorAll('.download_material_content');
-          if (buttons.length === 0) return;
+      modal.onclick = (e) => {
+        if (e.target === modal) closeModal();
+      };
 
-          buttons.forEach(btn => {
-            btn.addEventListener('click', function(event) {
-              event.preventDefault();
-              promptForCode();
-            });
-          });
+      input.onkeypress = (e) => {
+        if (e.key === 'Enter') validateAndDownload();
+      };
+    }
+
+    // ----- INICIALIZAÇÃO: CRIA MODAL E ATRIBUI EVENTOS AOS BOTÕES -----
+    document.addEventListener('DOMContentLoaded', function() {
+      createCodeModal();
+
+      const buttons = document.querySelectorAll('.download_material_content');
+      if (buttons.length === 0) return;
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', function(event) {
+          event.preventDefault();
+          promptForCode();
         });
-      })();
+      });
+    });
+  })();
     </script>
 
     <style>
-      /* Ajustes para responsividade do modal de código */
       @media screen and (min-width: 768px) {
         #downloadCodeModal .custom-confirm-content {
           max-width: 500px;
