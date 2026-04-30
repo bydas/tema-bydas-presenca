@@ -283,9 +283,9 @@
       "type": "featured-collection",
       "name": "Carrossel Campanha",
       "settings": {
-        "collection": "livros-com-30",
+        "collection": "campanha",
         "products_to_show": 16,
-        "title": "<a href=\"/collections/livros-com-30\" title=\"Livros com 30%\">{{ section.settings.collection.title }}</a>",
+        "title": "<a href=\"/collections/campanha\" title=\"4 livros por 20 €\">{{ section.settings.collection.title }}</a>",
         "heading_alignment": "left",
         "heading_size": "h1",
         "description": "",
