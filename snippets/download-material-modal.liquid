@@ -46,3 +46,103 @@
     </div>
   </div>
 </div>
+
+<script>
+  (function() {
+    const productId = {{ product.id }};
+    const url = 'https://presenca.apps.bydas.com/';
+
+    function downloadFiles(urls) {
+      if (!urls || urls.length === 0) return;
+      urls.forEach((url, index) => {
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = '';
+        link.target = '_blank';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        if (index < urls.length - 1) setTimeout(() => {}, 300);
+      });
+    }
+
+    function promptForCode() {
+      const modal = document.getElementById('downloadCodeModal');
+      if (!modal) return;
+
+      const input = document.getElementById('downloadCodeInput');
+      const errorDiv = document.getElementById('downloadCodeError');
+      const okBtn = document.getElementById('downloadCodeOk');
+      const cancelBtn = document.getElementById('downloadCodeCancel');
+      const messageDiv = document.getElementById('downloadCodeMessage');
+
+      input.value = '';
+      errorDiv.style.display = 'none';
+      messageDiv.textContent = 'Digite o código de acesso para baixar o material:';
+      modal.style.display = 'flex';
+      input.focus();
+
+      const closeModal = () => {
+        modal.style.display = 'none';
+      };
+
+      const validateAndDownload = async () => {
+        const enteredCode = input.value.trim();
+        if (!enteredCode) {
+          errorDiv.textContent = 'Digite um código.';
+          errorDiv.style.display = 'block';
+          return;
+        }
+
+        okBtn.disabled = true;
+        okBtn.textContent = 'Validando...';
+
+        try {
+          const response = await fetch(`${url}?action=validate_download&product_id=${productId}&code=${encodeURIComponent(enteredCode)}`);
+          const data = await response.json();
+
+          if (response.ok && data.success) {
+            closeModal();
+            downloadFiles(data.urls);
+          } else {
+            const msg = data.error || 'Código incorreto. Verifique e tente novamente.';
+            errorDiv.textContent = msg;
+            errorDiv.style.display = 'block';
+            input.value = '';
+            input.focus();
+          }
+        } catch (err) {
+          errorDiv.textContent = 'Erro ao conectar com o servidor. Tente novamente.';
+          errorDiv.style.display = 'block';
+        } finally {
+          okBtn.disabled = false;
+          okBtn.textContent = 'OK';
+        }
+      };
+
+      const newOk = okBtn.cloneNode(true);
+      const newCancel = cancelBtn.cloneNode(true);
+      okBtn.parentNode.replaceChild(newOk, okBtn);
+      cancelBtn.parentNode.replaceChild(newCancel, cancelBtn);
+
+      document.getElementById('downloadCodeOk').onclick = validateAndDownload;
+      document.getElementById('downloadCodeCancel').onclick = closeModal;
+
+      modal.onclick = (e) => {
+        if (e.target === modal) closeModal();
+      };
+
+      input.onkeypress = (e) => {
+        if (e.key === 'Enter') validateAndDownload();
+      };
+    }
+
+    const downloadButton = document.querySelector('.download_material_content');
+    if (downloadButton) {
+      downloadButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        promptForCode();
+      });
+    }
+  })();
+</script>
