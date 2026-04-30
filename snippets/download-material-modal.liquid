@@ -86,6 +86,7 @@
     const productId = {{ product.id }};
     const url = 'https://presenca.apps.bydas.com/';
     let pendingUrls = [];
+    let isProcessing = false;
 
     function lockScroll() {
       document.body.classList.add('modal-open');
@@ -143,6 +144,45 @@
       }
     }
 
+    async function validateAndDownload(okBtn, input, errorDiv, closeModal) {
+      if (isProcessing) return;
+      
+      const enteredCode = input.value.trim();
+      if (!enteredCode) {
+        errorDiv.textContent = 'Digite um código.';
+        errorDiv.style.display = 'block';
+        return;
+      }
+
+      isProcessing = true;
+      const originalText = okBtn.textContent;
+      okBtn.disabled = true;
+      okBtn.textContent = 'Validando...';
+
+      try {
+        const response = await fetch(`${url}?action=validate_download&product_id=${productId}&code=${encodeURIComponent(enteredCode)}`);
+        const data = await response.json();
+
+        if (response.ok && data.success) {
+          closeModal();
+          downloadFiles(data.urls);
+        } else {
+          const msg = data.error || 'Código incorreto. Verifique e tente novamente.';
+          errorDiv.textContent = msg;
+          errorDiv.style.display = 'block';
+          input.value = '';
+          input.focus();
+        }
+      } catch (err) {
+        errorDiv.textContent = 'Erro ao conectar com o servidor. Tente novamente.';
+        errorDiv.style.display = 'block';
+      } finally {
+        isProcessing = false;
+        okBtn.disabled = false;
+        okBtn.textContent = originalText;
+      }
+    }
+
     function promptForCode() {
       const modal = document.getElementById('downloadCodeModal');
       if (!modal) return;
@@ -167,40 +207,7 @@
         modal.style.display = 'none';
         unlockScroll();
         pendingUrls = [];
-      };
-
-      const validateAndDownload = async () => {
-        const enteredCode = input.value.trim();
-        if (!enteredCode) {
-          errorDiv.textContent = 'Digite um código.';
-          errorDiv.style.display = 'block';
-          return;
-        }
-
-        okBtn.disabled = true;
-        okBtn.textContent = 'Validando...';
-
-        try {
-          const response = await fetch(`${url}?action=validate_download&product_id=${productId}&code=${encodeURIComponent(enteredCode)}`);
-          const data = await response.json();
-
-          if (response.ok && data.success) {
-            closeModal();
-            downloadFiles(data.urls);
-          } else {
-            const msg = data.error || 'Código incorreto. Verifique e tente novamente.';
-            errorDiv.textContent = msg;
-            errorDiv.style.display = 'block';
-            input.value = '';
-            input.focus();
-          }
-        } catch (err) {
-          errorDiv.textContent = 'Erro ao conectar com o servidor. Tente novamente.';
-          errorDiv.style.display = 'block';
-        } finally {
-          okBtn.disabled = false;
-          okBtn.textContent = 'OK';
-        }
+        isProcessing = false;
       };
 
       if (forceLink) {
@@ -210,20 +217,23 @@
         };
       }
 
-      const newOk = okBtn.cloneNode(true);
-      const newCancel = cancelBtn.cloneNode(true);
-      okBtn.parentNode.replaceChild(newOk, okBtn);
-      cancelBtn.parentNode.replaceChild(newCancel, cancelBtn);
+      const newOkBtn = okBtn.cloneNode(true);
+      const newCancelBtn = cancelBtn.cloneNode(true);
+      okBtn.parentNode.replaceChild(newOkBtn, okBtn);
+      cancelBtn.parentNode.replaceChild(newCancelBtn, cancelBtn);
 
-      document.getElementById('downloadCodeOk').onclick = validateAndDownload;
-      document.getElementById('downloadCodeCancel').onclick = closeModal;
+      const finalOkBtn = document.getElementById('downloadCodeOk');
+      const finalCancelBtn = document.getElementById('downloadCodeCancel');
+
+      finalOkBtn.onclick = () => validateAndDownload(finalOkBtn, input, errorDiv, closeModal);
+      finalCancelBtn.onclick = closeModal;
 
       modal.onclick = (e) => {
         if (e.target === modal) closeModal();
       };
 
       input.onkeypress = (e) => {
-        if (e.key === 'Enter') validateAndDownload();
+        if (e.key === 'Enter') validateAndDownload(finalOkBtn, input, errorDiv, closeModal);
       };
     }
 
