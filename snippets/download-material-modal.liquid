@@ -191,14 +191,13 @@
       const errorDiv = document.getElementById('downloadCodeError');
       const okBtn = document.getElementById('downloadCodeOk');
       const cancelBtn = document.getElementById('downloadCodeCancel');
-      const messageDiv = document.getElementById('downloadCodeMessage');
       const popupMessage = document.getElementById('popupInfoMessage');
       const forceLink = document.getElementById('forceDownloadLink');
 
       if (popupMessage) popupMessage.classList.remove('show');
       input.value = '';
       errorDiv.style.display = 'none';
-      messageDiv.textContent = 'Digite o código de acesso para baixar o material:';
+      
       modal.style.display = 'flex';
       lockScroll();
       input.focus();
