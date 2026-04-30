@@ -1,0 +1,18 @@
+@media screen and (min-width: 768px) {
+    #downloadCodeModal .custom-confirm-content {
+        max-width: 500px;
+        width: 80%;
+        padding: 2rem;
+    }
+    #downloadCodeModal .custom-confirm-message {
+        font-size: 1.5rem;
+    }
+    #downloadCodeModal .custom-confirm-buttons button {
+        padding: 10px 28px;
+        font-size: 1.35rem;
+    }
+    #downloadCodeModal input {
+        font-size: 1.2rem !important;
+        padding: 12px !important;
+    }
+}
