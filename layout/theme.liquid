@@ -437,48 +437,51 @@
 
     <script>
   (function() {
-    // ---------- DADOS DO PRODUTO (via Liquid) ----------
-    const rawMaterial = {{ product.metafields.custom.material_para_download | json }};
-    const codigo = {{ product.metafields.custom.codigo_para_download | json }};
+    // ---------- EXTRAÇÃO DOS METAFIELDS VIA LIQUID (SEM ERRO) ----------
+    // Produto atual
+    {% assign product_material = product.metafields.custom.material_para_download %}
+    {% assign product_codigo = product.metafields.custom.codigo_para_download %}
 
-    console.log('🔍 Metafield material_para_download:', rawMaterial);
-    console.log('🔍 Metafield codigo_para_download:', codigo);
+    // Constrói um array de URLs a partir do metafield do tipo Arquivo (único ou lista)
+    {% assign file_urls = "" %}
+    {% if product_material.type == "file_reference" %}
+      // É um único arquivo
+      {% assign file_urls = product_material.url | json %}
+    {% elsif product_material.type == "list.file_reference" %}
+      // É uma lista de arquivos
+      {% assign urls_array = "" %}
+      {% for file in product_material.value %}
+        {% if file.url != blank %}
+          {% assign urls_array = urls_array | append: file.url | append: "||" %}
+        {% endif %}
+      {% endfor %}
+      {% assign file_urls = urls_array | split: "||" | uniq | json %}
+    {% else %}
+      // Fallback: tenta obter diretamente como string (para compatibilidade)
+      {% assign file_urls = product.metafields.custom.material_para_download | json %}
+    {% endif %}
 
-    // Função para extrair URLs de download (arquivo único ou lista)
-    function extractFileUrls(materialField) {
-      if (!materialField) return [];
+    // Código de acesso
+    {% assign codigo_value = product_codigo | default: "" %}
 
-      if (Array.isArray(materialField)) {
-        return materialField
-          .filter(item => item && typeof item === 'object' && item.url)
-          .map(item => item.url);
-      }
+    // Dados prontos para o JavaScript
+    const fileUrls = {{ file_urls }};
+    const codigo = {{ codigo_value | json }};
 
-      if (typeof materialField === 'object' && materialField.url) {
-        return [materialField.url];
-      }
+    console.log('✅ Arquivos extraídos (URLs):', fileUrls);
+    console.log('🔑 Código de acesso:', codigo);
 
-      if (typeof materialField === 'string' && materialField.trim() !== '') {
-        return [materialField.trim()];
-      }
+    const hasValidMetafields = Array.isArray(fileUrls) && fileUrls.length > 0 && codigo && codigo.trim() !== '';
 
-      return [];
-    }
-
-    const fileUrls = extractFileUrls(rawMaterial);
-    const codigoValido = codigo && typeof codigo === 'string' && codigo.trim() !== '';
-
-    const possuiMetafieldsValidos = fileUrls.length > 0 && codigoValido;
-
-    if (!possuiMetafieldsValidos) {
-      console.warn('⚠️ Download com código NÃO será ativado. Motivos:');
-      if (fileUrls.length === 0) console.warn('   - Nenhuma URL de arquivo encontrada em custom.material_para_download');
-      if (!codigoValido) console.warn('   - custom.codigo_para_download está vazio ou inválido');
+    if (!hasValidMetafields) {
+      console.warn('⚠️ Download com código NÃO ativado. Motivos:');
+      if (!Array.isArray(fileUrls) || fileUrls.length === 0) console.warn('   - Nenhuma URL de arquivo encontrada em custom.material_para_download');
+      if (!codigo || codigo.trim() === '') console.warn('   - custom.codigo_para_download está vazio ou inválido');
     } else {
       console.log('✅ Download com código ATIVADO. Arquivos prontos:', fileUrls);
     }
 
-    // ---------- CRIAÇÃO DO MODAL (sempre, mesmo se metafields inválidos – mas só será mostrado se válido) ----------
+    // ---------- CRIAÇÃO DO MODAL (mesmo estilo do componente pre-venda-confirm-modal) ----------
     function createCodeModal() {
       if (document.getElementById('downloadCodeModal')) return;
 
@@ -520,8 +523,7 @@
 
     // ---------- MOSTRA O MODAL E VALIDA O CÓDIGO ----------
     function promptForCode() {
-      // Verifica novamente se os metafields continuam válidos (segurança)
-      if (!possuiMetafieldsValidos) {
+      if (!hasValidMetafields) {
         console.error('❌ Tentativa de abrir modal, mas os metafields não são válidos.');
         alert('Este produto não possui material disponível para download com código.');
         return;
@@ -566,13 +568,13 @@
       };
 
       // Remove listeners antigos para evitar duplicação
-      okBtn.replaceWith(okBtn.cloneNode(true));
-      cancelBtn.replaceWith(cancelBtn.cloneNode(true));
-      const newOk = document.getElementById('downloadCodeOk');
-      const newCancel = document.getElementById('downloadCodeCancel');
+      const newOk = okBtn.cloneNode(true);
+      const newCancel = cancelBtn.cloneNode(true);
+      okBtn.parentNode.replaceChild(newOk, okBtn);
+      cancelBtn.parentNode.replaceChild(newCancel, cancelBtn);
 
-      newOk.onclick = validateAndDownload;
-      newCancel.onclick = closeModal;
+      document.getElementById('downloadCodeOk').onclick = validateAndDownload;
+      document.getElementById('downloadCodeCancel').onclick = closeModal;
 
       modal.onclick = (e) => {
         if (e.target === modal) closeModal();
@@ -586,7 +588,7 @@
     // ---------- INICIALIZAÇÃO: CRIA MODAL E USA DELEGAÇÃO DE EVENTOS ----------
     createCodeModal();
 
-    // Delegação de eventos: captura cliques em qualquer botão com a classe .download_material_content
+    // Delegação de eventos (funciona mesmo se o botão for carregado depois)
     document.body.addEventListener('click', function(event) {
       const button = event.target.closest('.download_material_content');
       if (!button) return;
@@ -594,7 +596,7 @@
       event.preventDefault();
       console.log('🔘 Clique detectado no botão:', button);
 
-      if (!possuiMetafieldsValidos) {
+      if (!hasValidMetafields) {
         console.warn('🚫 O produto não possui os metafields necessários. Nenhuma ação será executada.');
         alert('Material não disponível para este produto.');
         return;
