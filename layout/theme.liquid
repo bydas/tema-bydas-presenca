@@ -435,199 +435,109 @@
     <script src="{{ 'quick-add-icons.js' | asset_url }}" defer></script>
     <script src="{{ 'header-favorities.js' | asset_url }}" defer></script>
 
-    <script>
-  (function() {
-    // ---------- EXTRAÇÃO DOS METAFIELDS VIA LIQUID (SEM ERRO) ----------
-    // Produto atual
     {% assign product_material = product.metafields.custom.material_para_download %}
-    {% assign product_codigo = product.metafields.custom.codigo_para_download %}
+    {% assign product_code = product.metafields.custom.codigo_para_download %}
 
-    // Constrói um array de URLs a partir do metafield do tipo Arquivo (único ou lista)
-    {% assign file_urls = "" %}
-    {% if product_material.type == "file_reference" %}
-      // É um único arquivo
-      {% assign file_urls = product_material.url | json %}
-    {% elsif product_material.type == "list.file_reference" %}
-      // É uma lista de arquivos
-      {% assign urls_array = "" %}
+    {% if product_material != empty and product_code != blank %}
+      {% render 'download-material-modal' %}
+
+      {% assign file_urls = '' %}
+
       {% for file in product_material.value %}
         {% if file.url != blank %}
-          {% assign urls_array = urls_array | append: file.url | append: "||" %}
+          {% assign file_urls = file_urls | append: file.url | append: ',' %}
         {% endif %}
       {% endfor %}
-      {% assign file_urls = urls_array | split: "||" | uniq | json %}
-    {% else %}
-      // Fallback: tenta obter diretamente como string (para compatibilidade)
-      {% assign file_urls = product.metafields.custom.material_para_download | json %}
+
+      {% assign file_urls = file_urls | split: ',' | uniq | json %}
+
+      <script>
+        (function() {
+          const fileUrls = {{ file_urls }};
+          const codigo = {{ product_code | json }};
+
+          const hasValidMetafields = Array.isArray(fileUrls) && fileUrls.length > 0 && codigo && codigo.trim() !== '';
+
+          function downloadFiles(urls) {
+            if (!urls || urls.length === 0) return;
+            urls.forEach((url, index) => {
+              const link = document.createElement('a');
+              link.href = url;
+              link.download = '';
+              link.target = '_blank';
+              document.body.appendChild(link);
+              link.click();
+              document.body.removeChild(link);
+              if (index < urls.length - 1) setTimeout(() => {}, 300);
+            });
+          }
+
+          function promptForCode() {
+            if (!hasValidMetafields) {
+              alert('Este produto não possui material disponível para download com código.');
+              return;
+            }
+
+            const modal = document.getElementById('downloadCodeModal');
+            if (!modal) return;
+
+            const input = document.getElementById('downloadCodeInput');
+            const errorDiv = document.getElementById('downloadCodeError');
+            const okBtn = document.getElementById('downloadCodeOk');
+            const cancelBtn = document.getElementById('downloadCodeCancel');
+            const messageDiv = document.getElementById('downloadCodeMessage');
+
+            input.value = '';
+            errorDiv.style.display = 'none';
+            messageDiv.textContent = 'Digite o código de acesso para baixar o material:';
+            modal.style.display = 'flex';
+            input.focus();
+
+            const closeModal = () => {
+              modal.style.display = 'none';
+            };
+
+            const validateAndDownload = () => {
+              const enteredCode = input.value.trim();
+              const expectedCode = codigo.trim();
+
+              if (enteredCode === expectedCode) {
+                closeModal();
+                downloadFiles(fileUrls);
+              } else {
+                errorDiv.textContent = 'Código incorreto. Verifique e tente novamente.';
+                errorDiv.style.display = 'block';
+                input.value = '';
+                input.focus();
+              }
+            };
+
+            const newOk = okBtn.cloneNode(true);
+            const newCancel = cancelBtn.cloneNode(true);
+            okBtn.parentNode.replaceChild(newOk, okBtn);
+            cancelBtn.parentNode.replaceChild(newCancel, cancelBtn);
+
+            document.getElementById('downloadCodeOk').onclick = validateAndDownload;
+            document.getElementById('downloadCodeCancel').onclick = closeModal;
+
+            modal.onclick = (e) => {
+              if (e.target === modal) closeModal();
+            };
+
+            input.onkeypress = (e) => {
+              if (e.key === 'Enter') validateAndDownload();
+            };
+          }
+
+          const downloadButton = document.querySelector('.download_material_content');
+          if (downloadButton) {
+            downloadButton.addEventListener('click', function(event) {
+              event.preventDefault();
+              promptForCode();
+            });
+          }
+        })();
+      </script>
     {% endif %}
-
-    // Código de acesso
-    {% assign codigo_value = product_codigo | default: "" %}
-
-    // Dados prontos para o JavaScript
-    const fileUrls = {{ file_urls }};
-    const codigo = {{ codigo_value | json }};
-
-    console.log('✅ Arquivos extraídos (URLs):', fileUrls);
-    console.log('🔑 Código de acesso:', codigo);
-
-    const hasValidMetafields = Array.isArray(fileUrls) && fileUrls.length > 0 && codigo && codigo.trim() !== '';
-
-    if (!hasValidMetafields) {
-      console.warn('⚠️ Download com código NÃO ativado. Motivos:');
-      if (!Array.isArray(fileUrls) || fileUrls.length === 0) console.warn('   - Nenhuma URL de arquivo encontrada em custom.material_para_download');
-      if (!codigo || codigo.trim() === '') console.warn('   - custom.codigo_para_download está vazio ou inválido');
-    } else {
-      console.log('✅ Download com código ATIVADO. Arquivos prontos:', fileUrls);
-    }
-
-    // ---------- CRIAÇÃO DO MODAL (mesmo estilo do componente pre-venda-confirm-modal) ----------
-    function createCodeModal() {
-      if (document.getElementById('downloadCodeModal')) return;
-
-      const modalHTML = `
-        <div id="downloadCodeModal" style="display: none; position: fixed; top:0; left:0; width:100%; height:100%; background-color: rgba(0,0,0,0.5); justify-content: center; align-items: center; z-index: 10000;">
-          <div class="custom-confirm-content" style="padding: 1.5rem; border-radius: 12px; max-width: 400px; width: 90%; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); text-align: center; background: #ffffff;">
-            <div class="custom-confirm-message" id="downloadCodeMessage" style="font-size: 1.35rem; margin-bottom: 1rem; line-height: 1.5; color: #1f2937;">
-              Digite o código de acesso para baixar o material:
-            </div>
-            <input type="text" id="downloadCodeInput" style="width: 80%; padding: 10px; margin-bottom: 1.5rem; border: 1px solid #ccc; border-radius: 6px; font-size: 1rem; text-align: center;" placeholder="Código" autocomplete="off">
-            <div id="downloadCodeError" style="color: #dc2626; font-size: 0.875rem; margin-bottom: 1rem; display: none;"></div>
-            <div class="custom-confirm-buttons" style="display: flex; gap: 12px; justify-content: center;">
-              <button id="downloadCodeOk" class="custom-confirm-ok" style="background-color: #2563eb; color: white; padding: 8px 20px; border: none; border-radius: 6px; font-size: 1.25rem; font-weight: 500; cursor: pointer;">OK</button>
-              <button id="downloadCodeCancel" class="custom-confirm-cancel" style="background-color: #e5e7eb; color: #1f2937; padding: 8px 20px; border: none; border-radius: 6px; font-size: 1.25rem; font-weight: 500; cursor: pointer;">Cancelar</button>
-            </div>
-          </div>
-        </div>
-      `;
-      document.body.insertAdjacentHTML('beforeend', modalHTML);
-    }
-
-    // ---------- FUNÇÃO PARA BAIXAR ARQUIVOS ----------
-    function downloadFiles(urls) {
-      if (!urls || urls.length === 0) {
-        alert('Nenhum arquivo disponível para download.');
-        return;
-      }
-      urls.forEach((url, index) => {
-        const link = document.createElement('a');
-        link.href = url;
-        link.download = '';
-        link.target = '_blank';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-        if (index < urls.length - 1) setTimeout(() => {}, 300);
-      });
-    }
-
-    // ---------- MOSTRA O MODAL E VALIDA O CÓDIGO ----------
-    function promptForCode() {
-      if (!hasValidMetafields) {
-        console.error('❌ Tentativa de abrir modal, mas os metafields não são válidos.');
-        alert('Este produto não possui material disponível para download com código.');
-        return;
-      }
-
-      const modal = document.getElementById('downloadCodeModal');
-      if (!modal) {
-        console.error('❌ Modal não encontrado. Verifique se o script criou o elemento.');
-        return;
-      }
-
-      const input = document.getElementById('downloadCodeInput');
-      const errorDiv = document.getElementById('downloadCodeError');
-      const okBtn = document.getElementById('downloadCodeOk');
-      const cancelBtn = document.getElementById('downloadCodeCancel');
-      const messageDiv = document.getElementById('downloadCodeMessage');
-
-      // Reset do estado
-      input.value = '';
-      errorDiv.style.display = 'none';
-      messageDiv.textContent = 'Digite o código de acesso para baixar o material:';
-      modal.style.display = 'flex';
-      input.focus();
-
-      const closeModal = () => {
-        modal.style.display = 'none';
-      };
-
-      const validateAndDownload = () => {
-        const enteredCode = input.value.trim();
-        const expectedCode = codigo.trim();
-
-        if (enteredCode === expectedCode) {
-          closeModal();
-          downloadFiles(fileUrls);
-        } else {
-          errorDiv.textContent = 'Código incorreto. Verifique e tente novamente.';
-          errorDiv.style.display = 'block';
-          input.value = '';
-          input.focus();
-        }
-      };
-
-      // Remove listeners antigos para evitar duplicação
-      const newOk = okBtn.cloneNode(true);
-      const newCancel = cancelBtn.cloneNode(true);
-      okBtn.parentNode.replaceChild(newOk, okBtn);
-      cancelBtn.parentNode.replaceChild(newCancel, cancelBtn);
-
-      document.getElementById('downloadCodeOk').onclick = validateAndDownload;
-      document.getElementById('downloadCodeCancel').onclick = closeModal;
-
-      modal.onclick = (e) => {
-        if (e.target === modal) closeModal();
-      };
-
-      input.onkeypress = (e) => {
-        if (e.key === 'Enter') validateAndDownload();
-      };
-    }
-
-    // ---------- INICIALIZAÇÃO: CRIA MODAL E USA DELEGAÇÃO DE EVENTOS ----------
-    createCodeModal();
-
-    // Delegação de eventos (funciona mesmo se o botão for carregado depois)
-    document.body.addEventListener('click', function(event) {
-      const button = event.target.closest('.download_material_content');
-      if (!button) return;
-
-      event.preventDefault();
-      console.log('🔘 Clique detectado no botão:', button);
-
-      if (!hasValidMetafields) {
-        console.warn('🚫 O produto não possui os metafields necessários. Nenhuma ação será executada.');
-        alert('Material não disponível para este produto.');
-        return;
-      }
-
-      promptForCode();
-    });
-
-    console.log('🎉 Script de download com código inicializado. Aguardando clique em .download_material_content');
-  })();
-    </script>
-
-    <style>
-      @media screen and (min-width: 768px) {
-        #downloadCodeModal .custom-confirm-content {
-          max-width: 500px;
-          width: 80%;
-          padding: 2rem;
-        }
-        #downloadCodeModal .custom-confirm-message {
-          font-size: 1.5rem;
-        }
-        #downloadCodeModal .custom-confirm-buttons button {
-          padding: 10px 28px;
-          font-size: 1.35rem;
-        }
-        #downloadCodeModal input {
-          font-size: 1.2rem !important;
-          padding: 12px !important;
-        }
-      }
-    </style>
   </body>
 </html>
