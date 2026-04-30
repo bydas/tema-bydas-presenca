@@ -12,15 +12,13 @@
     "slideshow_Mh9AA4": {
       "type": "slideshow",
       "blocks": {
-        "slide_LniBY7": {
+        "slide_P7jztK": {
           "type": "slide",
-          "name": "Banner Campanhas",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/1_Campanha_30__Livros_Desktop_0ce8be9a-9f5f-4e08-970a-548036141714.jpg",
-            "image_mobile": "shopify://shop_images/1_Campanha_30__Livros_Mobile_c408aaf4-1c3c-487d-b3b5-739d24d3e241.jpg",
+            "image": "shopify://shop_images/Presenca_Banners_Site_22_voltas_DSK.jpg",
+            "image_mobile": "shopify://shop_images/Presenca_Banners_Site_22_voltas_MB.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://collections/livros-com-30",
+            "image_link": "shopify://products/22-voltas",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -35,13 +33,14 @@
             "color_scheme": ""
           }
         },
-        "slide_P7jztK": {
+        "slide_LniBY7": {
           "type": "slide",
+          "name": "Banner Campanhas",
           "settings": {
-            "image": "shopify://shop_images/Presenca_Banners_Site_22_voltas_DSK.jpg",
-            "image_mobile": "shopify://shop_images/Presenca_Banners_Site_22_voltas_MB.jpg",
+            "image": "shopify://shop_images/4_por_20_FICCAO_Banner_Desktop_1_df6b6282-9632-4e6b-a192-b04389891c75.jpg",
+            "image_mobile": "shopify://shop_images/4_por_20_FICCAO_Banner_Mobile_1_383e4983-596b-475d-bded-7361ccefc172.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/22-voltas",
+            "image_link": "shopify://collections/campanha",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -226,8 +225,8 @@
         }
       },
       "block_order": [
-        "slide_LniBY7",
         "slide_P7jztK",
+        "slide_LniBY7",
         "slide_9RNWLH",
         "slide_icJWTn",
         "slide_3WXTYL",
