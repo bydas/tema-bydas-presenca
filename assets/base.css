@@ -493,14 +493,14 @@ table:not([class]) {
   border-collapse: collapse;
   font-size: 1.4rem;
   border-style: hidden;
-  box-shadow: 0 0 0 0.1rem rgba(var(--color-foreground), 0.2);
+  /* box-shadow: 0 0 0 0.1rem rgba(var(--color-foreground), 0.2); */
   /* draws the table border  */
 }
 
 table:not([class]) td,
 table:not([class]) th {
   padding: 1em;
-  border: 0.1rem solid rgba(var(--color-foreground), 0.2);
+  /* border: 0.1rem solid rgba(var(--color-foreground), 0.2); */
 }
 
 @media screen and (max-width: 749px) {
