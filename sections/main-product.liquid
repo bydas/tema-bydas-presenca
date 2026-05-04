@@ -183,24 +183,20 @@
 
                         {%- unless topics_to_remove contains topic -%}
                           {%- if topic == 'Série' -%}
-                            {%- assign after_strong = strong_match[1] | split: '</strong>' | last -%}
-                            {%- assign serie_text = after_strong | strip_html | strip | remove_first: ':' | strip -%}
-                            {%- assign serie_handle = serie_text | handle -%}
+                            {%- assign serie_text = strong_match[1] | split: '</strong>' | last | strip_html | strip -%}
+                            {%- assign serie_collection_url = '' -%}
 
-                            {%- if serie_text != blank -%}
-                              {%- assign linked_serie = '<a href="/collections/'
-                                | append: serie_handle
-                                | append: '">'
-                                | append: serie_text
-                                | append: '</a>'
-                              -%}
-                              {%- assign new_after_strong = after_strong | replace: serie_text, linked_serie -%}
-                              {%- assign li_tag = strong_match[0]
-                                | append: '<strong>'
-                                | append: topic
-                                | append: '</strong>'
-                                | append: new_after_strong
-                              -%}
+                            {%- for collection in product.collections -%}
+                              {%- if collection.title contains serie_text -%}
+                                {%- assign serie_collection_url = collection.url -%}
+                                {%- break -%}
+                              {%- endif -%}
+                            {%- endfor -%}
+
+                            {%- if serie_collection_url != blank and serie_text != blank -%}
+                              {%- capture li_tag -%}
+                                <li><strong>{{ topic }}</strong> <a href="{{ serie_collection_url }}">{{ serie_text }}</a></li>
+                              {%- endcapture -%}
                             {%- endif -%}
                           {%- endif -%}
 
