@@ -180,7 +180,30 @@
 
                       {%- if strong_match.size > 1 -%}
                         {%- assign topic = strong_match[1] | split: '</strong>' | first | strip -%}
+
                         {%- unless topics_to_remove contains topic -%}
+                          {%- if topic == 'Série' -%}
+                            {%- assign after_strong = strong_match[1] | split: '</strong>' | last -%}
+                            {%- assign serie_text = after_strong | strip_html | strip | remove_first: ':' | strip -%}
+                            {%- assign serie_handle = serie_text | handle -%}
+
+                            {%- if serie_text != blank -%}
+                              {%- assign linked_serie = '<a href="/collections/'
+                                | append: serie_handle
+                                | append: '">'
+                                | append: serie_text
+                                | append: '</a>'
+                              -%}
+                              {%- assign new_after_strong = after_strong | replace: serie_text, linked_serie -%}
+                              {%- assign li_tag = strong_match[0]
+                                | append: '<strong>'
+                                | append: topic
+                                | append: '</strong>'
+                                | append: new_after_strong
+                              -%}
+                            {%- endif -%}
+                          {%- endif -%}
+
                           {%- assign filtered_items = filtered_items | append: li_tag -%}
                         {%- endunless -%}
                       {%- else -%}
