@@ -519,9 +519,10 @@
         "slide_J6Dyr4": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/22_Presenca_Comics_Institucional.jpg",
+            "image": "shopify://shop_images/Presenca_Banners_Site_HarryPotter_DSK_3.jpg",
+            "image_mobile": "shopify://shop_images/Presenca_Banners_Site_HarryPotter_MB_2.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://collections/presenca-comics",
+            "image_link": "shopify://collections/harry-potter",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -556,7 +557,7 @@
       "type": "featured-collection",
       "name": "Presença Comics",
       "settings": {
-        "collection": "presenca-comics",
+        "collection": "harry-potter",
         "products_to_show": 16,
         "title": "<a href=\"/collections/presenca-comics\" title=\"Presença Comics\">{{ section.settings.collection.title }}</a>",
         "heading_alignment": "left",
