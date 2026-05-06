@@ -12,13 +12,13 @@
     "slideshow_Mh9AA4": {
       "type": "slideshow",
       "blocks": {
-        "slide_P7jztK": {
+        "slide_9RNWLH": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Presenca_Banners_Site_22_voltas_DSK.jpg",
-            "image_mobile": "shopify://shop_images/Presenca_Banners_Site_22_voltas_MB.jpg",
+            "image": "shopify://shop_images/5_Academia_1_Desktop_7ced09b5-ccc3-4670-87cc-e842b900c5c2.jpg",
+            "image_mobile": "shopify://shop_images/5_Academia_1_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/22-voltas",
+            "image_link": "shopify://products/a-academia-1",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -55,13 +55,13 @@
             "color_scheme": ""
           }
         },
-        "slide_9RNWLH": {
+        "slide_xHT3bP": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Presenca_Banners_Site_A_felicidade_nos_dias_de_chuva_DSK.jpg",
-            "image_mobile": "shopify://shop_images/Presenca_Banners_Site_A_felicidade_nos_dias_de_chuva_MB.jpg",
+            "image": "shopify://shop_images/Presenca_Banners_Site_Um_Dia_Nao__DSK.jpg",
+            "image_mobile": "shopify://shop_images/Presenca_Banners_Site_Um_Dia_Nao__MB.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/a-felicidade-nos-dias-de-chuva",
+            "image_link": "shopify://products/um-dia-nao",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -79,10 +79,10 @@
         "slide_icJWTn": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/22_Comer_com_Sentido_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/22_Comer_com_Sentido_Mobile.jpg",
+            "image": "shopify://shop_images/2_O_Principezinho_Minalima_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/2_O_Principezinho_Minalima_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/comer-com-sentido",
+            "image_link": "shopify://products/o-principezinho-edicao-interativa",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -100,31 +100,10 @@
         "slide_3WXTYL": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Presenca_Banners_Site_Serie_Nero_DSK.jpg",
-            "image_mobile": "shopify://shop_images/Presenca_Banners_Site_Serie_Nero_DSK.jpg",
+            "image": "shopify://shop_images/3_As_Cartas_da_Papelaria_Ginza_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/3_As_Cartas_da_Papelaria_Ginza_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/nero",
-            "open_link_new_tab": false,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
-          }
-        },
-        "slide_xHT3bP": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/21_30_Dias_para_Mudar_de_Vida_com_Dieta_Paleo_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/21_30_Dias_para_Mudar_de_Vida_com_Dieta_Paleo_Mobile.jpg",
-            "image_overlay_opacity": 0,
-            "image_link": "shopify://products/30-dias-para-mudar-de-vida-com-a-dieta-paleo",
+            "image_link": "shopify://products/as-cartas-da-papelaria-de-ginza",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -142,10 +121,10 @@
         "slide_9DGE9B": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/23_O_que_se_Passa_acima_das_Nossas_Cabecas_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/23_O_que_se_Passa_acima_das_Nossas_Cabecas_Mobile.jpg",
+            "image": "shopify://shop_images/Presenca_Banners_Site_Os_mitos_que_o_estao_a_bloquear_DSK.jpg",
+            "image_mobile": "shopify://shop_images/Presenca_Banners_Site_Os_mitos_que_o_estao_a_bloquear_MB.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/o-que-se-passa-acima-das-nossas-cabecas",
+            "image_link": "shopify://products/os-mitos-que-o-estao-a-bloquear",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -163,10 +142,31 @@
         "slide_PQfNNM": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Presenca_Banners_Site_Um_ultimo_desejo_DSK.jpg",
-            "image_mobile": "shopify://shop_images/Presenca_Banners_Site_Um_ultimo_desejo_MB.jpg",
+            "image": "shopify://shop_images/6_Corte_de_Espinhos_e_Rosas_Livro_para_Colorir_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/6_Corte_de_Espinhos_e_Rosas_Livro_para_Colorir_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/um-ultimo-desejo",
+            "image_link": "shopify://products/corte-de-espinhos-e-rosas-livro-de-colorir",
+            "open_link_new_tab": false,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
+        "slide_P7jztK": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Presenca_Banners_Site_Cronicas_de_Enigma_DSK.jpg",
+            "image_mobile": "shopify://shop_images/Presenca_Banners_Site_Cronicas_de_Enigma_MB.jpg",
+            "image_overlay_opacity": 0,
+            "image_link": "shopify://collections/serie-cronicas-de-enigma",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -184,10 +184,10 @@
         "slide_NLnpqb": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Presenca_Banners_Site_O_Ritmo_de_Cristal_-_Academia_K-Pop_3_DSK.jpg",
-            "image_mobile": "shopify://shop_images/Presenca_Banners_Site_O_Ritmo_de_Cristal_-_Academia_K-Pop_3_MB.jpg",
+            "image": "shopify://shop_images/Presenca_Banners_Site_Este_livro_e_um_pivete_DSK.jpg",
+            "image_mobile": "shopify://shop_images/Presenca_Banners_Site_Este_livro_e_um_pivete_MB.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/o-ritmo-de-cristal-academia-k-pop",
+            "image_link": "shopify://products/este-livro-e-um-pivete",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -205,10 +205,10 @@
         "slide_bypDBF": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Presenca_Banners_Site_Elena_sabe_DSK.jpg",
-            "image_mobile": "shopify://shop_images/Presenca_Banners_Site_Elena_sabe_MB.jpg",
+            "image": "shopify://shop_images/Presenca_Banners_Site_Adoro-te_todos_os_dias_DSK.jpg",
+            "image_mobile": "shopify://shop_images/Presenca_Banners_Site_Adoro-te_todos_os_dias_MB.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/elena-sabe",
+            "image_link": "shopify://products/adoro-te-todos-os-dias",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -225,14 +225,14 @@
         }
       },
       "block_order": [
-        "slide_P7jztK",
-        "slide_LniBY7",
         "slide_9RNWLH",
+        "slide_LniBY7",
+        "slide_xHT3bP",
         "slide_icJWTn",
         "slide_3WXTYL",
-        "slide_xHT3bP",
         "slide_9DGE9B",
         "slide_PQfNNM",
+        "slide_P7jztK",
         "slide_NLnpqb",
         "slide_bypDBF"
       ],
@@ -254,7 +254,7 @@
       "name": "Coleção Novidades",
       "settings": {
         "collection": "novidades",
-        "products_to_show": 16,
+        "products_to_show": 25,
         "title": "<a href=\"/collections/novidades\" title=\"Novidades\">{{ section.settings.collection.title }}</a>",
         "heading_alignment": "center",
         "heading_size": "h1",
@@ -274,8 +274,8 @@
         "quick_add": "standard",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "padding_top": 48,
-        "padding_bottom": 48
+        "padding_top": 24,
+        "padding_bottom": 24
       }
     },
     "slideshow_8zUK6k": {
@@ -323,7 +323,7 @@
       "name": "Carrossel Campanha",
       "settings": {
         "collection": "campanha",
-        "products_to_show": 16,
+        "products_to_show": 25,
         "title": "<a href=\"/collections/campanha\" title=\"4 livros por 20 €\">{{ section.settings.collection.title }}</a>",
         "heading_alignment": "left",
         "heading_size": "h1",
@@ -343,8 +343,8 @@
         "quick_add": "standard",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "padding_top": 48,
-        "padding_bottom": 0
+        "padding_top": 24,
+        "padding_bottom": 24
       }
     },
     "featured_collection_HVgeey": {
@@ -352,7 +352,7 @@
       "name": "Carrossel Pré-vendas",
       "settings": {
         "collection": "pre-venda",
-        "products_to_show": 16,
+        "products_to_show": 25,
         "title": "<a href=\"/collections/pre-venda\" title=\"Pré-Vendas\">{{ section.settings.collection.title }}</a>",
         "heading_alignment": "left",
         "heading_size": "h1",
@@ -372,8 +372,8 @@
         "quick_add": "standard",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "padding_top": 48,
-        "padding_bottom": 48
+        "padding_top": 24,
+        "padding_bottom": 24
       }
     },
     "featured_product_bqgTVp": {
@@ -430,10 +430,10 @@
         "slide_QpMMqV": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/O_Leao_Que_Temos_Ca_Dentro_Banner_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/O_Leao_Que_Temos_Ca_Dentro_Banner_Mobile.jpg",
+            "image": "shopify://shop_images/7_Homem_Cao_Big_Jim_Acredita_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/7_Homem_Cao_Big_Jim_Acredita_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://collections/serie-o-leao-que-temos-ca-dentro",
+            "image_link": "shopify://collections/serie-homem-cao",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -452,7 +452,6 @@
       "block_order": [
         "slide_QpMMqV"
       ],
-      "disabled": true,
       "name": "Banner fixo 1",
       "settings": {
         "layout": "grid",
@@ -465,31 +464,12 @@
         "accessibility_info": "Apresentação de produtos e categorias da nossa marca"
       }
     },
-    "featured_blog_dnwXmG": {
-      "type": "featured-blog",
-      "name": "Agenda",
-      "settings": {
-        "blog": "agenda",
-        "post_limit": 3,
-        "heading": "<a href=\"/blogs/agenda\" title=\"Agenda\">{{ section.settings.blog.title }}</a>",
-        "heading_size": "h1",
-        "columns_desktop": 3,
-        "show_view_all": false,
-        "show_image": true,
-        "show_date": false,
-        "show_author": false,
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 48
-      }
-    },
     "featured_collection_HPdNTU": {
       "type": "featured-collection",
-      "disabled": true,
-      "name": "Populares no TikTok",
+      "name": "Carrossel Temático",
       "settings": {
-        "collection": "populares-no-tiktok",
-        "products_to_show": 16,
+        "collection": "serie-homem-cao",
+        "products_to_show": 25,
         "title": "<a href=\"/collections/populares-no-tiktok\" title=\"Populares no TikTok\">{{ section.settings.collection.title }}</a>",
         "heading_alignment": "left",
         "heading_size": "h1",
@@ -509,7 +489,25 @@
         "quick_add": "standard",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "padding_top": 48,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "featured_blog_dnwXmG": {
+      "type": "featured-blog",
+      "name": "Agenda",
+      "settings": {
+        "blog": "agenda",
+        "post_limit": 3,
+        "heading": "<a href=\"/blogs/agenda\" title=\"Agenda\">{{ section.settings.blog.title }}</a>",
+        "heading_size": "h1",
+        "columns_desktop": 3,
+        "show_view_all": false,
+        "show_image": true,
+        "show_date": false,
+        "show_author": false,
+        "color_scheme": "",
+        "padding_top": 0,
         "padding_bottom": 48
       }
     },
@@ -555,7 +553,7 @@
     },
     "featured_collection_N8qNYR": {
       "type": "featured-collection",
-      "name": "Presença Comics",
+      "name": "Carrossel temático",
       "settings": {
         "collection": "harry-potter",
         "products_to_show": 16,
@@ -578,8 +576,8 @@
         "quick_add": "standard",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "padding_top": 48,
-        "padding_bottom": 48
+        "padding_top": 24,
+        "padding_bottom": 24
       }
     },
     "featured_blog_DCcCgx": {
@@ -684,8 +682,8 @@
     "featured_collection_HVgeey",
     "featured_product_bqgTVp",
     "slideshow_VhxkXA",
-    "featured_blog_dnwXmG",
     "featured_collection_HPdNTU",
+    "featured_blog_dnwXmG",
     "slideshow_qAxrAq",
     "featured_collection_N8qNYR",
     "featured_blog_DCcCgx",
