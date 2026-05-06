@@ -470,7 +470,7 @@
       "settings": {
         "collection": "serie-homem-cao",
         "products_to_show": 25,
-        "title": "<a href=\"/collections/populares-no-tiktok\" title=\"Populares no TikTok\">{{ section.settings.collection.title }}</a>",
+        "title": "<a href=\"/collections/serie-homem-cao\" title=\"Série «Homem-Cão»\">{{ section.settings.collection.title }}</a>",
         "heading_alignment": "left",
         "heading_size": "h1",
         "description": "",
@@ -557,7 +557,7 @@
       "settings": {
         "collection": "harry-potter",
         "products_to_show": 16,
-        "title": "<a href=\"/collections/presenca-comics\" title=\"Presença Comics\">{{ section.settings.collection.title }}</a>",
+        "title": "<a href=\"/collections/harry-potter\" title=\"Universo Harry Potter\">{{ section.settings.collection.title }}</a>",
         "heading_alignment": "left",
         "heading_size": "h1",
         "description": "",
