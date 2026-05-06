@@ -274,8 +274,8 @@
         "quick_add": "standard",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "padding_top": 24,
-        "padding_bottom": 24
+        "padding_top": 48,
+        "padding_bottom": 48
       }
     },
     "slideshow_8zUK6k": {
@@ -343,8 +343,8 @@
         "quick_add": "standard",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "padding_top": 24,
-        "padding_bottom": 24
+        "padding_top": 48,
+        "padding_bottom": 48
       }
     },
     "featured_collection_HVgeey": {
@@ -372,8 +372,8 @@
         "quick_add": "standard",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "padding_top": 24,
-        "padding_bottom": 24
+        "padding_top": 48,
+        "padding_bottom": 48
       }
     },
     "featured_product_bqgTVp": {
@@ -489,8 +489,8 @@
         "quick_add": "standard",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "padding_top": 24,
-        "padding_bottom": 24
+        "padding_top": 48,
+        "padding_bottom": 48
       }
     },
     "featured_blog_dnwXmG": {
@@ -576,8 +576,8 @@
         "quick_add": "standard",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "padding_top": 24,
-        "padding_bottom": 24
+        "padding_top": 48,
+        "padding_bottom": 48
       }
     },
     "featured_blog_DCcCgx": {
