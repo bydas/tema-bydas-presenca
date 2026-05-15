@@ -27,28 +27,6 @@
     background-color: {{ settings.pre_venda_ok_bg_hover | default: '#1d4ed8' }};
   }
 
-  .popup-info-message {
-    background-color: #fef3c7;
-    border: 1px solid #fbbf24;
-    border-radius: 8px;
-    padding: 10px;
-    margin-bottom: 1rem;
-    font-size: 0.875rem;
-    color: #92400e;
-    display: none;
-    text-align: left;
-  }
-
-  .popup-info-message a {
-    color: #2563eb;
-    text-decoration: underline;
-    cursor: pointer;
-  }
-
-  .popup-info-message.show {
-    display: block;
-  }
-
   body.modal-open {
     overflow: hidden;
     position: fixed;
@@ -61,19 +39,15 @@
   <div class="custom-confirm-content">
     <div class="custom-confirm-message" id="downloadCodeMessage">Insira o código para aceder ao material bónus:</div>
 
-    <div class="popup-info-message" id="popupInfoMessage">
-      ⚠️ <strong>Pop-up bloqueado!</strong><br>
-      O navegador bloqueou a abertura dos downloads. Clique em
-      <a href="#" id="forceDownloadLink">baixar agora</a> ou permita pop-ups para este site.
-    </div>
-
     <input
       type="text"
       id="downloadCodeInput"
       placeholder="Código"
       autocomplete="off"
     >
+
     <div id="downloadCodeError"></div>
+
     <div class="custom-confirm-buttons">
       <button id="downloadCodeOk" class="custom-confirm-ok">OK</button>
       <button id="downloadCodeCancel" class="custom-confirm-cancel">Cancelar</button>
@@ -83,9 +57,8 @@
 
 <script>
   (function() {
-    const productId = {{ product.id }};
+    const productId = {{ product.id | json }};
     const url = 'https://presenca.apps.bydas.com/';
-    let pendingUrls = [];
     let isProcessing = false;
 
     function lockScroll() {
@@ -96,58 +69,16 @@
       document.body.classList.remove('modal-open');
     }
 
-    function downloadFiles(urls) {
-      if (!urls || urls.length === 0) return;
-      
-      pendingUrls = urls;
-      let downloadStarted = false;
-      
-      urls.forEach((fileUrl, index) => {
-        const link = document.createElement('a');
-        link.href = fileUrl;
-        link.download = '';
-        link.target = '_blank';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-        downloadStarted = true;
-        if (index < urls.length - 1) setTimeout(() => {}, 300);
-      });
-      
-      if (downloadStarted) {
-        setTimeout(() => {
-          const popupMessage = document.getElementById('popupInfoMessage');
-          if (popupMessage && !popupMessage.classList.contains('show')) {
-            popupMessage.classList.add('show');
-          }
-        }, 1000);
-      }
+    function redirectToMaterial(materialUrl) {
+      if (!materialUrl) return;
+      window.location.href = materialUrl;
     }
 
-    function forceDownload() {
-      if (pendingUrls.length === 0) return;
-      
-      pendingUrls.forEach((fileUrl, index) => {
-        const link = document.createElement('a');
-        link.href = fileUrl;
-        link.download = '';
-        link.target = '_self';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-        if (index < pendingUrls.length - 1) setTimeout(() => {}, 300);
-      });
-      
-      const popupMessage = document.getElementById('popupInfoMessage');
-      if (popupMessage) {
-        popupMessage.classList.remove('show');
-      }
-    }
-
-    async function validateAndDownload(okBtn, input, errorDiv, closeModal) {
+    async function validateAndRedirect(okBtn, input, errorDiv, closeModal) {
       if (isProcessing) return;
-      
+
       const enteredCode = input.value.trim();
+
       if (!enteredCode) {
         errorDiv.textContent = 'Digite um código.';
         errorDiv.style.display = 'block';
@@ -155,17 +86,21 @@
       }
 
       isProcessing = true;
+
       const originalText = okBtn.textContent;
       okBtn.disabled = true;
-      okBtn.textContent = 'Validando...';
+      okBtn.textContent = 'A validar...';
 
       try {
-        const response = await fetch(`${url}?action=validate_download&product_id=${productId}&code=${encodeURIComponent(enteredCode)}`);
+        const response = await fetch(
+          `${url}?action=validate_download&product_id=${encodeURIComponent(productId)}&code=${encodeURIComponent(enteredCode)}`
+        );
+
         const data = await response.json();
 
-        if (response.ok && data.success) {
+        if (response.ok && data.success && data.url) {
           closeModal();
-          downloadFiles(data.urls);
+          redirectToMaterial(data.url);
         } else {
           const msg = data.error || 'Código incorreto. Verifique e tente novamente.';
           errorDiv.textContent = msg;
@@ -191,40 +126,37 @@
       const errorDiv = document.getElementById('downloadCodeError');
       const okBtn = document.getElementById('downloadCodeOk');
       const cancelBtn = document.getElementById('downloadCodeCancel');
-      const popupMessage = document.getElementById('popupInfoMessage');
-      const forceLink = document.getElementById('forceDownloadLink');
 
-      if (popupMessage) popupMessage.classList.remove('show');
       input.value = '';
+      errorDiv.textContent = '';
       errorDiv.style.display = 'none';
-      
+
       modal.style.display = 'flex';
       lockScroll();
-      input.focus();
+
+      setTimeout(() => {
+        input.focus();
+      }, 50);
 
       const closeModal = () => {
         modal.style.display = 'none';
         unlockScroll();
-        pendingUrls = [];
         isProcessing = false;
       };
 
-      if (forceLink) {
-        forceLink.onclick = (e) => {
-          e.preventDefault();
-          forceDownload();
-        };
-      }
-
       const newOkBtn = okBtn.cloneNode(true);
       const newCancelBtn = cancelBtn.cloneNode(true);
+
       okBtn.parentNode.replaceChild(newOkBtn, okBtn);
       cancelBtn.parentNode.replaceChild(newCancelBtn, cancelBtn);
 
       const finalOkBtn = document.getElementById('downloadCodeOk');
       const finalCancelBtn = document.getElementById('downloadCodeCancel');
 
-      finalOkBtn.onclick = () => validateAndDownload(finalOkBtn, input, errorDiv, closeModal);
+      finalOkBtn.onclick = () => {
+        validateAndRedirect(finalOkBtn, input, errorDiv, closeModal);
+      };
+
       finalCancelBtn.onclick = closeModal;
 
       modal.onclick = (e) => {
@@ -232,11 +164,14 @@
       };
 
       input.onkeypress = (e) => {
-        if (e.key === 'Enter') validateAndDownload(finalOkBtn, input, errorDiv, closeModal);
+        if (e.key === 'Enter') {
+          validateAndRedirect(finalOkBtn, input, errorDiv, closeModal);
+        }
       };
     }
 
     const downloadButton = document.querySelector('.download_material_content');
+
     if (downloadButton) {
       downloadButton.addEventListener('click', function(event) {
         event.preventDefault();
