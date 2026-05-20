@@ -460,10 +460,10 @@
         "slide_QpMMqV": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/7_Homem_Cao_Big_Jim_Acredita_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/7_Homem_Cao_Big_Jim_Acredita_Mobile.jpg",
+            "image": "shopify://shop_images/18_O_Calor_da_Chama_Eterna_3_Desktop_f53b35d1-0710-4a0a-bbeb-223b3fc4c49c.jpg",
+            "image_mobile": "shopify://shop_images/18_O_Calor_da_Chama_Eterna_3_Mobile_59042426-e44b-4ef2-bf91-ef5190710216.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://collections/serie-homem-cao",
+            "image_link": "shopify://collections/genero-fantastico-1",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -498,7 +498,7 @@
       "type": "featured-collection",
       "name": "Carrossel Temático",
       "settings": {
-        "collection": "serie-homem-cao",
+        "collection": "genero-fantastico-1",
         "products_to_show": 25,
         "title": "<a href=\"/collections/serie-homem-cao\" title=\"Série «Homem-Cão»\">{{ section.settings.collection.title }}</a>",
         "heading_alignment": "left",
