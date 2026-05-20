@@ -37,10 +37,10 @@
           "type": "slide",
           "name": "Banner Campanhas",
           "settings": {
-            "image": "shopify://shop_images/4_por_20_FICCAO_Banner_Desktop_1_df6b6282-9632-4e6b-a192-b04389891c75.jpg",
-            "image_mobile": "shopify://shop_images/4_por_20_FICCAO_Banner_Mobile_1_383e4983-596b-475d-bded-7361ccefc172.jpg",
+            "image": "shopify://shop_images/Campanha_Autores_Portugueses_Banner_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/Campanha_Autores_Portugueses_Banner_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://collections/campanha",
+            "image_link": "shopify://collections/30-autores-portugueses",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
