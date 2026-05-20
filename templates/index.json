@@ -547,10 +547,10 @@
         "slide_J6Dyr4": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Presenca_Banners_Site_HarryPotter_DSK_3.jpg",
-            "image_mobile": "shopify://shop_images/Presenca_Banners_Site_HarryPotter_MB_2.jpg",
+            "image": "shopify://shop_images/Presenca_Banners_Site_Atividades_pre_escolares_DSK.jpg",
+            "image_mobile": "shopify://shop_images/Presenca_Banners_Site_Atividades_pre_escolares_MB.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://collections/harry-potter",
+            "image_link": "shopify://collections/atividades-pre-escolares",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -585,7 +585,7 @@
       "type": "featured-collection",
       "name": "Carrossel temático",
       "settings": {
-        "collection": "harry-potter",
+        "collection": "atividades-pre-escolares",
         "products_to_show": 16,
         "title": "<a href=\"/collections/harry-potter\" title=\"Universo Harry Potter\">{{ section.settings.collection.title }}</a>",
         "heading_alignment": "left",
