@@ -324,7 +324,7 @@
       "settings": {
         "collection": "30-autores-portugueses",
         "products_to_show": 25,
-        "title": "<a href=\"/collections/campanha\" title=\"4 livros por 20 €\">{{ section.settings.collection.title }}</a>",
+        "title": "<a href=\"/collections/30-autores-portugueses\" title=\"30% em autores portugueses\">{{ section.settings.collection.title }}</a>",
         "heading_alignment": "left",
         "heading_size": "h1",
         "description": "",
