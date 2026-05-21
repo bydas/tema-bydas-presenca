@@ -55,6 +55,27 @@
             "color_scheme": ""
           }
         },
+        "slide_bypDBF": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Presenca_Banners_Site_Tu_nasceste__para_seguir_o_teu_coracao_DSK.jpg",
+            "image_mobile": "shopify://shop_images/Presenca_Banners_Site_Tu_nasceste__para_seguir_o_teu_coracao_MB.jpg",
+            "image_overlay_opacity": 0,
+            "image_link": "shopify://products/adoro-te-todos-os-dias",
+            "open_link_new_tab": false,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
         "slide_xHT3bP": {
           "type": "slide",
           "settings": {
@@ -201,41 +222,19 @@
             "text_alignment_mobile": "center",
             "color_scheme": ""
           }
-        },
-        "slide_bypDBF": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Presenca_Banners_Site_Adoro-te_todos_os_dias_DSK.jpg",
-            "image_mobile": "shopify://shop_images/Presenca_Banners_Site_Adoro-te_todos_os_dias_MB.jpg",
-            "image_overlay_opacity": 0,
-            "image_link": "shopify://products/adoro-te-todos-os-dias",
-            "open_link_new_tab": false,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
-          }
         }
       },
       "block_order": [
         "slide_9RNWLH",
         "slide_LniBY7",
+        "slide_bypDBF",
         "slide_xHT3bP",
         "slide_icJWTn",
         "slide_3WXTYL",
         "slide_9DGE9B",
         "slide_PQfNNM",
         "slide_P7jztK",
-        "slide_NLnpqb",
-        "slide_bypDBF"
+        "slide_NLnpqb"
       ],
       "name": "Banner Header",
       "settings": {
@@ -350,6 +349,7 @@
     },
     "featured_collection_cqtiwV": {
       "type": "featured-collection",
+      "disabled": true,
       "name": "Carrossel Campanha",
       "settings": {
         "collection": "campanha",
