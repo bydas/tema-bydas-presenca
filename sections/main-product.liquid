@@ -138,6 +138,10 @@
                         {% assign current_tag_handle = tag_product | handleize %}
                         {% assign current_collection = product.collections | where: 'handle', current_tag_handle | first %}
 
+                        <script>
+                          console.log({{ product.collections | json }}, "{{ current_tag_handle }}", {{ current_collection.title }})
+                        </script>
+
                         {% if current_collection %}
                           <li>
                             <a href="{{ current_collection.url }}">
