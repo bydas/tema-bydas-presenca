@@ -136,11 +136,9 @@
                     {% for tag_product in tags_product %}
                       {% unless tag_product == blank %}
                         {% assign current_tag_handle = tag_product | handleize %}
-                        {% assign current_collection = collections[current_tag_handle] %}
+                        {% assign current_collection = product.collections[current_tag_handle] %}
 
-                        <script>console.log({{ current_collection.id }})</script>
-
-                        {% unless current_collection.url == blank %}
+                        {% unless current_collection == empty %}
                           <li>
                             <a href="{{ current_collection.url }}">
                               {{ current_collection.title }}
