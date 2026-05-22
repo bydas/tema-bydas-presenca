@@ -102,7 +102,9 @@
     endif
   %}
 
-  <script>console.log({{ tags_product | split: ',' | compact | json }})</script>
+  <script>
+    console.log({{ tags_product | split: ',' | json }})
+  </script>
 
   <div class="page-width">
     <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
@@ -138,19 +140,14 @@
                     {% for tag_product in tags_product %}
                       {% assign current_tag_handle = tag_product | handleize %}
                       {% assign current_collection = collections[current_tag_handle] %}
-                      {% assign has_product = current_collection.products | has: 'title', product.title %}
 
-                      {% if current_tag_handle == 'pre-venda' and has_product == false %}
-                        {% continue %}
-                      {% endif %}
-
-                      {% unless current_collection == empty %}
+                      {% if current_collection %}
                         <li>
                           <a href="{{ current_collection.url }}">
                             {{ current_collection.title }}
                           </a>
                         </li>
-                      {% endunless %}
+                      {% endif %}
                     {% endfor %}
                   </ul>
                 {% endif %}
