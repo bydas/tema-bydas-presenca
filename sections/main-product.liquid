@@ -80,12 +80,10 @@
     assign pre_venda_tag = null
 
     for tag in product.tags
-      unless tag == 'NOMEAUTOR_AAVV'
-        if tag contains 'NOMEAUTOR_'
-          assign clean_author_name = tag | replace: 'NOMEAUTOR_', ','
-          assign author_names = author_names | append: clean_author_name
-        endif
-      endunless
+      if tag contains 'NOMEAUTOR_' and tag != 'NOMEAUTOR_AAVV'
+        assign clean_author_name = tag | replace: 'NOMEAUTOR_', ','
+        assign author_names = author_names | append: clean_author_name
+      endif
 
       if tag == 'PRÉ-VENDA'
         assign pre_venda_tag = tag
