@@ -136,17 +136,15 @@
                     {% for tag_product in tags_product %}
                       {% unless tag_product == blank %}
                         {% assign current_tag_handle = tag_product | handleize %}
-                        {% assign current_collection = product.collections | where: 'handle', current_tag_handle %}
+                        {% assign current_collection = product.collections | where: 'handle', current_tag_handle | first %}
 
-                        <script>console.log({{ product.collections | json }}, "{{ current_tag_handle }}", {{ current_collection.title }})</script>
-
-                        {% unless current_collection.url == blank %}
+                        {% if current_collection %}
                           <li>
                             <a href="{{ current_collection.url }}">
                               {{ current_collection.title }}
                             </a>
                           </li>
-                        {% endunless %}
+                        {% endif %}
                       {% endunless %}
                     {% endfor %}
                   </ul>
