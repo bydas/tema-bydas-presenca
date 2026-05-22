@@ -347,7 +347,7 @@
         const { data, errors } = await response.json();
         if (errors) throw new Error(errors[0].message);
         
-        if (!data?.collection?.products?.edges && data.collection.products.edges.length) {
+        if (!data?.collection?.products?.edges && data?.collection?.products?.edges?.length) {
           return [];
         } else {
           const sectionContainer = document.getElementById("Section-other-suggestions-{{ section.id }}");
