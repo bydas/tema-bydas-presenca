@@ -136,9 +136,7 @@
                     {% for tag_product in tags_product %}
                       {% unless tag_product == blank %}
                         {% assign current_tag_handle = tag_product | handleize %}
-                        {% assign current_collection = product.collections[current_tag_handle] %}
-
-                        <script>console.log({{ product.collections | json }})</script>
+                        {% assign current_collection = product.collections | where: 'handle', current_tag_handle %}
 
                         {% unless current_collection.url == blank %}
                           <li>
