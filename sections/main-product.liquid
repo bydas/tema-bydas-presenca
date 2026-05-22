@@ -84,17 +84,19 @@
         if tag contains 'NOMEAUTOR_'
           assign clean_author_name = tag | replace: 'NOMEAUTOR_', ','
           assign author_names = author_names | append: clean_author_name
-        elsif tag == 'PRÉ-VENDA'
-          assign pre_venda_tag = tag
-        elsif tag contains 'CATEGORIA_' or tag contains 'TEMA_'
-          if tag contains 'CATEGORIA_'
-            assign clean_tag = tag | replace: 'CATEGORIA_', ','
-          elsif tag contains 'TEMA_'
-            assign clean_tag = tag | replace: 'TEMA_', ','
-          endif
-          assign tags_product = tags_product | append: clean_tag
         endif
       endunless
+
+      if tag == 'PRÉ-VENDA'
+        assign pre_venda_tag = tag
+      elsif tag contains 'CATEGORIA_' or tag contains 'TEMA_'
+        if tag contains 'CATEGORIA_'
+          assign clean_tag = tag | replace: 'CATEGORIA_', ','
+        elsif tag contains 'TEMA_'
+          assign clean_tag = tag | replace: 'TEMA_', ','
+        endif
+        assign tags_product = tags_product | append: clean_tag
+      endif
     endfor
 
     if pre_venda_tag != null
