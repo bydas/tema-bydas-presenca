@@ -138,7 +138,7 @@
                         {% assign current_tag_handle = tag_product | handleize %}
                         {% assign current_collection = product.collections[current_tag_handle] %}
 
-                        {% unless current_collection == empty %}
+                        {% unless current_collection.url == blank %}
                           <li>
                             <a href="{{ current_collection.url }}">
                               {{ current_collection.title }}
