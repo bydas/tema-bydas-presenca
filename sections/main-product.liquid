@@ -102,10 +102,6 @@
     endif
   %}
 
-  <script>
-    console.log({{ tags_product | split: ',' | json }})
-  </script>
-
   <div class="page-width">
     <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
       <div class="grid__item product__media-wrapper">
@@ -138,16 +134,20 @@
 
                   <ul class="tags-container-main-product">
                     {% for tag_product in tags_product %}
-                      {% assign current_tag_handle = tag_product | handleize %}
-                      {% assign current_collection = collections[current_tag_handle] %}
+                      {% unless tag_product == blank %}
+                        {% assign current_tag_handle = tag_product | handleize %}
+                        {% assign current_collection = collections[current_tag_handle] %}
 
-                      {% if current_collection.url != blank %}
-                        <li>
-                          <a href="{{ current_collection.url }}">
-                            {{ current_collection.title }}
-                          </a>
-                        </li>
-                      {% endif %}
+                        <script>console.log({{ current_collection | json }})</script>
+
+                        {% unless current_collection.url == blank %}
+                          <li>
+                            <a href="{{ current_collection.url }}">
+                              {{ current_collection.title }}
+                            </a>
+                          </li>
+                        {% endunless %}
+                      {% endunless %}
                     {% endfor %}
                   </ul>
                 {% endif %}
