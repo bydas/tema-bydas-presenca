@@ -36,6 +36,7 @@
         "slide_LniBY7": {
           "type": "slide",
           "name": "Banner Campanhas",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Campanha_Autores_Portugueses_Banner_Desktop.jpg",
             "image_mobile": "shopify://shop_images/Campanha_Autores_Portugueses_Banner_Mobile.jpg",
@@ -320,6 +321,7 @@
     },
     "featured_collection_QKCjKQ": {
       "type": "featured-collection",
+      "disabled": true,
       "name": "Carrossel Campanha",
       "settings": {
         "collection": "30-autores-portugueses",
