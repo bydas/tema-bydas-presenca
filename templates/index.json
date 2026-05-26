@@ -18,7 +18,51 @@
             "image": "shopify://shop_images/Tudo_o_que_nunca_Fomos_Desktop_d7797eeb-b964-4679-8f18-37cd504bc600.jpg",
             "image_mobile": "shopify://shop_images/Tudo_o_que_nunca_Fomos_Mobile_54f37842-6c35-49c6-a239-9960ad7bbd30.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/a-academia-1",
+            "image_link": "shopify://products/tudo-o-que-nunca-fomos-1",
+            "open_link_new_tab": false,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
+        "slide_PQfNNM": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Post_1920x400_30per_1.png",
+            "image_mobile": "shopify://shop_images/Banner_mobile_1080x1080_30per.png",
+            "image_overlay_opacity": 0,
+            "image_link": "",
+            "open_link_new_tab": false,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
+        "slide_P7jztK": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/2por12_1920x400_6c01e9b8-5f3d-4c0b-9310-6bdcac62b41c.png",
+            "image_mobile": "shopify://shop_images/2por12_1080x1080_d057da16-b0d2-4a2b-b985-f94212aa6148.png",
+            "image_overlay_opacity": 0,
+            "image_link": "shopify://collections/novidades",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -160,48 +204,6 @@
             "color_scheme": ""
           }
         },
-        "slide_PQfNNM": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/14_Royal_Spin_Desktop_bb995a28-a365-41d4-ba14-67f8af9fc88d.jpg",
-            "image_mobile": "shopify://shop_images/14_Royal_Spin_Mobile_2_c7a3cc2c-960f-4a53-9a1a-9d40677a407c.jpg",
-            "image_overlay_opacity": 0,
-            "image_link": "shopify://products/corte-de-espinhos-e-rosas-livro-de-colorir",
-            "open_link_new_tab": false,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
-          }
-        },
-        "slide_P7jztK": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/12_Crime_no_Monte_Fuji_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/12_Crime_no_Monte_Fuji_Mobile.jpg",
-            "image_overlay_opacity": 0,
-            "image_link": "shopify://collections/serie-cronicas-de-enigma",
-            "open_link_new_tab": false,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
-          }
-        },
         "slide_NLnpqb": {
           "type": "slide",
           "settings": {
@@ -226,14 +228,14 @@
       },
       "block_order": [
         "slide_9RNWLH",
+        "slide_PQfNNM",
+        "slide_P7jztK",
         "slide_LniBY7",
         "slide_bypDBF",
         "slide_xHT3bP",
         "slide_icJWTn",
         "slide_3WXTYL",
         "slide_9DGE9B",
-        "slide_PQfNNM",
-        "slide_P7jztK",
         "slide_NLnpqb"
       ],
       "name": "Banner Header",
