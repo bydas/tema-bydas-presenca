@@ -77,6 +77,28 @@
             "color_scheme": ""
           }
         },
+        "slide_NLnpqb": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/tudo_a_5__1920x400_87a60e74-4f0d-4d52-a3cc-5cc45c3354a5.png",
+            "image_mobile": "shopify://shop_images/tudo_a_5__1080x1080_e60b6e7a-b9aa-4307-83d4-b2d48bbf7096.png",
+            "image_overlay_opacity": 0,
+            "image_link": "shopify://collections/novidades",
+            "open_link_new_tab": false,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
         "slide_LniBY7": {
           "type": "slide",
           "name": "Slide",
@@ -126,7 +148,7 @@
             "image": "shopify://shop_images/13_Anatomia_de_um_Alibi_Desktop_c61c42ea-8dc6-4b5c-9fc4-6e302cb2e248.jpg",
             "image_mobile": "shopify://shop_images/13_Anatomia_de_um_Alibi_Mobile_b86b0aa6-7332-441d-89d6-1d4b2642394d.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/um-dia-nao",
+            "image_link": "shopify://products/anatomia-de-um-alibi",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -147,7 +169,7 @@
             "image": "shopify://shop_images/Presenca_Banners_Site_As_palavras_que_lancamos_ao_vento_DSK_eedb297a-efae-4290-810d-61b02315416f.jpg",
             "image_mobile": "shopify://shop_images/Presenca_Banners_Site_As_palavras_que_lancamos_ao_vento_MB_4d3e13cd-bf42-47c8-8754-568c02028b0a.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/o-principezinho-edicao-interativa",
+            "image_link": "shopify://products/as-palavras-que-lancamos-ao-vento",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -203,41 +225,19 @@
             "text_alignment_mobile": "center",
             "color_scheme": ""
           }
-        },
-        "slide_NLnpqb": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/tudo_a_5__1920x400_87a60e74-4f0d-4d52-a3cc-5cc45c3354a5.png",
-            "image_mobile": "shopify://shop_images/tudo_a_5__1080x1080_e60b6e7a-b9aa-4307-83d4-b2d48bbf7096.png",
-            "image_overlay_opacity": 0,
-            "image_link": "shopify://collections/novidades",
-            "open_link_new_tab": false,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
-          }
         }
       },
       "block_order": [
         "slide_9RNWLH",
         "slide_PQfNNM",
         "slide_P7jztK",
+        "slide_NLnpqb",
         "slide_LniBY7",
         "slide_bypDBF",
         "slide_xHT3bP",
         "slide_icJWTn",
         "slide_3WXTYL",
-        "slide_9DGE9B",
-        "slide_NLnpqb"
+        "slide_9DGE9B"
       ],
       "name": "Banner Header",
       "settings": {
