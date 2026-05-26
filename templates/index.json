@@ -12,13 +12,13 @@
     "slideshow_Mh9AA4": {
       "type": "slideshow",
       "blocks": {
-        "slide_9RNWLH": {
+        "slide_9DGE9B": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Tudo_o_que_nunca_Fomos_Desktop_d7797eeb-b964-4679-8f18-37cd504bc600.jpg",
-            "image_mobile": "shopify://shop_images/Tudo_o_que_nunca_Fomos_Mobile_54f37842-6c35-49c6-a239-9960ad7bbd30.jpg",
+            "image": "shopify://shop_images/Banner_DESKTOP_1920x400_2.gif",
+            "image_mobile": "shopify://shop_images/Banner_MOBILE_1080x1080_2.gif",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/tudo-o-que-nunca-fomos-1",
+            "image_link": "https://presenca.pt",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -85,6 +85,27 @@
             "image_mobile": "shopify://shop_images/tudo_a_5__1080x1080_e60b6e7a-b9aa-4307-83d4-b2d48bbf7096.png",
             "image_overlay_opacity": 0,
             "image_link": "shopify://collections/novidades",
+            "open_link_new_tab": false,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
+        "slide_9RNWLH": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Tudo_o_que_nunca_Fomos_Desktop_d7797eeb-b964-4679-8f18-37cd504bc600.jpg",
+            "image_mobile": "shopify://shop_images/Tudo_o_que_nunca_Fomos_Mobile_54f37842-6c35-49c6-a239-9960ad7bbd30.jpg",
+            "image_overlay_opacity": 0,
+            "image_link": "shopify://products/tudo-o-que-nunca-fomos-1",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -190,28 +211,7 @@
             "image": "shopify://shop_images/16_Murdle_5_Desktop_6d64265b-8b79-40e8-a519-0cb28448584d.jpg",
             "image_mobile": "shopify://shop_images/16_Murdle_5_Mobile_42a24776-8a34-483d-96fa-a11e95f40b55.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/as-cartas-da-papelaria-de-ginza",
-            "open_link_new_tab": false,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
-          }
-        },
-        "slide_9DGE9B": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/15_Dominar_a_Dopamina_Desktop_8d622e26-bc5f-427a-aee3-367e22616b8c.jpg",
-            "image_mobile": "shopify://shop_images/15_Dominar_a_Dopamina_Mobile_a861e933-448f-4412-bd80-cd3771d25d0e.jpg",
-            "image_overlay_opacity": 0,
-            "image_link": "shopify://products/os-mitos-que-o-estao-a-bloquear",
+            "image_link": "shopify://products/murdle-5",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -228,16 +228,16 @@
         }
       },
       "block_order": [
-        "slide_9RNWLH",
+        "slide_9DGE9B",
         "slide_PQfNNM",
         "slide_P7jztK",
         "slide_NLnpqb",
+        "slide_9RNWLH",
         "slide_LniBY7",
         "slide_bypDBF",
         "slide_xHT3bP",
         "slide_icJWTn",
-        "slide_3WXTYL",
-        "slide_9DGE9B"
+        "slide_3WXTYL"
       ],
       "name": "Banner Header",
       "settings": {
