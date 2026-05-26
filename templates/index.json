@@ -206,11 +206,12 @@
         },
         "slide_NLnpqb": {
           "type": "slide",
+          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/17_Diarios_de_uma_Apotecaria_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/17_Diarios_de_uma_Apotecaria_Mobile.jpg",
+            "image": "shopify://shop_images/tudo_a_5__1920x400_87a60e74-4f0d-4d52-a3cc-5cc45c3354a5.png",
+            "image_mobile": "shopify://shop_images/tudo_a_5__1080x1080_e60b6e7a-b9aa-4307-83d4-b2d48bbf7096.png",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/este-livro-e-um-pivete",
+            "image_link": "shopify://collections/novidades",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
