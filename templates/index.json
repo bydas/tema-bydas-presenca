@@ -424,35 +424,6 @@
         "padding_bottom": 48
       }
     },
-    "featured_collection_HVgeey": {
-      "type": "featured-collection",
-      "name": "Carrossel Pré-vendas",
-      "settings": {
-        "collection": "pre-venda",
-        "products_to_show": 25,
-        "title": "<a href=\"/collections/pre-venda\" title=\"Pré-Vendas\">{{ section.settings.collection.title }}</a>",
-        "heading_alignment": "left",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "columns_desktop": 6,
-        "enable_desktop_slider": true,
-        "show_view_all": true,
-        "view_all_style": "link",
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "standard",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 0,
-        "padding_bottom": 48
-      }
-    },
     "featured_product_bqgTVp": {
       "type": "featured-product",
       "blocks": {
@@ -598,6 +569,7 @@
       "block_order": [
         "slide_J6Dyr4"
       ],
+      "disabled": true,
       "name": "Banner fixo 2",
       "settings": {
         "layout": "grid",
@@ -612,6 +584,7 @@
     },
     "featured_collection_N8qNYR": {
       "type": "featured-collection",
+      "disabled": true,
       "name": "Carrossel temático",
       "settings": {
         "collection": "atividades-pre-escolares",
@@ -655,6 +628,35 @@
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 16
+      }
+    },
+    "featured_collection_HVgeey": {
+      "type": "featured-collection",
+      "name": "Carrossel Pré-vendas",
+      "settings": {
+        "collection": "pre-venda",
+        "products_to_show": 25,
+        "title": "<a href=\"/collections/pre-venda\" title=\"Pré-Vendas\">{{ section.settings.collection.title }}</a>",
+        "heading_alignment": "left",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 6,
+        "enable_desktop_slider": true,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 48
       }
     },
     "featured_article_cC3KU4": {
