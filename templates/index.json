@@ -18,7 +18,7 @@
             "image": "shopify://shop_images/Banner_DESKTOP_1920x400_2.gif",
             "image_mobile": "shopify://shop_images/Banner_MOBILE_1080x1080_2.gif",
             "image_overlay_opacity": 0,
-            "image_link": "https://presenca.pt",
+            "image_link": "",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
