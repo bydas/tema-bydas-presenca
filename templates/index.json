@@ -35,7 +35,6 @@
         },
         "slide_PQfNNM": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Post_1920x400_30per_1.png",
             "image_mobile": "shopify://shop_images/Banner_mobile_1080x1080_30per.png",
@@ -57,7 +56,6 @@
         },
         "slide_P7jztK": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/2por12_1920x400_6c01e9b8-5f3d-4c0b-9310-6bdcac62b41c.png",
             "image_mobile": "shopify://shop_images/2por12_1080x1080_d057da16-b0d2-4a2b-b985-f94212aa6148.png",
@@ -79,7 +77,6 @@
         },
         "slide_NLnpqb": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/tudo_a_5__1920x400_87a60e74-4f0d-4d52-a3cc-5cc45c3354a5.png",
             "image_mobile": "shopify://shop_images/tudo_a_5__1080x1080_e60b6e7a-b9aa-4307-83d4-b2d48bbf7096.png",
@@ -251,15 +248,14 @@
         "accessibility_info": "Apresentação de produtos e categorias da nossa marca"
       }
     },
-    "featured_collection": {
+    "featured_collection_QKCjKQ": {
       "type": "featured-collection",
-      "custom_css": [],
-      "name": "Coleção Novidades",
+      "name": "Carrossel Campanha",
       "settings": {
-        "collection": "novidades",
+        "collection": "ate-30-em-todos-os-livros",
         "products_to_show": 25,
-        "title": "<a href=\"/collections/novidades\" title=\"Novidades\">{{ section.settings.collection.title }}</a>",
-        "heading_alignment": "center",
+        "title": "<a href=\"/collections/ate-30-em-todos-os-livros\" title=\"Até 30% em todos os livros\">{{ section.settings.collection.title }}</a>",
+        "heading_alignment": "left",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
@@ -321,14 +317,13 @@
         "accessibility_info": "Apresentação de produtos e categorias da nossa marca"
       }
     },
-    "featured_collection_QKCjKQ": {
+    "featured_collection_Q7GLkz": {
       "type": "featured-collection",
-      "disabled": true,
       "name": "Carrossel Campanha",
       "settings": {
-        "collection": "30-autores-portugueses",
+        "collection": "campanha",
         "products_to_show": 25,
-        "title": "<a href=\"/collections/30-autores-portugueses\" title=\"30% em autores portugueses\">{{ section.settings.collection.title }}</a>",
+        "title": "<a href=\"/collections/campanha\" title=\"2 livros por 12€\">{{ section.settings.collection.title }}</a>",
         "heading_alignment": "left",
         "heading_size": "h1",
         "description": "",
@@ -353,10 +348,9 @@
     },
     "featured_collection_cqtiwV": {
       "type": "featured-collection",
-      "disabled": true,
       "name": "Carrossel Campanha",
       "settings": {
-        "collection": "campanha",
+        "collection": "livros-infantis-a-5",
         "products_to_show": 25,
         "title": "<a href=\"/collections/campanha\" title=\"4 livros por 20 €\">{{ section.settings.collection.title }}</a>",
         "heading_alignment": "left",
@@ -378,6 +372,55 @@
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 0,
+        "padding_bottom": 48
+      }
+    },
+    "featured_blog_dnwXmG": {
+      "type": "featured-blog",
+      "name": "Agenda",
+      "settings": {
+        "blog": "agenda",
+        "post_limit": 3,
+        "heading": "<a href=\"/blogs/agenda\" title=\"Agenda\">{{ section.settings.blog.title }}</a>",
+        "heading_size": "h1",
+        "columns_desktop": 3,
+        "show_view_all": false,
+        "show_image": true,
+        "show_date": false,
+        "show_author": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 48
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "disabled": true,
+      "custom_css": [],
+      "name": "Coleção Novidades",
+      "settings": {
+        "collection": "novidades",
+        "products_to_show": 25,
+        "title": "<a href=\"/collections/novidades\" title=\"Novidades\">{{ section.settings.collection.title }}</a>",
+        "heading_alignment": "center",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 6,
+        "enable_desktop_slider": true,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 48,
         "padding_bottom": 48
       }
     },
@@ -406,7 +449,7 @@
         "quick_add": "standard",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "padding_top": 48,
+        "padding_top": 0,
         "padding_bottom": 48
       }
     },
@@ -524,24 +567,6 @@
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 48,
-        "padding_bottom": 48
-      }
-    },
-    "featured_blog_dnwXmG": {
-      "type": "featured-blog",
-      "name": "Agenda",
-      "settings": {
-        "blog": "agenda",
-        "post_limit": 3,
-        "heading": "<a href=\"/blogs/agenda\" title=\"Agenda\">{{ section.settings.blog.title }}</a>",
-        "heading_size": "h1",
-        "columns_desktop": 3,
-        "show_view_all": false,
-        "show_image": true,
-        "show_date": false,
-        "show_author": false,
-        "color_scheme": "",
-        "padding_top": 0,
         "padding_bottom": 48
       }
     },
@@ -710,18 +735,19 @@
   },
   "order": [
     "slideshow_Mh9AA4",
-    "featured_collection",
-    "slideshow_8zUK6k",
     "featured_collection_QKCjKQ",
+    "slideshow_8zUK6k",
+    "featured_collection_Q7GLkz",
     "featured_collection_cqtiwV",
-    "featured_collection_HVgeey",
+    "featured_blog_dnwXmG",
+    "featured_collection",
     "featured_product_bqgTVp",
     "slideshow_VhxkXA",
     "featured_collection_HPdNTU",
-    "featured_blog_dnwXmG",
     "slideshow_qAxrAq",
     "featured_collection_N8qNYR",
     "featured_blog_DCcCgx",
+    "featured_collection_HVgeey",
     "featured_article_cC3KU4",
     "17701286961defe988"
   ]
