@@ -99,10 +99,10 @@
         "slide_9RNWLH": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Tudo_o_que_nunca_Fomos_Desktop_d7797eeb-b964-4679-8f18-37cd504bc600.jpg",
-            "image_mobile": "shopify://shop_images/Tudo_o_que_nunca_Fomos_Mobile_54f37842-6c35-49c6-a239-9960ad7bbd30.jpg",
+            "image": "shopify://shop_images/2_A_Rapariga_de_Ninguem_Teaser_Desktop_29ed4f6d-af72-4b22-8dd3-8bf4648dfab3.jpg",
+            "image_mobile": "shopify://shop_images/2_A_Rapariga_de_Ninguem_Teaser_Mobile_e5b7906a-79b7-4894-86db-b36bf4af1328.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/tudo-o-que-nunca-fomos-1",
+            "image_link": "shopify://products/a-rapariga-de-ninguem",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -121,8 +121,8 @@
           "type": "slide",
           "name": "Slide",
           "settings": {
-            "image": "shopify://shop_images/1_O_Contrato_de_Mariano_Teaser_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/1_O_Contrato_de_Mariano_Teaser_Mobile.jpg",
+            "image": "shopify://shop_images/14_O_Contrato_de_Mariano_Mobile_ccc51ef9-191e-41dd-abbf-b8b09f04a5f6.jpg",
+            "image_mobile": "shopify://shop_images/14_O_Contrato_de_Mariano_Desktop_a823f134-a3cc-4b03-9faa-74c49cdea72c.jpg",
             "image_overlay_opacity": 0,
             "image_link": "shopify://products/o-contrato-de-mariano",
             "open_link_new_tab": false,
@@ -142,10 +142,10 @@
         "slide_bypDBF": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Presenca_Banners_Site_Tu_nasceste__para_seguir_o_teu_coracao_DSK.jpg",
-            "image_mobile": "shopify://shop_images/Presenca_Banners_Site_Tu_nasceste__para_seguir_o_teu_coracao_MB.jpg",
+            "image": "shopify://shop_images/12_Tudo_Menos_Tua_Desktop_fd8bc3d3-5abf-435c-945e-3e04cd6626e2.jpg",
+            "image_mobile": "shopify://shop_images/12_Tudo_Menos_Tua_Mobile_f8b7766b-c055-471e-bea0-4b3ffd280569.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/tu-nasceste-para-seguir-o-teu-coracao",
+            "image_link": "shopify://products/tudo-menos-tua",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -163,10 +163,10 @@
         "slide_xHT3bP": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/13_Anatomia_de_um_Alibi_Desktop_c61c42ea-8dc6-4b5c-9fc4-6e302cb2e248.jpg",
-            "image_mobile": "shopify://shop_images/13_Anatomia_de_um_Alibi_Mobile_b86b0aa6-7332-441d-89d6-1d4b2642394d.jpg",
+            "image": "shopify://shop_images/11_O_Consultorio_da_Senhora_Responde_Mobile_81429e5c-1b36-4643-b8e2-3306cf35a86a.jpg",
+            "image_mobile": "shopify://shop_images/11_O_Consultorio_da_Senhora_Responde_Desktop_566f339a-3594-4206-a53b-ebfb3260811f.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/anatomia-de-um-alibi",
+            "image_link": "shopify://products/o-consultorio-da-senhora-responde",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -184,10 +184,10 @@
         "slide_icJWTn": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Presenca_Banners_Site_As_palavras_que_lancamos_ao_vento_DSK_eedb297a-efae-4290-810d-61b02315416f.jpg",
-            "image_mobile": "shopify://shop_images/Presenca_Banners_Site_As_palavras_que_lancamos_ao_vento_MB_4d3e13cd-bf42-47c8-8754-568c02028b0a.jpg",
+            "image": "shopify://shop_images/6_33_Razoes_Para_Voltar_a_Ver_te_Desktop_5d09d30a-679f-4de3-8302-f1837c6d3ef1.jpg",
+            "image_mobile": "shopify://shop_images/6_33_Razoes_Para_Voltar_a_Ver_te_Mobile_04ad71f6-bb82-4c05-b606-eb05f6c03362.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/as-palavras-que-lancamos-ao-vento",
+            "image_link": "shopify://products/33-razoes-para-te-voltar-a-ver",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -205,10 +205,10 @@
         "slide_3WXTYL": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/16_Murdle_5_Desktop_6d64265b-8b79-40e8-a519-0cb28448584d.jpg",
-            "image_mobile": "shopify://shop_images/16_Murdle_5_Mobile_42a24776-8a34-483d-96fa-a11e95f40b55.jpg",
+            "image": "shopify://shop_images/5_Os_Pequenos_Milagres_na_Pastelaria_da_Meia_Noite_Desktop_c9dfba1c-a561-4057-80d6-0ac57b5f61c3.jpg",
+            "image_mobile": "shopify://shop_images/5_Os_Pequenos_Milagres_na_Pastelaria_da_Meia_Noite_Mobile_2f10404c-47bb-4255-86b4-227185ad98c1.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/murdle-5",
+            "image_link": "shopify://products/os-pequenos-milagres-na-pastelaria-da-meia-noite",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -395,7 +395,6 @@
     },
     "featured_collection": {
       "type": "featured-collection",
-      "disabled": true,
       "custom_css": [],
       "name": "Coleção Novidades",
       "settings": {
@@ -424,64 +423,16 @@
         "padding_bottom": 48
       }
     },
-    "featured_product_bqgTVp": {
-      "type": "featured-product",
-      "blocks": {
-        "title_i7FFac": {
-          "type": "title",
-          "settings": {
-            "selected_title": "{{ section.settings.product.title }}",
-            "heading_size": "h1"
-          }
-        },
-        "text_VGk7My": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>Sete anos a guardar um segredo que finalmente chegou ao fim.</strong></p><p>Pela primeira vez, Raul Minh’alma revela o desfecho que os leitores sempre pediram e o plano original que guardou para estas personagens. </p><p>Descubra a verdade que faltava nesta edição limitada em capa dura.</p>",
-            "text_style": "body",
-            "line_limit": 10
-          }
-        },
-        "button_paQD8m": {
-          "type": "button",
-          "settings": {
-            "button_label": "Comprar",
-            "button_link": "{{ section.settings.product.url }}",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "title_i7FFac",
-        "text_VGk7My",
-        "button_paQD8m"
-      ],
-      "disabled": true,
-      "name": "Vídeo",
-      "settings": {
-        "product": "ganhei-uma-vida-quando-te-perdi-edicao-especial",
-        "video": "shopify://files/videos/Geral_RaulMinhalma.mp4",
-        "cover_image": "shopify://shop_images/Captura_de_ecra_2026-03-30_102957.png",
-        "color_scheme": "scheme-custom-teal",
-        "secondary_background": false,
-        "media_position": "left",
-        "padding_top": 48,
-        "padding_bottom": 48,
-        "product_padding": 24,
-        "max_height_desktop": 20,
-        "max_height_mobile": 12
-      }
-    },
     "slideshow_VhxkXA": {
       "type": "slideshow",
       "blocks": {
         "slide_QpMMqV": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/18_O_Calor_da_Chama_Eterna_3_Desktop_f53b35d1-0710-4a0a-bbeb-223b3fc4c49c.jpg",
-            "image_mobile": "shopify://shop_images/18_O_Calor_da_Chama_Eterna_3_Mobile_59042426-e44b-4ef2-bf91-ef5190710216.jpg",
+            "image": "shopify://shop_images/9_As_Aventuras_do_Dragao_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/9_As_Aventuras_do_Dragao_Mobile_efeb5a92-0518-49b2-b29d-7d641fcdb6ff.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://collections/genero-fantastico-1",
+            "image_link": "shopify://collections/colecao-dav-pilkey",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -516,9 +467,9 @@
       "type": "featured-collection",
       "name": "Carrossel Temático",
       "settings": {
-        "collection": "genero-fantastico-1",
+        "collection": "colecao-dav-pilkey",
         "products_to_show": 25,
-        "title": "<a href=\"/collections/serie-homem-cao\" title=\"Série «Homem-Cão»\">{{ section.settings.collection.title }}</a>",
+        "title": "<a href=\"/collections/colecao-dav-pilkey\" title=\"Dav Pilkey\">{{ section.settings.collection.title }}</a>",
         "heading_alignment": "left",
         "heading_size": "h1",
         "description": "",
@@ -539,6 +490,53 @@
         "swipe_on_mobile": true,
         "padding_top": 48,
         "padding_bottom": 48
+      }
+    },
+    "featured_blog_DCcCgx": {
+      "type": "featured-blog",
+      "name": "Sugestões de leitura",
+      "settings": {
+        "blog": "sugestoes-de-leitura",
+        "post_limit": 3,
+        "heading": "<a href=\"/blogs/sugestoes-de-leitura\" title=\"Sugestões de Leitura\">{{ section.settings.blog.title }}</a>",
+        "heading_size": "h1",
+        "columns_desktop": 3,
+        "show_view_all": false,
+        "show_image": true,
+        "show_date": false,
+        "show_author": false,
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 48
+      }
+    },
+    "featured_collection_HVgeey": {
+      "type": "featured-collection",
+      "name": "Carrossel Pré-vendas",
+      "settings": {
+        "collection": "pre-venda",
+        "products_to_show": 25,
+        "title": "<a href=\"/collections/pre-venda\" title=\"Pré-Vendas\">{{ section.settings.collection.title }}</a>",
+        "heading_alignment": "left",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 6,
+        "enable_desktop_slider": true,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 16
       }
     },
     "slideshow_qAxrAq": {
@@ -612,53 +610,6 @@
         "padding_bottom": 48
       }
     },
-    "featured_blog_DCcCgx": {
-      "type": "featured-blog",
-      "name": "Sugestões de leitura",
-      "settings": {
-        "blog": "sugestoes-de-leitura",
-        "post_limit": 3,
-        "heading": "<a href=\"/blogs/sugestoes-de-leitura\" title=\"Sugestões de Leitura\">{{ section.settings.blog.title }}</a>",
-        "heading_size": "h1",
-        "columns_desktop": 3,
-        "show_view_all": false,
-        "show_image": true,
-        "show_date": false,
-        "show_author": false,
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 48
-      }
-    },
-    "featured_collection_HVgeey": {
-      "type": "featured-collection",
-      "name": "Carrossel Pré-vendas",
-      "settings": {
-        "collection": "pre-venda",
-        "products_to_show": 25,
-        "title": "<a href=\"/collections/pre-venda\" title=\"Pré-Vendas\">{{ section.settings.collection.title }}</a>",
-        "heading_alignment": "left",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "columns_desktop": 6,
-        "enable_desktop_slider": true,
-        "show_view_all": true,
-        "view_all_style": "link",
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "standard",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 0,
-        "padding_bottom": 16
-      }
-    },
     "featured_article_cC3KU4": {
       "type": "featured-article",
       "blocks": {
@@ -705,6 +656,54 @@
         "max_height_mobile": 10
       }
     },
+    "featured_product_bqgTVp": {
+      "type": "featured-product",
+      "blocks": {
+        "title_i7FFac": {
+          "type": "title",
+          "settings": {
+            "selected_title": "{{ section.settings.product.title }}",
+            "heading_size": "h1"
+          }
+        },
+        "text_VGk7My": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Sete anos a guardar um segredo que finalmente chegou ao fim.</strong></p><p>Pela primeira vez, Raul Minh’alma revela o desfecho que os leitores sempre pediram e o plano original que guardou para estas personagens. </p><p>Descubra a verdade que faltava nesta edição limitada em capa dura.</p>",
+            "text_style": "body",
+            "line_limit": 10
+          }
+        },
+        "button_paQD8m": {
+          "type": "button",
+          "settings": {
+            "button_label": "Comprar",
+            "button_link": "{{ section.settings.product.url }}",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "title_i7FFac",
+        "text_VGk7My",
+        "button_paQD8m"
+      ],
+      "disabled": true,
+      "name": "Vídeo",
+      "settings": {
+        "product": "ganhei-uma-vida-quando-te-perdi-edicao-especial",
+        "video": "shopify://files/videos/Geral_RaulMinhalma.mp4",
+        "cover_image": "shopify://shop_images/Captura_de_ecra_2026-03-30_102957.png",
+        "color_scheme": "scheme-custom-teal",
+        "secondary_background": false,
+        "media_position": "left",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "product_padding": 24,
+        "max_height_desktop": 20,
+        "max_height_mobile": 12
+      }
+    },
     "17701286961defe988": {
       "type": "apps",
       "blocks": {
@@ -743,14 +742,14 @@
     "featured_collection_cqtiwV",
     "featured_blog_dnwXmG",
     "featured_collection",
-    "featured_product_bqgTVp",
     "slideshow_VhxkXA",
     "featured_collection_HPdNTU",
-    "slideshow_qAxrAq",
-    "featured_collection_N8qNYR",
     "featured_blog_DCcCgx",
     "featured_collection_HVgeey",
+    "slideshow_qAxrAq",
+    "featured_collection_N8qNYR",
     "featured_article_cC3KU4",
+    "featured_product_bqgTVp",
     "17701286961defe988"
   ]
 }
