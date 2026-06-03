@@ -121,8 +121,8 @@
           "type": "slide",
           "name": "Slide",
           "settings": {
-            "image": "shopify://shop_images/14_O_Contrato_de_Mariano_Mobile_ccc51ef9-191e-41dd-abbf-b8b09f04a5f6.jpg",
-            "image_mobile": "shopify://shop_images/14_O_Contrato_de_Mariano_Desktop_a823f134-a3cc-4b03-9faa-74c49cdea72c.jpg",
+            "image": "shopify://shop_images/14_O_Contrato_de_Mariano_Desktop_af941893-1374-43d9-b7c3-40c857893b7f.jpg",
+            "image_mobile": "shopify://shop_images/14_O_Contrato_de_Mariano_Mobile_668ac796-b385-4819-b378-f560bc852f03.jpg",
             "image_overlay_opacity": 0,
             "image_link": "shopify://products/o-contrato-de-mariano",
             "open_link_new_tab": false,
