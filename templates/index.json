@@ -426,7 +426,7 @@
         "show_date": false,
         "show_author": false,
         "color_scheme": "",
-        "padding_top": 0,
+        "padding_top": 48,
         "padding_bottom": 48
       }
     },
@@ -743,18 +743,18 @@
   },
   "order": [
     "slideshow_Mh9AA4",
-    "featured_collection_QKCjKQ",
     "featured_collection",
     "slideshow_8zUK6k",
-    "featured_collection_Q7GLkz",
-    "featured_collection_cqtiwV",
     "featured_blog_dnwXmG",
+    "featured_collection_HVgeey",
     "slideshow_VhxkXA",
     "featured_collection_HPdNTU",
     "featured_blog_DCcCgx",
-    "featured_collection_HVgeey",
     "slideshow_qAxrAq",
     "featured_collection_N8qNYR",
+    "featured_collection_cqtiwV",
+    "featured_collection_Q7GLkz",
+    "featured_collection_QKCjKQ",
     "featured_article_cC3KU4",
     "featured_product_bqgTVp",
     "17701286961defe988"
