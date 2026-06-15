@@ -141,12 +141,11 @@
         },
         "slide_NLnpqb": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/tudo_a_5__1920x400_87a60e74-4f0d-4d52-a3cc-5cc45c3354a5.png",
-            "image_mobile": "shopify://shop_images/tudo_a_5__1080x1080_e60b6e7a-b9aa-4307-83d4-b2d48bbf7096.png",
+            "image": "shopify://shop_images/13_Virginia_Mordida_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/13_Virginia_Mordida_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://collections/novidades",
+            "image_link": "shopify://products/virginia-mordida",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -163,12 +162,11 @@
         },
         "slide_P7jztK": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/2por12_1920x400_6c01e9b8-5f3d-4c0b-9310-6bdcac62b41c.png",
-            "image_mobile": "shopify://shop_images/2por12_1080x1080_d057da16-b0d2-4a2b-b985-f94212aa6148.png",
+            "image": "shopify://shop_images/8_King_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/8_King_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://collections/novidades",
+            "image_link": "shopify://products/king",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -185,12 +183,11 @@
         },
         "slide_PQfNNM": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Post_1920x400_30per_1.png",
-            "image_mobile": "shopify://shop_images/Banner_mobile_1080x1080_30per.png",
+            "image": "shopify://shop_images/7_Murdle_Junior_Detetives_a_Solta_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/7_Murdle_Junior_Detetives_a_Solta_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "",
+            "image_link": "shopify://products/murdle-junior-3-detetives-a-solta",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -207,12 +204,11 @@
         },
         "slide_9DGE9B": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Banner_DESKTOP_1920x400_2.gif",
-            "image_mobile": "shopify://shop_images/Banner_MOBILE_1080x1080_2.gif",
+            "image": "shopify://shop_images/4_O_Livro_do_Po_Campo_de_Rosas_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/4_O_Livro_do_Po_Campo_de_Rosas_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "",
+            "image_link": "shopify://products/o-campo-de-rosas-o-livro-do-po-3",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
