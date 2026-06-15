@@ -170,7 +170,7 @@
       };
     }
 
-    const downloadButton = document.querySelector('.download_material_content');
+    const downloadButton = document.querySelector('.download_material_content') || document.querySelector('.extra-content');
 
     if (downloadButton) {
       downloadButton.addEventListener('click', function(event) {
