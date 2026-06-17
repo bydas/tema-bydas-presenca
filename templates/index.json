@@ -12,6 +12,196 @@
     "slideshow_Mh9AA4": {
       "type": "slideshow",
       "blocks": {
+        "slide_9DGE9B": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/17.A_Vida_que_Mereces_Viver_Banner_Desktop_d95f4013-69ac-46ec-8b41-af0f4f1957bb.jpg",
+            "image_mobile": "shopify://shop_images/17.A_Vida_que_Mereces_Viver_Banner_Mobile.jpg",
+            "image_overlay_opacity": 0,
+            "image_link": "shopify://products/a-vida-que-mereces-viver",
+            "open_link_new_tab": false,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
+        "slide_icJWTn": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/16.O_Impulso_Banner_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/16.O_Impulso_Banner_Mobile.jpg",
+            "image_overlay_opacity": 0,
+            "image_link": "shopify://products/o-impulso",
+            "open_link_new_tab": false,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
+        "slide_LniBY7": {
+          "type": "slide",
+          "name": "Slide",
+          "settings": {
+            "image": "shopify://shop_images/15.Os_Novos_Vizinhos_Banner_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/15.Os_Novos_Vizinhos_Banner_Mobile.jpg",
+            "image_overlay_opacity": 0,
+            "image_link": "shopify://products/os-novos-vizinhos",
+            "open_link_new_tab": false,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
+        "slide_3WXTYL": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/22_Os_meus_Pais_Envelheceram_e_Agora_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/22_Os_meus_Pais_Envelheceram_e_Agora_Mobile.jpg",
+            "image_overlay_opacity": 0,
+            "image_link": "shopify://products/os-meus-pais-envelheceram-e-agora",
+            "open_link_new_tab": false,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
+        "slide_P7jztK": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/20.Amor_e_Odio_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/20.Amor_e_Odio_Mobile.jpg",
+            "image_overlay_opacity": 0,
+            "image_link": "shopify://products/amor-e-odio",
+            "open_link_new_tab": false,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
+        "slide_xHT3bP": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/12_E_Minha_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/12_E_Minha_Mobile.jpg",
+            "image_overlay_opacity": 0,
+            "image_link": "https://www.presenca.pt/products/e-minha",
+            "open_link_new_tab": false,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
+        "slide_NLnpqb": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/23_A_Maria_nao_e_Culpada_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/23_A_Maria_nao_e_Culpada_Mobile.jpg",
+            "image_overlay_opacity": 0,
+            "image_link": "shopify://products/a-maria-nao-e-a-culpada",
+            "open_link_new_tab": false,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
+        "slide_PQfNNM": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/18.Drop_Dead_Famous_Banner_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/18.Drop_Dead_Famous_Banner_Mobile.jpg",
+            "image_overlay_opacity": 0,
+            "image_link": "shopify://products/drop-dead-famous",
+            "open_link_new_tab": false,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
+        "slide_bypDBF": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/10_Nao_Sou_Teu_Pai_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/10_Nao_Sou_Teu_Pai_Mobile.jpg",
+            "image_overlay_opacity": 0,
+            "image_link": "shopify://products/nao-sou-o-teu-pai",
+            "open_link_new_tab": false,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
         "slide_9RNWLH": {
           "type": "slide",
           "settings": {
@@ -32,209 +222,19 @@
             "text_alignment_mobile": "center",
             "color_scheme": ""
           }
-        },
-        "slide_LniBY7": {
-          "type": "slide",
-          "name": "Slide",
-          "settings": {
-            "image": "shopify://shop_images/14_O_Contrato_de_Mariano_Desktop_af941893-1374-43d9-b7c3-40c857893b7f.jpg",
-            "image_mobile": "shopify://shop_images/14_O_Contrato_de_Mariano_Mobile_668ac796-b385-4819-b378-f560bc852f03.jpg",
-            "image_overlay_opacity": 0,
-            "image_link": "shopify://products/o-contrato-de-mariano",
-            "open_link_new_tab": false,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
-          }
-        },
-        "slide_bypDBF": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/12_Tudo_Menos_Tua_Desktop_fd8bc3d3-5abf-435c-945e-3e04cd6626e2.jpg",
-            "image_mobile": "shopify://shop_images/12_Tudo_Menos_Tua_Mobile_f8b7766b-c055-471e-bea0-4b3ffd280569.jpg",
-            "image_overlay_opacity": 0,
-            "image_link": "shopify://products/tudo-menos-tua",
-            "open_link_new_tab": false,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
-          }
-        },
-        "slide_xHT3bP": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/11_O_Consultorio_da_Senhora_Responde_Desktop_f59255d7-492d-4b5e-b298-02f06df064d1.jpg",
-            "image_mobile": "shopify://shop_images/11_O_Consultorio_da_Senhora_Responde_Mobile_2818214e-c4c5-44fc-8893-99fcec397739.jpg",
-            "image_overlay_opacity": 0,
-            "image_link": "shopify://products/o-consultorio-da-senhora-responde",
-            "open_link_new_tab": false,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
-          }
-        },
-        "slide_icJWTn": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/6_33_Razoes_Para_Voltar_a_Ver_te_Desktop_5d09d30a-679f-4de3-8302-f1837c6d3ef1.jpg",
-            "image_mobile": "shopify://shop_images/6_33_Razoes_Para_Voltar_a_Ver_te_Mobile_04ad71f6-bb82-4c05-b606-eb05f6c03362.jpg",
-            "image_overlay_opacity": 0,
-            "image_link": "shopify://products/33-razoes-para-te-voltar-a-ver",
-            "open_link_new_tab": false,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
-          }
-        },
-        "slide_3WXTYL": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/5_Os_Pequenos_Milagres_na_Pastelaria_da_Meia_Noite_Desktop_c9dfba1c-a561-4057-80d6-0ac57b5f61c3.jpg",
-            "image_mobile": "shopify://shop_images/5_Os_Pequenos_Milagres_na_Pastelaria_da_Meia_Noite_Mobile_2f10404c-47bb-4255-86b4-227185ad98c1.jpg",
-            "image_overlay_opacity": 0,
-            "image_link": "shopify://products/os-pequenos-milagres-na-pastelaria-da-meia-noite",
-            "open_link_new_tab": false,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
-          }
-        },
-        "slide_NLnpqb": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/13_Virginia_Mordida_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/13_Virginia_Mordida_Mobile.jpg",
-            "image_overlay_opacity": 0,
-            "image_link": "shopify://products/virginia-mordida",
-            "open_link_new_tab": false,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
-          }
-        },
-        "slide_P7jztK": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/8_King_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/8_King_Mobile.jpg",
-            "image_overlay_opacity": 0,
-            "image_link": "shopify://products/king",
-            "open_link_new_tab": false,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
-          }
-        },
-        "slide_PQfNNM": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/7_Murdle_Junior_Detetives_a_Solta_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/7_Murdle_Junior_Detetives_a_Solta_Mobile.jpg",
-            "image_overlay_opacity": 0,
-            "image_link": "shopify://products/murdle-junior-3-detetives-a-solta",
-            "open_link_new_tab": false,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
-          }
-        },
-        "slide_9DGE9B": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/4_O_Livro_do_Po_Campo_de_Rosas_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/4_O_Livro_do_Po_Campo_de_Rosas_Mobile.jpg",
-            "image_overlay_opacity": 0,
-            "image_link": "shopify://products/o-campo-de-rosas-o-livro-do-po-3",
-            "open_link_new_tab": false,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
-          }
         }
       },
       "block_order": [
-        "slide_9RNWLH",
-        "slide_LniBY7",
-        "slide_bypDBF",
-        "slide_xHT3bP",
+        "slide_9DGE9B",
         "slide_icJWTn",
+        "slide_LniBY7",
         "slide_3WXTYL",
-        "slide_NLnpqb",
         "slide_P7jztK",
+        "slide_xHT3bP",
+        "slide_NLnpqb",
         "slide_PQfNNM",
-        "slide_9DGE9B"
+        "slide_bypDBF",
+        "slide_9RNWLH"
       ],
       "name": "Banner Header",
       "settings": {
