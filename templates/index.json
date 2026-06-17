@@ -353,10 +353,10 @@
         "slide_QpMMqV": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/9_As_Aventuras_do_Dragao_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/9_As_Aventuras_do_Dragao_Mobile_efeb5a92-0518-49b2-b29d-7d641fcdb6ff.jpg",
+            "image": "shopify://shop_images/19.Diarios_de_uma_Apotecaria_2_Banner_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/19.Diarios_de_uma_Apotecaria_2_Banner_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://collections/colecao-dav-pilkey",
+            "image_link": "shopify://products/diarios-de-uma-apotecaria-2",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -391,7 +391,7 @@
       "type": "featured-collection",
       "name": "Carrossel Temático",
       "settings": {
-        "collection": "colecao-dav-pilkey",
+        "collection": "presenca-comics",
         "products_to_show": 25,
         "title": "<a href=\"/collections/colecao-dav-pilkey\" title=\"Dav Pilkey\">{{ section.settings.collection.title }}</a>",
         "heading_alignment": "left",
