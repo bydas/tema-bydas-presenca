@@ -182,20 +182,22 @@
                 {%- assign skip_card_product_styles = true -%}
               {%- endfor -%}
             </ul>
-<div class="collection-description page-width rte">
-  {%- if collection.description == blank -%}
-    <p>{{ 'sections.main-collection-product-grid.disclaimer' | t }}</p>
-  {%- else -%}
-    {{ collection.description }}
-  {%- endif -%}
-</div>
+
             {%- if paginate.pages > 1 -%}
               {% render 'pagination', paginate: paginate, anchor: '' %}
             {%- endif -%}
           </div>
         {%- endif -%}
       </div>
+      <div class="collection-description page-width rte">
+  {%- if collection.description == blank -%}
+    <p>{{ 'sections.main-collection-product-grid.disclaimer' | t }}</p>
+  {%- else -%}
+    {{ collection.description }}
+  {%- endif -%}
+</div>
     </div>
+
   {%- endpaginate -%}
   
   {% if section.settings.image_shape == 'arch' %}
