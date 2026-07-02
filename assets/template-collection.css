@@ -75,6 +75,12 @@
   margin-bottom: 1rem;
 }
 
+.collection-description {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 100px;
+}
 @media screen and (min-width: 990px) {
   .collection__title--desktop-slider .title {
     margin-bottom: 2.5rem;
@@ -92,15 +98,12 @@
     padding: 0 1.5rem;
     max-width: none;
   }
+  .collection-description {
+    padding-left: 0;
+  }
 }
 
 .collection__view-all a:not(.link) {
   margin-top: 1rem;
 }
 
-
-.collection-description {
-  margin: 0 auto;
-  text-align: center;
-  padding-top: 20px;
-}
