@@ -278,6 +278,35 @@
         "padding_bottom": 48
       }
     },
+    "featured_collection_cqtiwV": {
+      "type": "featured-collection",
+      "name": "Carrossel Campanha",
+      "settings": {
+        "collection": "3-livros-por-15",
+        "products_to_show": 25,
+        "title": "<a href=\"/collections/campanha\" title=\"4 livros por 20 €\">{{ section.settings.collection.title }}</a>",
+        "heading_alignment": "left",
+        "heading_size": "h1",
+        "description": "<p>Código de Desconto: 3POR15 ou 6POR30</p>",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 6,
+        "enable_desktop_slider": true,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 48
+      }
+    },
     "slideshow_8zUK6k": {
       "type": "slideshow",
       "blocks": {
@@ -416,24 +445,6 @@
         "padding_bottom": 48
       }
     },
-    "featured_blog_DCcCgx": {
-      "type": "featured-blog",
-      "name": "Sugestões de leitura",
-      "settings": {
-        "blog": "sugestoes-de-leitura",
-        "post_limit": 3,
-        "heading": "<a href=\"/blogs/sugestoes-de-leitura\" title=\"Sugestões de Leitura\">{{ section.settings.blog.title }}</a>",
-        "heading_size": "h1",
-        "columns_desktop": 3,
-        "show_view_all": false,
-        "show_image": true,
-        "show_date": false,
-        "show_author": false,
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 48
-      }
-    },
     "featured_blog_dnwXmG": {
       "type": "featured-blog",
       "name": "Agenda",
@@ -449,6 +460,24 @@
         "show_author": false,
         "color_scheme": "",
         "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
+    "featured_blog_DCcCgx": {
+      "type": "featured-blog",
+      "name": "Sugestões de leitura",
+      "settings": {
+        "blog": "sugestoes-de-leitura",
+        "post_limit": 3,
+        "heading": "<a href=\"/blogs/sugestoes-de-leitura\" title=\"Sugestões de Leitura\">{{ section.settings.blog.title }}</a>",
+        "heading_size": "h1",
+        "columns_desktop": 3,
+        "show_view_all": false,
+        "show_image": true,
+        "show_date": false,
+        "show_author": false,
+        "color_scheme": "",
+        "padding_top": 0,
         "padding_bottom": 48
       }
     },
@@ -520,36 +549,6 @@
         "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 48,
-        "padding_bottom": 48
-      }
-    },
-    "featured_collection_cqtiwV": {
-      "type": "featured-collection",
-      "disabled": true,
-      "name": "Carrossel Campanha",
-      "settings": {
-        "collection": "livros-infantis-a-5",
-        "products_to_show": 25,
-        "title": "<a href=\"/collections/campanha\" title=\"4 livros por 20 €\">{{ section.settings.collection.title }}</a>",
-        "heading_alignment": "left",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "columns_desktop": 6,
-        "enable_desktop_slider": true,
-        "show_view_all": true,
-        "view_all_style": "link",
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "standard",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 0,
         "padding_bottom": 48
       }
     },
@@ -740,15 +739,15 @@
   "order": [
     "slideshow_Mh9AA4",
     "featured_collection",
+    "featured_collection_cqtiwV",
     "slideshow_8zUK6k",
     "featured_collection_HVgeey",
     "slideshow_VhxkXA",
     "featured_collection_HPdNTU",
-    "featured_blog_DCcCgx",
     "featured_blog_dnwXmG",
+    "featured_blog_DCcCgx",
     "slideshow_qAxrAq",
     "featured_collection_N8qNYR",
-    "featured_collection_cqtiwV",
     "featured_collection_Q7GLkz",
     "featured_collection_QKCjKQ",
     "featured_article_cC3KU4",
