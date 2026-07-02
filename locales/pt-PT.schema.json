@@ -1491,15 +1491,11 @@
       }
     },
     "main-collection-product-grid": {
-      "disclaimer": "Promoção válida nos livros assinalados. Limitado ao stock existente e não acumulável com outras campanhas ou descontos em vigor.",
-
-      "name": "Grelha de produtos",          
-
+      "name": "Grelha de produtos",
       "settings": {
         "products_per_page": {
           "label": "Produtos por página"
         },
-        
         "image_ratio": {
           "label": "Proporção de imagem",
           "options__1": {
@@ -1510,8 +1506,7 @@
           },
           "options__3": {
             "label": "Quadrado"
-          },
-
+          }
         },
         "show_secondary_image": {
           "label": "Mostrar a segunda imagem ao passar o rato"

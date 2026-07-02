@@ -294,6 +294,10 @@
         "many": "{{ count }} itens"
       }
     },
+    "main-collection-product-grid":{
+        "disclaimer": "Promoção válida nos livros assinalados. Limitado ao stock existente e não acumulável com outras campanhas ou descontos em vigor."
+
+    },
     "cart": {
       "title": "O seu carrinho",
       "caption": "Itens do carrinho",
