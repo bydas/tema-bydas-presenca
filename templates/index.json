@@ -15,10 +15,10 @@
         "slide_9DGE9B": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/17.A_Vida_que_Mereces_Viver_Banner_Desktop_d95f4013-69ac-46ec-8b41-af0f4f1957bb.jpg",
-            "image_mobile": "shopify://shop_images/17.A_Vida_que_Mereces_Viver_Banner_Mobile.jpg",
+            "image": "shopify://shop_images/13-Culpa_Vossa_4_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/13-Culpa_Vossa_4_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/a-vida-que-mereces-viver",
+            "image_link": "shopify://products/culpa-vossa",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -36,10 +36,10 @@
         "slide_icJWTn": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/16.O_Impulso_Banner_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/16.O_Impulso_Banner_Mobile.jpg",
+            "image": "shopify://shop_images/15-Regras_de_Verao_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/15-Regras_de_Verao_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/o-impulso",
+            "image_link": "shopify://products/as-regras-do-verao",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -58,10 +58,10 @@
           "type": "slide",
           "name": "Slide",
           "settings": {
-            "image": "shopify://shop_images/15.Os_Novos_Vizinhos_Banner_Desktop.jpg",
+            "image": "shopify://shop_images/18.Assim_na_Terra_como_Embaixo_da_Terra_Desktop.jpg",
             "image_mobile": "shopify://shop_images/15.Os_Novos_Vizinhos_Banner_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/os-novos-vizinhos",
+            "image_link": "shopify://products/assim-na-terra-como-embaixo-da-terra",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -79,10 +79,10 @@
         "slide_3WXTYL": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/22_Os_meus_Pais_Envelheceram_e_Agora_Desktop.jpg",
+            "image": "shopify://shop_images/16.Sticker_Therapy_Desktop.jpg",
             "image_mobile": "shopify://shop_images/22_Os_meus_Pais_Envelheceram_e_Agora_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/os-meus-pais-envelheceram-e-agora",
+            "image_link": "shopify://collections/sticker-therapy",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -100,10 +100,10 @@
         "slide_P7jztK": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/20.Amor_e_Odio_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/20.Amor_e_Odio_Mobile.jpg",
+            "image": "shopify://shop_images/3-Campanha_de_Verao_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/3-Campanha_de_Verao_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/amor-e-odio",
+            "image_link": "shopify://collections/livros-para-o-verao",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -121,10 +121,10 @@
         "slide_xHT3bP": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/12_E_Minha_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/12_E_Minha_Mobile.jpg",
+            "image": "shopify://shop_images/4-Campanha_de_Verao_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/4-Campanha_de_Verao_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "https://www.presenca.pt/products/e-minha",
+            "image_link": "shopify://collections/livros-para-o-verao",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -163,10 +163,10 @@
         "slide_PQfNNM": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/18.Drop_Dead_Famous_Banner_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/18.Drop_Dead_Famous_Banner_Mobile.jpg",
+            "image": "shopify://shop_images/7-Campanha_de_Verao_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/7-Campanha_de_Verao_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/drop-dead-famous",
+            "image_link": "shopify://collections/livros-para-o-verao",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -184,10 +184,10 @@
         "slide_bypDBF": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/10_Nao_Sou_Teu_Pai_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/10_Nao_Sou_Teu_Pai_Mobile.jpg",
+            "image": "shopify://shop_images/6-Campanha_de_Verao_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/6-Campanha_de_Verao_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/nao-sou-o-teu-pai",
+            "image_link": "shopify://collections/livros-para-o-verao",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -205,10 +205,10 @@
         "slide_9RNWLH": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/2_A_Rapariga_de_Ninguem_Teaser_Desktop_29ed4f6d-af72-4b22-8dd3-8bf4648dfab3.jpg",
-            "image_mobile": "shopify://shop_images/2_A_Rapariga_de_Ninguem_Teaser_Mobile_e5b7906a-79b7-4894-86db-b36bf4af1328.jpg",
+            "image": "shopify://shop_images/8-Campanha_de_Verao_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/8-Campanha_de_Verao_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/a-rapariga-de-ninguem",
+            "image_link": "shopify://collections/livros-para-o-verao",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
