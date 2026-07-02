@@ -181,11 +181,11 @@
             "color_scheme": ""
           }
         },
-        "slide_bypDBF": {
+        "slide_9RNWLH": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/6-Campanha_de_Verao_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/6-Campanha_de_Verao_Mobile.jpg",
+            "image": "shopify://shop_images/8-Campanha_de_Verao_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/8-Campanha_de_Verao_Mobile.jpg",
             "image_overlay_opacity": 0,
             "image_link": "shopify://collections/livros-para-o-verao",
             "open_link_new_tab": false,
@@ -202,11 +202,11 @@
             "color_scheme": ""
           }
         },
-        "slide_9RNWLH": {
+        "slide_bypDBF": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/8-Campanha_de_Verao_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/8-Campanha_de_Verao_Mobile.jpg",
+            "image": "shopify://shop_images/6-Campanha_de_Verao_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/6-Campanha_de_Verao_Mobile.jpg",
             "image_overlay_opacity": 0,
             "image_link": "shopify://collections/livros-para-o-verao",
             "open_link_new_tab": false,
@@ -233,8 +233,8 @@
         "slide_xHT3bP",
         "slide_NLnpqb",
         "slide_PQfNNM",
-        "slide_bypDBF",
-        "slide_9RNWLH"
+        "slide_9RNWLH",
+        "slide_bypDBF"
       ],
       "name": "Banner Header",
       "settings": {
