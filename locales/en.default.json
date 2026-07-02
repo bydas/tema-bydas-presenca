@@ -276,6 +276,9 @@
     }
   },
   "sections": {
+     "main-collection-product-grid":{
+      "disclaimer": "Promotion valid on selected books. Limited to existing stock and cannot be combined with other active campaigns or discounts."
+    },
     "announcements": {
       "previous_announcement": "Previous announcement",
       "next_announcement": "Next announcement",
