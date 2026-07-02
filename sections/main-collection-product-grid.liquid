@@ -124,6 +124,7 @@
           data-cascade
         {% endif %}
       >
+        
         {%- if collection.products.size == 0 -%}
           <div class="collection collection--empty page-width" id="product-grid" data-id="{{ section.id }}">
             <div class="loading-overlay gradient"></div>
@@ -181,7 +182,13 @@
                 {%- assign skip_card_product_styles = true -%}
               {%- endfor -%}
             </ul>
-
+<div class="collection-description page-width rte">
+  {%- if collection.description == blank -%}
+    <p>{{ 'sections.main-collection-product-grid.disclaimer' | t }}</p>
+  {%- else -%}
+    {{ collection.description }}
+  {%- endif -%}
+</div>
             {%- if paginate.pages > 1 -%}
               {% render 'pagination', paginate: paginate, anchor: '' %}
             {%- endif -%}
@@ -190,13 +197,7 @@
       </div>
     </div>
   {%- endpaginate -%}
-  <div class="collection-description page-width rte">
-  {%- if collection.description == blank -%}
-    <p>{{ 'sections.main-collection-product-grid.disclaimer' | t }}</p>
-  {%- else -%}
-    {{ collection.description }}
-  {%- endif -%}
-</div>
+  
   {% if section.settings.image_shape == 'arch' %}
     {{ 'mask-arch.svg' | inline_asset_content }}
   {%- endif -%}
