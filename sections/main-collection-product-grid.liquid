@@ -189,17 +189,17 @@
           </div>
         {%- endif -%}
       </div>
-      <div class="collection-description page-width rte">
+      
+    </div>
+
+  {%- endpaginate -%}
+  <div class="collection-description page-width rte">
   {%- if collection.description == blank -%}
     <p>{{ 'sections.main-collection-product-grid.disclaimer' | t }}</p>
   {%- else -%}
     {{ collection.description }}
   {%- endif -%}
 </div>
-    </div>
-
-  {%- endpaginate -%}
-  
   {% if section.settings.image_shape == 'arch' %}
     {{ 'mask-arch.svg' | inline_asset_content }}
   {%- endif -%}
