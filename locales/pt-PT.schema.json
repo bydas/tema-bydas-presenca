@@ -1491,9 +1491,9 @@
       }
     },
     "main-collection-product-grid": {
-      
-      "name": "Grelha de produtos",          
       "disclaimer": "Promoção válida nos livros assinalados. Limitado ao stock existente e não acumulável com outras campanhas ou descontos em vigor.",
+
+      "name": "Grelha de produtos",          
 
       "settings": {
         "products_per_page": {
