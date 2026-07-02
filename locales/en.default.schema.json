@@ -1829,7 +1829,8 @@
           },
           "options__3": {
             "label": "Drawer"
-          }
+          },
+          "disclaimer": "Promotion valid on selected books. Limited to existing stock and cannot be combined with other active campaigns or discounts."
         },
         "enable_sorting": {
           "label": "Sorting"

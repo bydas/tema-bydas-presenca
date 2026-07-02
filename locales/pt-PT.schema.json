@@ -1506,7 +1506,9 @@
           },
           "options__3": {
             "label": "Quadrado"
-          }
+          },
+            "disclaimer": "Promoção válida nos livros assinalados. Limitado ao stock existente e não acumulável com outras campanhas ou descontos em vigor."
+
         },
         "show_secondary_image": {
           "label": "Mostrar a segunda imagem ao passar o rato"
