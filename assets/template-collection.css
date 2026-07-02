@@ -97,3 +97,9 @@
 .collection__view-all a:not(.link) {
   margin-top: 1rem;
 }
+
+
+.collection-description {
+  margin: 0 auto;
+  text-align: center;
+}
