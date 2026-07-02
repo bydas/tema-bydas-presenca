@@ -1808,6 +1808,7 @@
     },
     "main-collection-product-grid": {
       "name": "Product grid",
+      "disclaimer": "Promotion valid on selected books. Limited to existing stock and cannot be combined with other active campaigns or discounts.",
       "settings": {
         "products_per_page": {
           "label": "Products per page"
