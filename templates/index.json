@@ -14,6 +14,7 @@
       "blocks": {
         "slide_icJWTn": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Campanha_Site_3por15_Banner_Desktop_64172a18-2b1e-4b31-934d-080c50188462.jpg",
             "image_mobile": "shopify://shop_images/Campanha_Site_3por15_Banner_Mobile.jpg",
@@ -280,6 +281,7 @@
     },
     "featured_collection_cqtiwV": {
       "type": "featured-collection",
+      "disabled": true,
       "name": "Carrossel Campanha",
       "settings": {
         "collection": "3-livros-por-15",
