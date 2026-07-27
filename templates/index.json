@@ -488,6 +488,7 @@
       "blocks": {
         "slide_J6Dyr4": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Presenca_Banners_Site_Atividades_pre_escolares_DSK.jpg",
             "image_mobile": "shopify://shop_images/Presenca_Banners_Site_Atividades_pre_escolares_MB.jpg",
@@ -511,7 +512,6 @@
       "block_order": [
         "slide_J6Dyr4"
       ],
-      "disabled": true,
       "name": "Banner fixo 2",
       "settings": {
         "layout": "grid",
