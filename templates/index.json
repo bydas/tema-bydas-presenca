@@ -281,15 +281,14 @@
     },
     "featured_collection_cqtiwV": {
       "type": "featured-collection",
-      "disabled": true,
       "name": "Carrossel Campanha",
       "settings": {
         "collection": "4-livros-por-25",
         "products_to_show": 25,
-        "title": "<a href=\"/collections/3-livros-por-15\" title=\"3 livros por 15€\">3 Livros por 15€</a>",
+        "title": "4 Livros por 15 €",
         "heading_alignment": "left",
         "heading_size": "h1",
-        "description": "<p>Código de Desconto: 3POR15 ou 6POR30</p>",
+        "description": "",
         "show_description": false,
         "description_style": "body",
         "columns_desktop": 6,
