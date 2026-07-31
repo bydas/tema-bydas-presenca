@@ -33,27 +33,6 @@
             "color_scheme": ""
           }
         },
-        "slide_P7jztK": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/3-Campanha_de_Verao_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/3-Campanha_de_Verao_Mobile.jpg",
-            "image_overlay_opacity": 0,
-            "image_link": "shopify://collections/livros-para-o-verao",
-            "open_link_new_tab": false,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
-          }
-        },
         "slide_xHT3bP": {
           "type": "slide",
           "settings": {
@@ -117,34 +96,14 @@
             "color_scheme": ""
           }
         },
-        "slide_9RNWLH": {
+        "slide_LniBY7": {
           "type": "slide",
+          "name": "Slide",
           "settings": {
-            "image": "shopify://shop_images/8-Campanha_de_Verao_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/8-Campanha_de_Verao_Mobile.jpg",
+            "image": "shopify://shop_images/17-Rosalia_Desktop_8e909c24-bc8d-441c-8f7b-8117730a57ec.jpg",
+            "image_mobile": "shopify://shop_images/17-Rosalia_Mobile_f338e839-1025-45e3-bc47-cc100d742baf.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://collections/livros-para-o-verao",
-            "open_link_new_tab": false,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
-          }
-        },
-        "slide_bypDBF": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/6-Campanha_de_Verao_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/6-Campanha_de_Verao_Mobile.jpg",
-            "image_overlay_opacity": 0,
-            "image_link": "shopify://collections/livros-para-o-verao",
+            "image_link": "shopify://products/rosalia",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -162,32 +121,10 @@
         "slide_9DGE9B": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/13-Culpa_Vossa_4_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/13-Culpa_Vossa_4_Mobile.jpg",
+            "image": "shopify://shop_images/10-Campo_de_Papoilas_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/10-Campo_de_Papoilas_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/culpa-vossa",
-            "open_link_new_tab": false,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
-          }
-        },
-        "slide_LniBY7": {
-          "type": "slide",
-          "name": "Slide",
-          "settings": {
-            "image": "shopify://shop_images/18.Assim_na_Terra_como_Embaixo_da_Terra_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/15.Os_Novos_Vizinhos_Banner_Mobile.jpg",
-            "image_overlay_opacity": 0,
-            "image_link": "shopify://products/assim-na-terra-como-embaixo-da-terra",
+            "image_link": "shopify://products/campo-de-papoilas",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -205,10 +142,73 @@
         "slide_3WXTYL": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/16.Sticker_Therapy_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/22_Os_meus_Pais_Envelheceram_e_Agora_Mobile.jpg",
+            "image": "shopify://shop_images/11-Queridas_Meninas_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/11-Queridas_Meninas_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://collections/sticker-therapy",
+            "image_link": "shopify://products/queridas-meninas",
+            "open_link_new_tab": false,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
+        "slide_P7jztK": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/12-O_Meu_Avo_O_Eterno_Detetive_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/12-O_Meu_Avo_O_Eterno_Detetive_Mobile.jpg",
+            "image_overlay_opacity": 0,
+            "image_link": "shopify://products/o-meu-avo-o-eterno-detetive",
+            "open_link_new_tab": false,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
+        "slide_bypDBF": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/24.Classicos_para_Ler_numa_Noite_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/24.Classicos_para_Ler_numa_Noite_Mobile.jpg",
+            "image_overlay_opacity": 0,
+            "image_link": "shopify://collections/serie-classicos-para-ler-numa-noite",
+            "open_link_new_tab": false,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
+        "slide_9RNWLH": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/17.A_Mae_de_Alice_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/17.A_Mae_de_Alice_Mobile.jpg",
+            "image_overlay_opacity": 0,
+            "image_link": "shopify://products/a-mae-de-alice",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -226,15 +226,15 @@
       },
       "block_order": [
         "slide_icJWTn",
-        "slide_P7jztK",
         "slide_xHT3bP",
         "slide_NLnpqb",
         "slide_PQfNNM",
-        "slide_9RNWLH",
-        "slide_bypDBF",
-        "slide_9DGE9B",
         "slide_LniBY7",
-        "slide_3WXTYL"
+        "slide_9DGE9B",
+        "slide_3WXTYL",
+        "slide_P7jztK",
+        "slide_bypDBF",
+        "slide_9RNWLH"
       ],
       "name": "Banner Header",
       "settings": {
