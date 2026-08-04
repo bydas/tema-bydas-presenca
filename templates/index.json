@@ -33,69 +33,6 @@
             "color_scheme": ""
           }
         },
-        "slide_xHT3bP": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/4-Campanha_de_Verao_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/4-Campanha_de_Verao_Mobile.jpg",
-            "image_overlay_opacity": 0,
-            "image_link": "shopify://collections/livros-para-o-verao",
-            "open_link_new_tab": false,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
-          }
-        },
-        "slide_NLnpqb": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/9-Campanha_de_Verao_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/9-Campanha_de_Verao_Mobile.jpg",
-            "image_overlay_opacity": 0,
-            "image_link": "shopify://collections/livros-para-o-verao",
-            "open_link_new_tab": false,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
-          }
-        },
-        "slide_PQfNNM": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/7-Campanha_de_Verao_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/7-Campanha_de_Verao_Mobile.jpg",
-            "image_overlay_opacity": 0,
-            "image_link": "shopify://collections/livros-para-o-verao",
-            "open_link_new_tab": false,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
-          }
-        },
         "slide_LniBY7": {
           "type": "slide",
           "name": "Slide",
@@ -222,19 +159,82 @@
             "text_alignment_mobile": "center",
             "color_scheme": ""
           }
+        },
+        "slide_NLnpqb": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/16-Games_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/16-Games_Mobile.jpg",
+            "image_overlay_opacity": 0,
+            "image_link": "shopify://products/games",
+            "open_link_new_tab": false,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
+        "slide_PQfNNM": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/23.A_Fada_das_Coisas_Perdidas_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/23.A_Fada_das_Coisas_Perdidas_Mobile.jpg",
+            "image_overlay_opacity": 0,
+            "image_link": "shopify://products/a-fada-das-coisas-perdidas",
+            "open_link_new_tab": false,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
+        "slide_xHT3bP": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/19-Mapa_dos_Desejos_RL_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/19-Mapa_dos_Desejos_RL_Mobile.jpg",
+            "image_overlay_opacity": 0,
+            "image_link": "shopify://products/o-mapa-dos-desejos",
+            "open_link_new_tab": false,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
         }
       },
       "block_order": [
         "slide_icJWTn",
-        "slide_xHT3bP",
-        "slide_NLnpqb",
-        "slide_PQfNNM",
         "slide_LniBY7",
         "slide_9DGE9B",
         "slide_3WXTYL",
         "slide_P7jztK",
         "slide_bypDBF",
-        "slide_9RNWLH"
+        "slide_9RNWLH",
+        "slide_NLnpqb",
+        "slide_PQfNNM",
+        "slide_xHT3bP"
       ],
       "name": "Banner Header",
       "settings": {
