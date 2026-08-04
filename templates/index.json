@@ -33,14 +33,35 @@
             "color_scheme": ""
           }
         },
+        "slide_P7jztK": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/5.A_Tranca_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/5.A_Tranca_Mobile.jpg",
+            "image_overlay_opacity": 0,
+            "image_link": "shopify://products/a-tranca",
+            "open_link_new_tab": false,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
         "slide_LniBY7": {
           "type": "slide",
           "name": "Slide",
           "settings": {
-            "image": "shopify://shop_images/17-Rosalia_Desktop_8e909c24-bc8d-441c-8f7b-8117730a57ec.jpg",
-            "image_mobile": "shopify://shop_images/17-Rosalia_Mobile_f338e839-1025-45e3-bc47-cc100d742baf.jpg",
+            "image": "shopify://shop_images/3.Um_Hino_a_Vida_Teaser_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/3.Um_Hino_a_Vida_Teaser_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/rosalia",
+            "image_link": "shopify://products/um-hino-a-vida",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -58,10 +79,10 @@
         "slide_9DGE9B": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/10-Campo_de_Papoilas_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/10-Campo_de_Papoilas_Mobile.jpg",
+            "image": "shopify://shop_images/7-Procura_e_Descobre_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/7-Procura_e_Descobre_Mobile_99bb9236-025a-4a13-8a85-71675e9d6203.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/campo-de-papoilas",
+            "image_link": "shopify://collections/serie-procura-e-descobre",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -79,31 +100,10 @@
         "slide_3WXTYL": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/11-Queridas_Meninas_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/11-Queridas_Meninas_Mobile.jpg",
+            "image": "shopify://shop_images/8-Brilhantes_Tatuagens_Temporarias_Mala_de_Atividades_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/8-Brilhantes_Tatuagens_Temporarias_Mala_de_Atividades_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/queridas-meninas",
-            "open_link_new_tab": false,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
-          }
-        },
-        "slide_P7jztK": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/12-O_Meu_Avo_O_Eterno_Detetive_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/12-O_Meu_Avo_O_Eterno_Detetive_Mobile.jpg",
-            "image_overlay_opacity": 0,
-            "image_link": "shopify://products/o-meu-avo-o-eterno-detetive",
+            "image_link": "shopify://products/brilhantes-tatuagens-temporarias-mala-de-atividades",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -125,6 +125,27 @@
             "image_mobile": "shopify://shop_images/24.Classicos_para_Ler_numa_Noite_Mobile.jpg",
             "image_overlay_opacity": 0,
             "image_link": "shopify://collections/serie-classicos-para-ler-numa-noite",
+            "open_link_new_tab": false,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
+        "slide_PQfNNM": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/23.A_Fada_das_Coisas_Perdidas_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/23.A_Fada_das_Coisas_Perdidas_Mobile.jpg",
+            "image_overlay_opacity": 0,
+            "image_link": "shopify://products/a-fada-das-coisas-perdidas",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -181,27 +202,6 @@
             "color_scheme": ""
           }
         },
-        "slide_PQfNNM": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/23.A_Fada_das_Coisas_Perdidas_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/23.A_Fada_das_Coisas_Perdidas_Mobile.jpg",
-            "image_overlay_opacity": 0,
-            "image_link": "shopify://products/a-fada-das-coisas-perdidas",
-            "open_link_new_tab": false,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
-          }
-        },
         "slide_xHT3bP": {
           "type": "slide",
           "settings": {
@@ -226,14 +226,14 @@
       },
       "block_order": [
         "slide_icJWTn",
+        "slide_P7jztK",
         "slide_LniBY7",
         "slide_9DGE9B",
         "slide_3WXTYL",
-        "slide_P7jztK",
         "slide_bypDBF",
+        "slide_PQfNNM",
         "slide_9RNWLH",
         "slide_NLnpqb",
-        "slide_PQfNNM",
         "slide_xHT3bP"
       ],
       "name": "Banner Header",
