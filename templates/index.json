@@ -489,6 +489,7 @@
     },
     "featured_collection_9ir9Wg": {
       "type": "featured-collection",
+      "disabled": true,
       "name": "Carrossel Temático",
       "settings": {
         "collection": "colecao-mercedes-ron",
