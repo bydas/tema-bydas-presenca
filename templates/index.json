@@ -404,6 +404,7 @@
       "block_order": [
         "slide_QpMMqV"
       ],
+      "disabled": true,
       "name": "Banner fixo 1",
       "settings": {
         "layout": "grid",
@@ -450,6 +451,7 @@
       "blocks": {
         "slide_jH87wQ": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/13-Culpa_Vossa_4_Desktop_4a18ae93-9831-4265-8c53-4cb9c1ab4c49.jpg",
             "image_mobile": "shopify://shop_images/13-Culpa_Vossa_4_Mobile_57952cd0-4cc1-440d-81db-9c75b38e3a8a.jpg",
