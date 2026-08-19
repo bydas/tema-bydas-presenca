@@ -419,6 +419,7 @@
     },
     "featured_collection_HPdNTU": {
       "type": "featured-collection",
+      "disabled": true,
       "name": "Carrossel Temático",
       "settings": {
         "collection": "livros-para-o-verao",
