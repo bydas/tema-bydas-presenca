@@ -582,7 +582,7 @@
       "settings": {
         "collection": "colecao-lynn-painter",
         "products_to_show": 16,
-        "title": "<a href=\"/collections/harry-potter\" title=\"Universo Harry Potter\">{{ section.settings.collection.title }}</a>",
+        "title": "<a href=\"/collections/colecao-lynn-painter\" title=\"Livros de Lynn Painter\">{{ section.settings.collection.title }}</a>",
         "heading_alignment": "left",
         "heading_size": "h1",
         "description": "",
