@@ -55,27 +55,6 @@
             "color_scheme": ""
           }
         },
-        "slide_P7jztK": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/12.Amor_a_Fingir_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/12.Amor_a_Fingir_Mobile.jpg",
-            "image_overlay_opacity": 0,
-            "image_link": "shopify://products/a-tranca",
-            "open_link_new_tab": false,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
-          }
-        },
         "slide_3WXTYL": {
           "type": "slide",
           "settings": {
@@ -97,34 +76,13 @@
             "color_scheme": ""
           }
         },
-        "slide_bypDBF": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/24.Classicos_para_Ler_numa_Noite_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/24.Classicos_para_Ler_numa_Noite_Mobile.jpg",
-            "image_overlay_opacity": 0,
-            "image_link": "shopify://collections/serie-classicos-para-ler-numa-noite",
-            "open_link_new_tab": false,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
-          }
-        },
         "slide_9RNWLH": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/17.A_Mae_de_Alice_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/17.A_Mae_de_Alice_Mobile.jpg",
+            "image": "shopify://shop_images/14-K_Pop_Veste_as_tuas_Amigas_Desktop_476312de-4bf0-4440-aec5-1b0788369903.jpg",
+            "image_mobile": "shopify://shop_images/14-K_Pop_Veste_as_tuas_Amigas_Mobile_e69a8fd3-d2de-482a-8441-4fc52ad03dec.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/a-mae-de-alice",
+            "image_link": "shopify://collections/serie-veste-as-tuas-amigas",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -142,10 +100,31 @@
         "slide_NLnpqb": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/16-Games_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/16-Games_Mobile.jpg",
+            "image": "shopify://shop_images/10.Quando_Te_Atreves_a_Sentir_Desktop_aad6267a-1767-4726-a167-2280b9c89426.jpg",
+            "image_mobile": "shopify://shop_images/10.Quando_Te_Atreves_a_Sentir_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/games",
+            "image_link": "shopify://products/quando-te-atreves-a-sentir",
+            "open_link_new_tab": false,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
+        "slide_P7jztK": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/9.Um_Beijinho_na_Tua_Mao_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/9.Um_Beijinho_na_Tua_Mao_Mobile.jpg",
+            "image_overlay_opacity": 0,
+            "image_link": "shopify://products/um-beijinho-na-tua-mao",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -163,10 +142,10 @@
         "slide_xHT3bP": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/19-Mapa_dos_Desejos_RL_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/19-Mapa_dos_Desejos_RL_Mobile.jpg",
+            "image": "shopify://shop_images/13-Na_Escola_Livro_das_Minhas_Emocoes_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/13-Na_Escola_Livro_das_Minhas_Emocoes_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/o-mapa-dos-desejos",
+            "image_link": "shopify://products/na-escola-o-livro-das-minhas-emocoes",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -184,10 +163,10 @@
         "slide_PQfNNM": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/23.A_Fada_das_Coisas_Perdidas_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/23.A_Fada_das_Coisas_Perdidas_Mobile.jpg",
+            "image": "shopify://shop_images/11.O_Verao_em_que_Hikaru_Morreu_7_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/11.O_Verao_em_que_Hikaru_Morreu_7_Mobile_00b37fa7-4031-4316-9c6f-c4bc3f747dae.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/a-fada-das-coisas-perdidas",
+            "image_link": "shopify://collections/serie-o-verao-em-que-hikaru-morreu",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -222,19 +201,40 @@
             "text_alignment_mobile": "center",
             "color_scheme": ""
           }
+        },
+        "slide_bypDBF": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/24.Classicos_para_Ler_numa_Noite_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/24.Classicos_para_Ler_numa_Noite_Mobile.jpg",
+            "image_overlay_opacity": 0,
+            "image_link": "shopify://collections/serie-classicos-para-ler-numa-noite",
+            "open_link_new_tab": false,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
         }
       },
       "block_order": [
         "slide_LniBY7",
         "slide_icJWTn",
-        "slide_P7jztK",
         "slide_3WXTYL",
-        "slide_bypDBF",
         "slide_9RNWLH",
         "slide_NLnpqb",
+        "slide_P7jztK",
         "slide_xHT3bP",
         "slide_PQfNNM",
-        "slide_9DGE9B"
+        "slide_9DGE9B",
+        "slide_bypDBF"
       ],
       "name": "Banner Header",
       "settings": {
