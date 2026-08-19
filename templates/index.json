@@ -181,13 +181,13 @@
             "color_scheme": ""
           }
         },
-        "slide_9DGE9B": {
+        "slide_bypDBF": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/7-Procura_e_Descobre_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/7-Procura_e_Descobre_Mobile_99bb9236-025a-4a13-8a85-71675e9d6203.jpg",
+            "image": "shopify://shop_images/24.Classicos_para_Ler_numa_Noite_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/24.Classicos_para_Ler_numa_Noite_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://collections/serie-procura-e-descobre",
+            "image_link": "shopify://collections/serie-classicos-para-ler-numa-noite",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -202,13 +202,13 @@
             "color_scheme": ""
           }
         },
-        "slide_bypDBF": {
+        "slide_9DGE9B": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/24.Classicos_para_Ler_numa_Noite_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/24.Classicos_para_Ler_numa_Noite_Mobile.jpg",
+            "image": "shopify://shop_images/7-Procura_e_Descobre_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/7-Procura_e_Descobre_Mobile_99bb9236-025a-4a13-8a85-71675e9d6203.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://collections/serie-classicos-para-ler-numa-noite",
+            "image_link": "shopify://collections/serie-procura-e-descobre",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -233,8 +233,8 @@
         "slide_P7jztK",
         "slide_xHT3bP",
         "slide_PQfNNM",
-        "slide_9DGE9B",
-        "slide_bypDBF"
+        "slide_bypDBF",
+        "slide_9DGE9B"
       ],
       "name": "Banner Header",
       "settings": {
