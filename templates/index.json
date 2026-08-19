@@ -541,12 +541,11 @@
       "blocks": {
         "slide_J6Dyr4": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Presenca_Banners_Site_Atividades_pre_escolares_DSK.jpg",
-            "image_mobile": "shopify://shop_images/Presenca_Banners_Site_Atividades_pre_escolares_MB.jpg",
+            "image": "shopify://shop_images/12.Amor_a_Fingir_Desktop_eeae6a05-6ade-418e-bd35-719a6f1ae0d6.jpg",
+            "image_mobile": "shopify://shop_images/12.Amor_a_Fingir_Mobile_7b975e95-b51d-4440-acee-4a298f4c20d0.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://collections/atividades-pre-escolares",
+            "image_link": "shopify://products/amor-a-fingir",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -579,10 +578,9 @@
     },
     "featured_collection_N8qNYR": {
       "type": "featured-collection",
-      "disabled": true,
       "name": "Carrossel temático",
       "settings": {
-        "collection": "atividades-pre-escolares",
+        "collection": "colecao-lynn-painter",
         "products_to_show": 16,
         "title": "<a href=\"/collections/harry-potter\" title=\"Universo Harry Potter\">{{ section.settings.collection.title }}</a>",
         "heading_alignment": "left",
