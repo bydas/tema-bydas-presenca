@@ -37,8 +37,8 @@
           "type": "slide",
           "name": "Slide",
           "settings": {
-            "image": "shopify://shop_images/3.Um_Hino_a_Vida_Teaser_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/3.Um_Hino_a_Vida_Teaser_Mobile.jpg",
+            "image": "shopify://shop_images/4.Um_Hino_a_Vida_Desktop_da01c0dc-8136-4962-815c-1de089601479.jpg",
+            "image_mobile": "shopify://shop_images/4.Um_Hino_a_Vida_Mobile_4cd628b2-0a38-4fc0-93b1-8f9b1bf5b4fd.jpg",
             "image_overlay_opacity": 0,
             "image_link": "shopify://products/um-hino-a-vida",
             "open_link_new_tab": false,
@@ -58,10 +58,31 @@
         "slide_P7jztK": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/5.A_Tranca_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/5.A_Tranca_Mobile.jpg",
+            "image": "shopify://shop_images/12.Amor_a_Fingir_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/12.Amor_a_Fingir_Mobile.jpg",
             "image_overlay_opacity": 0,
             "image_link": "shopify://products/a-tranca",
+            "open_link_new_tab": false,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
+        "slide_3WXTYL": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/6.Misterio_da_Lavandaria_Yeonnam_Dong_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/6.Misterio_da_Lavandaria_Yeonnam_Dong_Mobile.jpg",
+            "image_overlay_opacity": 0,
+            "image_link": "shopify://products/o-misterio-da-lavandaria-de-yeonnam-dong",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -83,27 +104,6 @@
             "image_mobile": "shopify://shop_images/24.Classicos_para_Ler_numa_Noite_Mobile.jpg",
             "image_overlay_opacity": 0,
             "image_link": "shopify://collections/serie-classicos-para-ler-numa-noite",
-            "open_link_new_tab": false,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
-          }
-        },
-        "slide_PQfNNM": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/23.A_Fada_das_Coisas_Perdidas_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/23.A_Fada_das_Coisas_Perdidas_Mobile.jpg",
-            "image_overlay_opacity": 0,
-            "image_link": "shopify://products/a-fada-das-coisas-perdidas",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -181,13 +181,13 @@
             "color_scheme": ""
           }
         },
-        "slide_3WXTYL": {
+        "slide_PQfNNM": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/8-Brilhantes_Tatuagens_Temporarias_Mala_de_Atividades_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/8-Brilhantes_Tatuagens_Temporarias_Mala_de_Atividades_Mobile.jpg",
+            "image": "shopify://shop_images/23.A_Fada_das_Coisas_Perdidas_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/23.A_Fada_das_Coisas_Perdidas_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/brilhantes-tatuagens-temporarias-mala-de-atividades",
+            "image_link": "shopify://products/a-fada-das-coisas-perdidas",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -228,12 +228,12 @@
         "slide_icJWTn",
         "slide_LniBY7",
         "slide_P7jztK",
+        "slide_3WXTYL",
         "slide_bypDBF",
-        "slide_PQfNNM",
         "slide_9RNWLH",
         "slide_NLnpqb",
         "slide_xHT3bP",
-        "slide_3WXTYL",
+        "slide_PQfNNM",
         "slide_9DGE9B"
       ],
       "name": "Banner Header",
