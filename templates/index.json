@@ -38,10 +38,10 @@
           "type": "slide",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/4por25_Banner_Desktop_cf7c71f2-e50b-40cb-93da-1c83a6e013cc.jpg",
-            "image_mobile": "shopify://shop_images/4por25_Banner_Mobile_771cd7f4-204b-426c-8d0a-9ae1ec23be77.jpg",
+            "image": "shopify://shop_images/30_Romances_Verao_edit_Banner_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/30_Romances_Verao_edit_Banner_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://collections/4-livros-por-25",
+            "image_link": "shopify://collections/romances-30-desconto",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
