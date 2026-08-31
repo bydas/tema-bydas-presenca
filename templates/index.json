@@ -36,6 +36,7 @@
         },
         "slide_icJWTn": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/30_Romances_Verao_edit_Banner_Desktop.jpg",
             "image_mobile": "shopify://shop_images/30_Romances_Verao_edit_Banner_Mobile.jpg",
@@ -318,35 +319,6 @@
         "accessibility_info": "Apresentação de produtos e categorias da nossa marca"
       }
     },
-    "featured_collection_cqtiwV": {
-      "type": "featured-collection",
-      "name": "Carrossel Campanha",
-      "settings": {
-        "collection": "romances-30-desconto",
-        "products_to_show": 25,
-        "title": "<a href=\"https://www.presenca.pt/collections/romances-30-desconto\" title=\"https://www.presenca.pt/collections/romances-30-desconto\">Romances com 30% de desconto</a>",
-        "heading_alignment": "left",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "columns_desktop": 6,
-        "enable_desktop_slider": true,
-        "show_view_all": true,
-        "view_all_style": "link",
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "standard",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 48,
-        "padding_bottom": 0
-      }
-    },
     "featured_collection_HVgeey": {
       "type": "featured-collection",
       "name": "Carrossel Pré-vendas",
@@ -521,6 +493,36 @@
         "color_scheme": "",
         "padding_top": 24,
         "padding_bottom": 48
+      }
+    },
+    "featured_collection_cqtiwV": {
+      "type": "featured-collection",
+      "disabled": true,
+      "name": "Carrossel Campanha",
+      "settings": {
+        "collection": "romances-30-desconto",
+        "products_to_show": 25,
+        "title": "<a href=\"https://www.presenca.pt/collections/romances-30-desconto\" title=\"https://www.presenca.pt/collections/romances-30-desconto\">Romances com 30% de desconto</a>",
+        "heading_alignment": "left",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 6,
+        "enable_desktop_slider": true,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 48,
+        "padding_bottom": 0
       }
     },
     "featured_collection_HPdNTU": {
@@ -771,13 +773,13 @@
     "slideshow_Mh9AA4",
     "featured_collection",
     "slideshow_8zUK6k",
-    "featured_collection_cqtiwV",
     "featured_collection_HVgeey",
     "slideshow_pmwgw7",
     "slideshow_qAxrAq",
     "featured_collection_N8qNYR",
     "featured_blog_DCcCgx",
     "featured_blog_dnwXmG",
+    "featured_collection_cqtiwV",
     "featured_collection_HPdNTU",
     "featured_collection_9ir9Wg",
     "featured_collection_Q7GLkz",
