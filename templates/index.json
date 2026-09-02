@@ -350,57 +350,16 @@
         "padding_bottom": 48
       }
     },
-    "slideshow_pmwgw7": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_jH87wQ": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/13-Culpa_Vossa_4_Desktop_4a18ae93-9831-4265-8c53-4cb9c1ab4c49.jpg",
-            "image_mobile": "shopify://shop_images/13-Culpa_Vossa_4_Mobile_57952cd0-4cc1-440d-81db-9c75b38e3a8a.jpg",
-            "image_overlay_opacity": 0,
-            "image_link": "https://www.presenca.pt/collections/livros-para-o-verao",
-            "open_link_new_tab": false,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
-          }
-        }
-      },
-      "block_order": [
-        "slide_jH87wQ"
-      ],
-      "name": "Banner fixo 1",
-      "settings": {
-        "layout": "grid",
-        "layout_mobile": "full_bleed",
-        "slide_height": "adapt_image",
-        "auto_rotate": true,
-        "change_slides_speed": 5,
-        "image_behavior": "none",
-        "show_text_below": false,
-        "accessibility_info": "Apresentação de produtos e categorias da nossa marca"
-      }
-    },
     "slideshow_qAxrAq": {
       "type": "slideshow",
       "blocks": {
         "slide_J6Dyr4": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/12.Amor_a_Fingir_Desktop_eeae6a05-6ade-418e-bd35-719a6f1ae0d6.jpg",
-            "image_mobile": "shopify://shop_images/12.Amor_a_Fingir_Mobile_7b975e95-b51d-4440-acee-4a298f4c20d0.jpg",
+            "image": "shopify://shop_images/11-Onde_Esta_o_Wally_Sarilhos_a_Dobrar_Desktop_a852c18c-db3e-4d3f-9a52-4b6ce6c79c92.jpg",
+            "image_mobile": "shopify://shop_images/11-Onde_Esta_o_Wally_Sarilhos_a_Dobrar_Mobile_5c5de12f-2d01-4f7b-8a38-e92f16bee32c.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/amor-a-fingir",
+            "image_link": "shopify://products/onde-esta-o-wally-sarilhos-a-dobrar",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -435,7 +394,7 @@
       "type": "featured-collection",
       "name": "Carrossel temático",
       "settings": {
-        "collection": "colecao-lynn-painter",
+        "collection": "serie-onde-esta-o-wally",
         "products_to_show": 16,
         "title": "<a href=\"/collections/colecao-lynn-painter\" title=\"Livros de Lynn Painter\">{{ section.settings.collection.title }}</a>",
         "heading_alignment": "left",
@@ -476,6 +435,47 @@
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 48
+      }
+    },
+    "slideshow_pmwgw7": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_jH87wQ": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/13-Culpa_Vossa_4_Desktop_4a18ae93-9831-4265-8c53-4cb9c1ab4c49.jpg",
+            "image_mobile": "shopify://shop_images/13-Culpa_Vossa_4_Mobile_57952cd0-4cc1-440d-81db-9c75b38e3a8a.jpg",
+            "image_overlay_opacity": 0,
+            "image_link": "https://www.presenca.pt/collections/livros-para-o-verao",
+            "open_link_new_tab": false,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_jH87wQ"
+      ],
+      "disabled": true,
+      "name": "Banner fixo 1",
+      "settings": {
+        "layout": "grid",
+        "layout_mobile": "full_bleed",
+        "slide_height": "adapt_image",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Apresentação de produtos e categorias da nossa marca"
       }
     },
     "featured_blog_dnwXmG": {
@@ -776,10 +776,10 @@
     "featured_collection",
     "slideshow_8zUK6k",
     "featured_collection_HVgeey",
-    "slideshow_pmwgw7",
     "slideshow_qAxrAq",
     "featured_collection_N8qNYR",
     "featured_blog_DCcCgx",
+    "slideshow_pmwgw7",
     "featured_blog_dnwXmG",
     "featured_collection_cqtiwV",
     "featured_collection_HPdNTU",
