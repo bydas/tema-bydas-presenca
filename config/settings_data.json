@@ -286,6 +286,17 @@
           "secondary_button_label": "#00bcb4",
           "shadow": "#000000"
         }
+      },
+      "scheme-featured-product-green": {
+        "settings": {
+          "background": "#f3f3f3",
+          "background_gradient": "",
+          "text": "#000000",
+          "button": "#A9C138",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#000000",
+          "shadow": "#000000"
+        }
       }
     }
   },
