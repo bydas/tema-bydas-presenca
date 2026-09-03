@@ -321,6 +321,53 @@
         "accessibility_info": "Apresentação de produtos e categorias da nossa marca"
       }
     },
+    "featured_product_bqgTVp": {
+      "type": "featured-product",
+      "blocks": {
+        "title_i7FFac": {
+          "type": "title",
+          "settings": {
+            "selected_title": "«{{ section.settings.product.title }}»",
+            "heading_size": "h1"
+          }
+        },
+        "text_VGk7My": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A história de Gisèle Pelicot, uma mulher que caminhou sobre o abismo e escolheu continuar viva, dando coragem a milhares de vítimas para recuperarem a própria voz. </p><p>Leitura de um excerto, por Júlia Pinheiro.</p>",
+            "text_style": "body",
+            "line_limit": 10
+          }
+        },
+        "button_paQD8m": {
+          "type": "button",
+          "settings": {
+            "button_label": "Comprar",
+            "button_link": "{{ section.settings.product.url }}",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "title_i7FFac",
+        "text_VGk7My",
+        "button_paQD8m"
+      ],
+      "name": "Vídeo",
+      "settings": {
+        "product": "um-hino-a-vida",
+        "video": "shopify://files/videos/JULIA_T1_HRZ_V4.mp4",
+        "cover_image": "shopify://shop_images/Captura_de_ecra_2026-09-03_105957.png",
+        "color_scheme": "scheme-featured-product-green",
+        "secondary_background": false,
+        "media_position": "left",
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "product_padding": 24,
+        "max_height_desktop": 16,
+        "max_height_mobile": 12
+      }
+    },
     "featured_collection_HVgeey": {
       "type": "featured-collection",
       "name": "Carrossel Pré-vendas",
@@ -693,53 +740,6 @@
         "max_height_mobile": 10
       }
     },
-    "featured_product_bqgTVp": {
-      "type": "featured-product",
-      "blocks": {
-        "title_i7FFac": {
-          "type": "title",
-          "settings": {
-            "selected_title": "«{{ section.settings.product.title }}»",
-            "heading_size": "h1"
-          }
-        },
-        "text_VGk7My": {
-          "type": "text",
-          "settings": {
-            "text": "<p>A história de Gisèle Pelicot, uma mulher que caminhou sobre o abismo e escolheu continuar viva, dando coragem a milhares de vítimas para recuperarem a própria voz. </p><p>Leitura de um excerto, por Júlia Pinheiro.</p>",
-            "text_style": "body",
-            "line_limit": 10
-          }
-        },
-        "button_paQD8m": {
-          "type": "button",
-          "settings": {
-            "button_label": "Comprar",
-            "button_link": "{{ section.settings.product.url }}",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "title_i7FFac",
-        "text_VGk7My",
-        "button_paQD8m"
-      ],
-      "name": "Vídeo",
-      "settings": {
-        "product": "um-hino-a-vida",
-        "video": "shopify://files/videos/JULIA_T1_HRZ_V4.mp4",
-        "cover_image": "shopify://shop_images/Captura_de_ecra_2026-09-03_105957.png",
-        "color_scheme": "scheme-featured-product-green",
-        "secondary_background": false,
-        "media_position": "left",
-        "padding_top": 48,
-        "padding_bottom": 48,
-        "product_padding": 24,
-        "max_height_desktop": 16,
-        "max_height_mobile": 12
-      }
-    },
     "17701286961defe988": {
       "type": "apps",
       "blocks": {
@@ -774,6 +774,7 @@
     "slideshow_Mh9AA4",
     "featured_collection",
     "slideshow_8zUK6k",
+    "featured_product_bqgTVp",
     "featured_collection_HVgeey",
     "slideshow_qAxrAq",
     "featured_collection_N8qNYR",
@@ -786,7 +787,6 @@
     "featured_collection_Q7GLkz",
     "featured_collection_QKCjKQ",
     "featured_article_cC3KU4",
-    "featured_product_bqgTVp",
     "17701286961defe988"
   ]
 }
