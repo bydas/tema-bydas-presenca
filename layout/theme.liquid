@@ -322,6 +322,31 @@
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
+
+    <script>
+      (function () {
+        var blockedLangs = ['ar', 'bn', 'fa', 'zh', 'ur', 'vi'];
+
+        var navLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+
+        var acceptLang = '';
+        try {
+          acceptLang = (navigator.languages && navigator.languages.join(','))
+            ? navigator.languages.join(',').toLowerCase()
+            : '';
+        } catch (e) {}
+
+        var isBlockedLang =
+          blockedLangs.some(function (lang) { return navLang.indexOf(lang) === 0; }) ||
+          blockedLangs.some(function (lang) { return acceptLang.indexOf(lang) !== -1; });
+
+        if (isBlockedLang) {
+          try { window.stop(); } catch (e) {}
+          document.documentElement.style.display = 'none';
+          document.documentElement.innerHTML = '';
+        }
+      })();
+  </script>
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
@@ -369,23 +394,25 @@
     {% sections 'header-group' %}
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
-{% assign blocked_countries = 'IQ,BD,IR,CN,JO,HK,PK,VN,SG' | split: ',' %}
 
-{% if blocked_countries contains localization.country.iso_code %}
-  <main
-    id="MainContent"
-    role="main"
-    tabindex="-1"
-    style="min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 24px;"
-  >
-    <div>
-      <h1>Access unavailable</h1>
-      <p>This store is not available in your region.</p>
-    </div>
-  </main>
-{% else %}
-  {{ content_for_layout }}
-{% endif %}    </main>
+      {% assign blocked_countries = 'IQ,BD,IR,CN,JO,HK,PK,VN,SG' | split: ',' %}
+
+      {% if blocked_countries contains localization.country.iso_code %}
+        <main
+          id="MainContent"
+          role="main"
+          tabindex="-1"
+          style="min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 24px;"
+        >
+          <div>
+            <h1>Access unavailable</h1>
+            <p>This store is not available in your region.</p>
+          </div>
+        </main>
+      {% else %}
+        {{ content_for_layout }}
+      {% endif %}
+    </main>
 
     {% sections 'footer-group' %}
 
