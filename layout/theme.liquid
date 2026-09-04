@@ -369,7 +369,16 @@
     {% sections 'header-group' %}
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
-      {{ content_for_layout }}
+{% assign blocked_countries = 'IQ,BD,IR,CN,JO,HK,PK,VN,SG' | split: ',' %}
+
+{% if blocked_countries contains localization.country.iso_code %}
+  <main id="MainContent" role="main" tabindex="-1">
+    <h1>Access unavailable</h1>
+    <p>This store is not available in your region.</p>
+  </main>
+{% else %}
+  {{ content_for_layout }}
+{% endif %}
     </main>
 
     {% sections 'footer-group' %}
