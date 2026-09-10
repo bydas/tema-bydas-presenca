@@ -545,7 +545,6 @@
     },
     "featured_collection_cqtiwV": {
       "type": "featured-collection",
-      "disabled": true,
       "name": "Carrossel Campanha",
       "settings": {
         "collection": "romances-30-desconto",
@@ -773,6 +772,7 @@
     "slideshow_Mh9AA4",
     "featured_collection",
     "slideshow_8zUK6k",
+    "featured_collection_cqtiwV",
     "featured_product_bqgTVp",
     "featured_collection_HVgeey",
     "slideshow_qAxrAq",
@@ -780,7 +780,6 @@
     "featured_blog_DCcCgx",
     "slideshow_pmwgw7",
     "featured_blog_dnwXmG",
-    "featured_collection_cqtiwV",
     "featured_collection_HPdNTU",
     "featured_collection_9ir9Wg",
     "featured_collection_Q7GLkz",
