@@ -555,7 +555,6 @@
     },
     "featured_blog_dnwXmG": {
       "type": "featured-blog",
-      "disabled": true,
       "name": "Agenda",
       "settings": {
         "blog": "agenda",
@@ -777,9 +776,9 @@
     "featured_collection_HVgeey",
     "slideshow_qAxrAq",
     "featured_collection_N8qNYR",
+    "featured_blog_dnwXmG",
     "featured_blog_DCcCgx",
     "slideshow_pmwgw7",
-    "featured_blog_dnwXmG",
     "featured_collection_HPdNTU",
     "featured_collection_9ir9Wg",
     "featured_collection_Q7GLkz",
