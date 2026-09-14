@@ -36,12 +36,11 @@
         },
         "slide_icJWTn": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/30_Romances_Verao_edit_Banner_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/30_Romances_Verao_edit_Banner_Mobile.jpg",
+            "image": "shopify://shop_images/1_Campanha_Novo_Ano_3por12_Banner_Desktop_e5a13159-68ab-4d70-a7e7-7bc7f9e2320c.jpg",
+            "image_mobile": "shopify://shop_images/1_Campanha_Novo_Ano_3por12_Banner_Mobile_d6d1a29b-d2fb-4a37-8d9d-f2a2ddac5a61.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://collections/romances-30-desconto",
+            "image_link": "shopify://collections/leve-3-pague-2",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -494,6 +493,24 @@
         "padding_bottom": 48
       }
     },
+    "featured_blog_dnwXmG": {
+      "type": "featured-blog",
+      "name": "Agenda",
+      "settings": {
+        "blog": "agenda",
+        "post_limit": 3,
+        "heading": "<a href=\"/blogs/agenda\" title=\"Agenda\">{{ section.settings.blog.title }}</a>",
+        "heading_size": "h1",
+        "columns_desktop": 3,
+        "show_view_all": false,
+        "show_image": true,
+        "show_date": false,
+        "show_author": false,
+        "color_scheme": "",
+        "padding_top": 24,
+        "padding_bottom": 48
+      }
+    },
     "featured_blog_DCcCgx": {
       "type": "featured-blog",
       "name": "Sugestões de leitura",
@@ -551,24 +568,6 @@
         "image_behavior": "none",
         "show_text_below": false,
         "accessibility_info": "Apresentação de produtos e categorias da nossa marca"
-      }
-    },
-    "featured_blog_dnwXmG": {
-      "type": "featured-blog",
-      "name": "Agenda",
-      "settings": {
-        "blog": "agenda",
-        "post_limit": 3,
-        "heading": "<a href=\"/blogs/agenda\" title=\"Agenda\">{{ section.settings.blog.title }}</a>",
-        "heading_size": "h1",
-        "columns_desktop": 3,
-        "show_view_all": false,
-        "show_image": true,
-        "show_date": false,
-        "show_author": false,
-        "color_scheme": "",
-        "padding_top": 24,
-        "padding_bottom": 48
       }
     },
     "featured_collection_HPdNTU": {
