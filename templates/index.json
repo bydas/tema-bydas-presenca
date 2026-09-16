@@ -429,10 +429,10 @@
         "slide_J6Dyr4": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/11-Onde_Esta_o_Wally_Sarilhos_a_Dobrar_Desktop_a852c18c-db3e-4d3f-9a52-4b6ce6c79c92.jpg",
-            "image_mobile": "shopify://shop_images/11-Onde_Esta_o_Wally_Sarilhos_a_Dobrar_Mobile_5c5de12f-2d01-4f7b-8a38-e92f16bee32c.jpg",
+            "image": "shopify://shop_images/24-Apotecaria_Desktop_0f292b3e-f08d-4262-95ef-528ec12c1951.jpg",
+            "image_mobile": "shopify://shop_images/24-Apotecaria_Mobile_2c9dac01-75c3-485b-8520-64af3ea55106.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/onde-esta-o-wally-sarilhos-a-dobrar",
+            "image_link": "shopify://collections/serie-diarios-de-uma-apotecaria",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -467,7 +467,7 @@
       "type": "featured-collection",
       "name": "Carrossel temático",
       "settings": {
-        "collection": "serie-onde-esta-o-wally",
+        "collection": "presenca-comics",
         "products_to_show": 16,
         "title": "<a href=\"/collections/colecao-lynn-painter\" title=\"Livros de Lynn Painter\">{{ section.settings.collection.title }}</a>",
         "heading_alignment": "left",
