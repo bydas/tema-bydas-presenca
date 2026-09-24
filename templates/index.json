@@ -36,6 +36,7 @@
         },
         "slide_icJWTn": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/1_Campanha_Novo_Ano_3por12_Banner_Desktop_e5a13159-68ab-4d70-a7e7-7bc7f9e2320c.jpg",
             "image_mobile": "shopify://shop_images/1_Campanha_Novo_Ano_3por12_Banner_Mobile_d6d1a29b-d2fb-4a37-8d9d-f2a2ddac5a61.jpg",
@@ -320,6 +321,7 @@
     },
     "featured_collection_cqtiwV": {
       "type": "featured-collection",
+      "disabled": true,
       "name": "Carrossel Campanha",
       "settings": {
         "collection": "leve-3-pague-2",
