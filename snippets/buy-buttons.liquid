@@ -196,6 +196,7 @@
 <div class="grouped-buttons">
   {% assign excerpt_url = product.metafields.global.excerpt | strip | url_encode %}
   {% assign extra_story = product.metafields.custom.conto_extra %}
+  {% assign ficha_de_atividades = product.metafields.custom.ficha_de_atividades %}
 
   {% if excerpt_url %}
     <a
@@ -231,6 +232,18 @@
     >
       {{- 'icon-book-plus.svg' | inline_asset_content -}}
       Conto Extra
+    </a>
+  {% endunless %}
+
+  {% unless ficha_de_atividades == blank %}
+    <a
+      class="share-button__button excerpt_extra"
+      href="{{ ficha_de_atividades | file_url }}"
+      target="_blank"
+      rel="noopener"
+    >
+      {{- 'icon-file-pen.svg' | inline_asset_content -}}
+      Fichas de Atividades
     </a>
   {% endunless %}
 
