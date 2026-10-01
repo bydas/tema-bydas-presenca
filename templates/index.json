@@ -36,10 +36,9 @@
         },
         "slide_icJWTn": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/1_Campanha_Novo_Ano_3por12_Banner_Desktop_e5a13159-68ab-4d70-a7e7-7bc7f9e2320c.jpg",
-            "image_mobile": "shopify://shop_images/1_Campanha_Novo_Ano_3por12_Banner_Mobile_d6d1a29b-d2fb-4a37-8d9d-f2a2ddac5a61.jpg",
+            "image": "shopify://shop_images/Campanha_fantastico_out_26_Banner_desktop.jpg",
+            "image_mobile": "shopify://shop_images/Campanha_fantastico_out_26_Banner_mobile_8c956979-9975-46d5-a44b-6d7f82e7e2ee.jpg",
             "image_overlay_opacity": 0,
             "image_link": "shopify://collections/30-fantastico",
             "open_link_new_tab": false,
@@ -279,35 +278,6 @@
         "padding_bottom": 48
       }
     },
-    "featured_collection_cqtiwV": {
-      "type": "featured-collection",
-      "name": "Carrossel Campanha",
-      "settings": {
-        "collection": "30-fantastico",
-        "products_to_show": 25,
-        "title": "<a href=\"https://www.presenca.pt/collections/30-fantastico\" title=\"https://www.presenca.pt/collections/30-fantastico\">30% em Fantástico</a>",
-        "heading_alignment": "left",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "columns_desktop": 6,
-        "enable_desktop_slider": true,
-        "show_view_all": true,
-        "view_all_style": "link",
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "standard",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 48,
-        "padding_bottom": 48
-      }
-    },
     "slideshow_8zUK6k": {
       "type": "slideshow",
       "blocks": {
@@ -346,6 +316,35 @@
         "image_behavior": "none",
         "show_text_below": false,
         "accessibility_info": "Apresentação de produtos e categorias da nossa marca"
+      }
+    },
+    "featured_collection_cqtiwV": {
+      "type": "featured-collection",
+      "name": "Carrossel Campanha",
+      "settings": {
+        "collection": "30-fantastico",
+        "products_to_show": 25,
+        "title": "<a href=\"https://www.presenca.pt/collections/30-fantastico\" title=\"https://www.presenca.pt/collections/30-fantastico\">30% em Fantástico</a>",
+        "heading_alignment": "left",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 6,
+        "enable_desktop_slider": true,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 48,
+        "padding_bottom": 48
       }
     },
     "featured_product_bqgTVp": {
