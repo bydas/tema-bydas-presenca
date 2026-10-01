@@ -279,6 +279,35 @@
         "padding_bottom": 48
       }
     },
+    "featured_collection_cqtiwV": {
+      "type": "featured-collection",
+      "name": "Carrossel Campanha",
+      "settings": {
+        "collection": "30-fantastico",
+        "products_to_show": 25,
+        "title": "<a href=\"https://www.presenca.pt/collections/30-fantastico\" title=\"https://www.presenca.pt/collections/30-fantastico\">30% em Fantástico</a>",
+        "heading_alignment": "left",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 6,
+        "enable_desktop_slider": true,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
     "slideshow_8zUK6k": {
       "type": "slideshow",
       "blocks": {
@@ -317,35 +346,6 @@
         "image_behavior": "none",
         "show_text_below": false,
         "accessibility_info": "Apresentação de produtos e categorias da nossa marca"
-      }
-    },
-    "featured_collection_cqtiwV": {
-      "type": "featured-collection",
-      "name": "Carrossel Campanha",
-      "settings": {
-        "collection": "30-fantastico",
-        "products_to_show": 25,
-        "title": "<a href=\"https://www.presenca.pt/collections/30-fantastico\" title=\"https://www.presenca.pt/collections/30-fantastico\">30% em Fantástico</a>",
-        "heading_alignment": "left",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "columns_desktop": 6,
-        "enable_desktop_slider": true,
-        "show_view_all": true,
-        "view_all_style": "link",
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "standard",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 48,
-        "padding_bottom": 0
       }
     },
     "featured_product_bqgTVp": {
