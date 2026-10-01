@@ -12,14 +12,13 @@
     "slideshow_Mh9AA4": {
       "type": "slideshow",
       "blocks": {
-        "slide_LniBY7": {
+        "slide_icJWTn": {
           "type": "slide",
-          "name": "Slide",
           "settings": {
-            "image": "shopify://shop_images/20.Portugal_na_Airfryer_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/20.Portugal_na_Airfryer_Mobile.jpg",
+            "image": "shopify://shop_images/Campanha_fantastico_out_26_Banner_desktop.jpg",
+            "image_mobile": "shopify://shop_images/Campanha_fantastico_out_26_Banner_mobile_8c956979-9975-46d5-a44b-6d7f82e7e2ee.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/portugal-na-air-fryer",
+            "image_link": "shopify://collections/30-fantastico",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -34,13 +33,14 @@
             "color_scheme": ""
           }
         },
-        "slide_icJWTn": {
+        "slide_LniBY7": {
           "type": "slide",
+          "name": "Slide",
           "settings": {
-            "image": "shopify://shop_images/Campanha_fantastico_out_26_Banner_desktop.jpg",
-            "image_mobile": "shopify://shop_images/Campanha_fantastico_out_26_Banner_mobile_8c956979-9975-46d5-a44b-6d7f82e7e2ee.jpg",
+            "image": "shopify://shop_images/20.Portugal_na_Airfryer_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/20.Portugal_na_Airfryer_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://collections/30-fantastico",
+            "image_link": "shopify://products/portugal-na-air-fryer",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -225,8 +225,8 @@
         }
       },
       "block_order": [
-        "slide_LniBY7",
         "slide_icJWTn",
+        "slide_LniBY7",
         "slide_9RNWLH",
         "slide_NLnpqb",
         "slide_P7jztK",
