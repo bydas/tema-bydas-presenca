@@ -41,7 +41,7 @@
             "image": "shopify://shop_images/1_Campanha_Novo_Ano_3por12_Banner_Desktop_e5a13159-68ab-4d70-a7e7-7bc7f9e2320c.jpg",
             "image_mobile": "shopify://shop_images/1_Campanha_Novo_Ano_3por12_Banner_Mobile_d6d1a29b-d2fb-4a37-8d9d-f2a2ddac5a61.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://collections/leve-3-pague-2",
+            "image_link": "shopify://collections/30-fantastico",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -324,7 +324,7 @@
       "disabled": true,
       "name": "Carrossel Campanha",
       "settings": {
-        "collection": "leve-3-pague-2",
+        "collection": "30-fantastico",
         "products_to_show": 25,
         "title": "<a href=\"https://www.presenca.pt/collections/leve-3-pague-2\" title=\"https://www.presenca.pt/collections/leve-3-pague-2\">Leve 3, Pague 2</a>",
         "heading_alignment": "left",
