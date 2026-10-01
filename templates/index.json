@@ -321,12 +321,11 @@
     },
     "featured_collection_cqtiwV": {
       "type": "featured-collection",
-      "disabled": true,
       "name": "Carrossel Campanha",
       "settings": {
         "collection": "30-fantastico",
         "products_to_show": 25,
-        "title": "<a href=\"https://www.presenca.pt/collections/leve-3-pague-2\" title=\"https://www.presenca.pt/collections/leve-3-pague-2\">Leve 3, Pague 2</a>",
+        "title": "<a href=\"https://www.presenca.pt/collections/30-fantastico\" title=\"https://www.presenca.pt/collections/30-fantastico\">30% em Fantástico</a>",
         "heading_alignment": "left",
         "heading_size": "h1",
         "description": "",
