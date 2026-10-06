@@ -14,6 +14,7 @@
       "blocks": {
         "slide_icJWTn": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Campanha_fantastico_out_26_Banner_desktop.jpg",
             "image_mobile": "shopify://shop_images/Campanha_fantastico_out_26_Banner_mobile_8c956979-9975-46d5-a44b-6d7f82e7e2ee.jpg",
@@ -320,6 +321,7 @@
     },
     "featured_collection_cqtiwV": {
       "type": "featured-collection",
+      "disabled": true,
       "name": "Carrossel Campanha",
       "settings": {
         "collection": "30-fantastico",
