@@ -1,6 +1,129 @@
+{% doc %}
+  @prompt
+    Criar um novo bloco que reproduza o mais fielmente possível o aspeto da secção «Featured article» atualmente selecionada neste tema (secção template--29379695804753__featured_article_cC3KU4), e não um design alternativo. Manter a tipografia, cores, fundo, espaçamentos, conteúdo do artigo, texto e botão da referência. Acrescentar apenas a possibilidade de selecionar um produto no editor e apresentar a imagem desse produto do lado direito, com ligação à página do produto. Manter o texto e o botão centrados na secção, usando uma coluna de equilíbrio vazia à esquerda se necessário. O produto deve poder ser escolhido e trocado através de um seletor de produto. Em telemóvel, apresentar o produto abaixo do texto. Manter o conteúdo editável e não alterar a secção original.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-featured-article-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    margin-inline: auto;
+    padding: 48px 0;
+    color: rgb(var(--color-foreground));
+    background: rgb(var(--color-background));
+  }
+  .ai-featured-article-{{ ai_gen_id }} .ai-featured-article__layout-{{ ai_gen_id }} {
+    width: 100%;
+    max-width: var(--page-width, 160rem);
+    margin: 0 auto;
+    padding: 0 5rem;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center;
+    gap: 2rem;
+  }
+  .ai-featured-article-{{ ai_gen_id }} .ai-featured-article__copy-{{ ai_gen_id }} { grid-column: 2; text-align: center; }
+  .ai-featured-article-{{ ai_gen_id }} .ai-featured-article__eyebrow-{{ ai_gen_id }} { margin: 0 0 1rem; font-size: 1.4rem; line-height: 1.4; }
+  .ai-featured-article-{{ ai_gen_id }} .ai-featured-article__title-{{ ai_gen_id }} {
+    margin: 0 0 1.5rem;
+    font-family: var(--font-heading-family);
+    font-style: var(--font-heading-style);
+    font-weight: var(--font-heading-weight);
+    font-size: clamp(2.4rem, 3vw, 4rem);
+    line-height: 1.15;
+    color: inherit;
+  }
+  .ai-featured-article-{{ ai_gen_id }} .ai-featured-article__excerpt-{{ ai_gen_id }} { margin: 0 auto 2rem; max-width: 55rem; font-size: 1.6rem; line-height: 1.6; }
+  .ai-featured-article-{{ ai_gen_id }} .ai-featured-article__excerpt-{{ ai_gen_id }} p { margin: 0 0 1rem; }
+  .ai-featured-article-{{ ai_gen_id }} .ai-featured-article__button-{{ ai_gen_id }} {
+    display: inline-flex; align-items: center; justify-content: center; padding: 1.2rem 3rem; min-height: 4.5rem;
+    border: 1px solid rgba(var(--color-foreground), .75); color: rgb(var(--color-foreground)); background: transparent;
+    text-decoration: none; font: inherit; line-height: 1.2; overflow-wrap: anywhere;
+  }
+  .ai-featured-article-{{ ai_gen_id }} .ai-featured-article__button-{{ ai_gen_id }}:focus-visible,
+  .ai-featured-article-{{ ai_gen_id }} .ai-featured-article__product-link-{{ ai_gen_id }}:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+  .ai-featured-article-{{ ai_gen_id }} .ai-featured-article__product-{{ ai_gen_id }} { grid-column: 3; justify-self: end; width: 100%; max-width: 32rem; }
+  .ai-featured-article-{{ ai_gen_id }} .ai-featured-article__product-link-{{ ai_gen_id }} { display: block; color: inherit; text-decoration: none; }
+  .ai-featured-article-{{ ai_gen_id }} .ai-featured-article__product-image-{{ ai_gen_id }} { display: block; width: 100%; height: auto; object-fit: contain; }
+  .ai-featured-article-{{ ai_gen_id }} .ai-featured-article__placeholder-{{ ai_gen_id }} { width: 100%; aspect-ratio: 3 / 4; display: grid; place-items: center; background: rgba(var(--color-foreground), .04); }
+  .ai-featured-article-{{ ai_gen_id }} .ai-featured-article__placeholder-{{ ai_gen_id }} svg { display: block; width: 100%; height: 100%; color: rgba(var(--color-foreground), .45); }
+  .ai-featured-article-{{ ai_gen_id }} .ai-featured-article__empty-{{ ai_gen_id }} { margin: .8rem 0 0; color: rgba(var(--color-foreground), .7); text-align: center; font-size: 1.3rem; }
+  @media screen and (max-width: 749px) {
+    .ai-featured-article-{{ ai_gen_id }} { padding: 3.6rem 0; }
+    .ai-featured-article-{{ ai_gen_id }} .ai-featured-article__layout-{{ ai_gen_id }} { display: flex; flex-direction: column; gap: 2.4rem; padding: 0 1.5rem; }
+    .ai-featured-article-{{ ai_gen_id }} .ai-featured-article__copy-{{ ai_gen_id }} { width: 100%; order: 1; }
+    .ai-featured-article-{{ ai_gen_id }} .ai-featured-article__product-{{ ai_gen_id }} { width: min(100%, 28rem); justify-self: auto; order: 2; margin: 0 auto; }
+    .ai-featured-article-{{ ai_gen_id }} .ai-featured-article__title-{{ ai_gen_id }} { font-size: 2.6rem; }
+  }
+{% endstyle %}
+
+<div class="ai-featured-article-{{ ai_gen_id }} color-{{ block.settings.color_scheme }} gradient" {{ block.shopify_attributes }}>
+  <div class="ai-featured-article__layout-{{ ai_gen_id }}">
+    <div class="ai-featured-article__copy-{{ ai_gen_id }}">
+      {% if block.settings.article != blank %}
+        {% if block.settings.show_date %}<p class="ai-featured-article__eyebrow-{{ ai_gen_id }}">{{ block.settings.article.published_at | date: '%d %B %Y' }}</p>{% endif %}
+        <h2 class="ai-featured-article__title-{{ ai_gen_id }}">{{ block.settings.article.title | escape }}</h2>
+        {% if block.settings.article.excerpt != blank %}
+          <div class="ai-featured-article__excerpt-{{ ai_gen_id }} rte">{{ block.settings.article.excerpt }}</div>
+        {% elsif block.settings.article.content != blank %}
+          <div class="ai-featured-article__excerpt-{{ ai_gen_id }} rte">{{ block.settings.article.content | strip_html | truncate: 220 }}</div>
+        {% endif %}
+        <a class="ai-featured-article__button-{{ ai_gen_id }}" href="{{ block.settings.article.url }}">{{ block.settings.button_label | escape }}</a>
+      {% else %}
+        <h2 class="ai-featured-article__title-{{ ai_gen_id }}">{{ block.settings.placeholder_heading | escape }}</h2>
+        <p>{{ block.settings.placeholder_text | escape }}</p>
+      {% endif %}
+    </div>
+    {% if block.settings.product != blank %}
+      <div class="ai-featured-article__product-{{ ai_gen_id }}">
+        <a class="ai-featured-article__product-link-{{ ai_gen_id }}" href="{{ block.settings.product.url }}" aria-label="{{ block.settings.product.title | escape }}">
+          {% if block.settings.product.featured_image %}
+            <img class="ai-featured-article__product-image-{{ ai_gen_id }}" src="{{ block.settings.product.featured_image | image_url: width: 900 }}" alt="{{ block.settings.product.featured_image.alt | default: block.settings.product.title | escape }}" width="{{ block.settings.product.featured_image.width }}" height="{{ block.settings.product.featured_image.height }}" loading="lazy">
+          {% else %}
+            <div class="ai-featured-article__placeholder-{{ ai_gen_id }}">{{ 'product-apparel-1' | placeholder_svg_tag }}</div>
+          {% endif %}
+        </a>
+      </div>
+    {% else %}
+      <div class="ai-featured-article__product-{{ ai_gen_id }}">
+        <div class="ai-featured-article__placeholder-{{ ai_gen_id }}">{{ 'product-apparel-1' | placeholder_svg_tag }}</div>
+        <p class="ai-featured-article__empty-{{ ai_gen_id }}">Selecione um produto para apresentar a imagem.</p>
+      </div>
+    {% endif %}
+  </div>
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Artigo e produto",
+  "settings": [
+    { "type": "header", "content": "Conteúdo do artigo" },
+    { "type": "article", "id": "article", "label": "Artigo" },
+    { "type": "text", "id": "button_label", "label": "Texto do botão", "default": "Ler artigo" },
+    { "type": "checkbox", "id": "show_date", "label": "Mostrar data", "default": false },
+    { "type": "text", "id": "placeholder_heading", "label": "Título de pré-visualização", "default": "Artigo em destaque" },
+    { "type": "text", "id": "placeholder_text", "label": "Ajuda de pré-visualização", "default": "Selecione o artigo que pretende destacar." },
+    { "type": "header", "content": "Produto" },
+    { "type": "product", "id": "product", "label": "Produto apresentado" },
+    { "type": "header", "content": "Estilo" },
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "label": "Esquema de cores",
+      "options": [
+        { "value": "scheme-1", "label": "Claro" },
+        { "value": "scheme-2", "label": "Cinza" },
+        { "value": "scheme-3", "label": "Escuro" },
+        { "value": "scheme-5", "label": "Verde" }
+      ],
+      "default": "scheme-1"
+    },
+    { "type": "range", "id": "desktop_width_percent", "label": "Largura no desktop", "min": 50, "max": 100, "step": 5, "unit": "%", "default": 100 }
+  ],
+  "presets": [{ "name": "Artigo e produto" }],
+  "tag": null,
+  "class": "featured-article-product-block"
+}
 {% endschema %}
