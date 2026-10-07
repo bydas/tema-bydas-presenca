@@ -364,7 +364,7 @@
         "text_VGk7My": {
           "type": "text",
           "settings": {
-            "text": "<p>Gisèle Pelicot partilha no livro «Um Hino à Vida», uma mensagem poderosa de coragem, esperança e superação.</p><p>A história de uma mulher que caminhou sobre o abismo e escolheu continuar viva, dando coragem a milhares de vítimas para recuperarem a própria voz. </p><p>Leitura de um excerto, por Júlia Pinheiro.</p>",
+            "text": "<p>Raul Minh'alma regressa com um romance inesquecível sobre perdas, segredos, segundas oportunidades e a dificuldade em voltar a confiar.</p><p>Um romance delicado, íntimo e profundamente humano sobre as feridas que carregamos em silêncio.</p>",
             "text_style": "body",
             "line_limit": 10
           }
@@ -385,9 +385,9 @@
       ],
       "name": "Vídeo",
       "settings": {
-        "product": "um-hino-a-vida",
-        "video": "shopify://files/videos/JULIA_T1_HRZ_V4.mp4",
-        "cover_image": "shopify://shop_images/Captura_de_ecra_2026-09-03_105957.png",
+        "product": "as-flores-que-o-inverno-deixou",
+        "video": "shopify://files/videos/Raul Minh'Alma As Flores que o Inverno deixou.mp4",
+        "cover_image": "shopify://shop_images/As_Flores_que_o_Inverno_Deixou_LMKT_FB_LINK_2.jpg",
         "color_scheme": "scheme-featured-product-green",
         "secondary_background": false,
         "media_position": "left",
@@ -396,6 +396,35 @@
         "product_padding": 20,
         "max_height_desktop": 16,
         "max_height_mobile": 12
+      }
+    },
+    "featured_collection_N8qNYR": {
+      "type": "featured-collection",
+      "name": "Carrossel temático",
+      "settings": {
+        "collection": "colecao-raul-minhalma",
+        "products_to_show": 16,
+        "title": "<a href=\"/collections/colecao-lynn-painter\" title=\"Livros de Lynn Painter\">{{ section.settings.collection.title }}</a>",
+        "heading_alignment": "left",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 6,
+        "enable_desktop_slider": true,
+        "show_view_all": true,
+        "view_all_style": "link",
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 48,
+        "padding_bottom": 48
       }
     },
     "featured_collection_HVgeey": {
@@ -445,73 +474,51 @@
         "padding_bottom": 48
       }
     },
-    "slideshow_qAxrAq": {
-      "type": "slideshow",
+    "featured_article_cC3KU4": {
+      "type": "featured-article",
       "blocks": {
-        "slide_J6Dyr4": {
-          "type": "slide",
+        "title_7pKrym": {
+          "type": "title",
           "settings": {
-            "image": "shopify://shop_images/24-Apotecaria_Desktop_0f292b3e-f08d-4262-95ef-528ec12c1951.jpg",
-            "image_mobile": "shopify://shop_images/24-Apotecaria_Mobile_2c9dac01-75c3-485b-8520-64af3ea55106.jpg",
-            "image_overlay_opacity": 0,
-            "image_link": "shopify://collections/serie-diarios-de-uma-apotecaria",
-            "open_link_new_tab": false,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
+            "selected_title": "Carlos Tavares - Uma Autobiografia",
+            "heading_size": "h1"
+          }
+        },
+        "text_N64h6A": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Poucos ramos são tão implacáveis como o da indústria automóvel. Num mercado que vive sempre no limite, uma decisão errada pode custar milhões de euros e eliminar milhares de postos de trabalho, mas não tomar decisões pode ser igualmente fatal. Neste negócio, só os mais fortes sobrevivem. E só os verdadeiros líderes chegam ao topo. Carlos Tavares não chegou apenas lá: revolucionou para sempre o segmento automóvel. Após uma carreira notável na Renault, o empresário português assumiu a presidência do grupo PSA e liderou a sua recuperação financeira, abrindo caminho à fusão com a Fiat-Chrysler e à criação da Stellantis, atualmente um dos maiores grupos automóveis do mundo.</p>",
+            "text_style": "subtitle",
+            "line_limit": 7
+          }
+        },
+        "button_THgqmq": {
+          "type": "button",
+          "settings": {
+            "button_label": "Continuar a ler",
+            "button_link": "{{ section.settings.article.url }}",
+            "button_style_secondary": true
           }
         }
       },
       "block_order": [
-        "slide_J6Dyr4"
+        "title_7pKrym",
+        "text_N64h6A",
+        "button_THgqmq"
       ],
-      "name": "Banner fixo 2",
+      "disabled": true,
+      "custom_css": [],
+      "name": "t:sections.featured-article.name",
       "settings": {
-        "layout": "grid",
-        "layout_mobile": "full_bleed",
-        "slide_height": "adapt_image",
-        "auto_rotate": true,
-        "change_slides_speed": 5,
-        "image_behavior": "none",
-        "show_text_below": false,
-        "accessibility_info": "Apresentação de produtos e categorias da nossa marca"
-      }
-    },
-    "featured_collection_N8qNYR": {
-      "type": "featured-collection",
-      "name": "Carrossel temático",
-      "settings": {
-        "collection": "presenca-comics",
-        "products_to_show": 16,
-        "title": "<a href=\"/collections/colecao-lynn-painter\" title=\"Livros de Lynn Painter\">{{ section.settings.collection.title }}</a>",
-        "heading_alignment": "left",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "columns_desktop": 6,
-        "enable_desktop_slider": true,
-        "show_view_all": true,
-        "view_all_style": "link",
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "standard",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 48,
-        "padding_bottom": 48
+        "article": "autores/raul-minhalma",
+        "color_scheme": "scheme-custom-teal",
+        "secondary_background": false,
+        "media_position": "left",
+        "padding_top": 0,
+        "padding_bottom": 48,
+        "article_padding": 24,
+        "max_height": 20,
+        "max_height_mobile": 10
       }
     },
     "featured_blog_DCcCgx": {
@@ -562,6 +569,47 @@
       ],
       "disabled": true,
       "name": "Banner fixo 1",
+      "settings": {
+        "layout": "grid",
+        "layout_mobile": "full_bleed",
+        "slide_height": "adapt_image",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Apresentação de produtos e categorias da nossa marca"
+      }
+    },
+    "slideshow_qAxrAq": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_J6Dyr4": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/24-Apotecaria_Desktop_0f292b3e-f08d-4262-95ef-528ec12c1951.jpg",
+            "image_mobile": "shopify://shop_images/24-Apotecaria_Mobile_2c9dac01-75c3-485b-8520-64af3ea55106.jpg",
+            "image_overlay_opacity": 0,
+            "image_link": "shopify://collections/serie-diarios-de-uma-apotecaria",
+            "open_link_new_tab": false,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_J6Dyr4"
+      ],
+      "disabled": true,
+      "name": "Banner fixo 2",
       "settings": {
         "layout": "grid",
         "layout_mobile": "full_bleed",
@@ -693,52 +741,6 @@
         "padding_bottom": 48
       }
     },
-    "featured_article_cC3KU4": {
-      "type": "featured-article",
-      "blocks": {
-        "title_7pKrym": {
-          "type": "title",
-          "settings": {
-            "selected_title": "Carlos Tavares - Uma Autobiografia",
-            "heading_size": "h1"
-          }
-        },
-        "text_N64h6A": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Poucos ramos são tão implacáveis como o da indústria automóvel. Num mercado que vive sempre no limite, uma decisão errada pode custar milhões de euros e eliminar milhares de postos de trabalho, mas não tomar decisões pode ser igualmente fatal. Neste negócio, só os mais fortes sobrevivem. E só os verdadeiros líderes chegam ao topo. Carlos Tavares não chegou apenas lá: revolucionou para sempre o segmento automóvel. Após uma carreira notável na Renault, o empresário português assumiu a presidência do grupo PSA e liderou a sua recuperação financeira, abrindo caminho à fusão com a Fiat-Chrysler e à criação da Stellantis, atualmente um dos maiores grupos automóveis do mundo.</p>",
-            "text_style": "subtitle",
-            "line_limit": 7
-          }
-        },
-        "button_THgqmq": {
-          "type": "button",
-          "settings": {
-            "button_label": "Continuar a ler",
-            "button_link": "{{ section.settings.article.url }}",
-            "button_style_secondary": true
-          }
-        }
-      },
-      "block_order": [
-        "title_7pKrym",
-        "text_N64h6A",
-        "button_THgqmq"
-      ],
-      "disabled": true,
-      "name": "t:sections.featured-article.name",
-      "settings": {
-        "article": "sugestoes-de-leitura/de-portugal-para-o-topo-da-industria-automovel-global-a-historia-de-carlos-tavares",
-        "color_scheme": "scheme-2",
-        "secondary_background": false,
-        "media_position": "left",
-        "padding_top": 0,
-        "padding_bottom": 48,
-        "article_padding": 24,
-        "max_height": 20,
-        "max_height_mobile": 10
-      }
-    },
     "17701286961defe988": {
       "type": "apps",
       "blocks": {
@@ -767,6 +769,14 @@
       "settings": {
         "include_margins": false
       }
+    },
+    "1791369514553d76a5": {
+      "type": "_blocks",
+      "settings": {}
+    },
+    "1791369643ea426143": {
+      "type": "_blocks",
+      "settings": {}
     }
   },
   "order": [
@@ -775,17 +785,19 @@
     "slideshow_8zUK6k",
     "featured_collection_cqtiwV",
     "featured_product_bqgTVp",
+    "featured_collection_N8qNYR",
     "featured_collection_HVgeey",
     "featured_blog_dnwXmG",
-    "slideshow_qAxrAq",
-    "featured_collection_N8qNYR",
+    "featured_article_cC3KU4",
     "featured_blog_DCcCgx",
     "slideshow_pmwgw7",
+    "slideshow_qAxrAq",
     "featured_collection_HPdNTU",
     "featured_collection_9ir9Wg",
     "featured_collection_Q7GLkz",
     "featured_collection_QKCjKQ",
-    "featured_article_cC3KU4",
-    "17701286961defe988"
+    "17701286961defe988",
+    "1791369514553d76a5",
+    "1791369643ea426143"
   ]
 }
