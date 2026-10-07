@@ -1,6 +1,111 @@
+{% doc %}
+  @prompt
+    A magazine-style editorial layout
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-editorial-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    margin: 0 auto;
+    color: {{ block.settings.text_color }};
+    background: {{ block.settings.background_color }};
+  }
+  .ai-editorial-{{ ai_gen_id }}__inner { width: 100%; padding: clamp(24px, 5vw, 72px); }
+  .ai-editorial-{{ ai_gen_id }}__kicker { margin: 0 0 14px; color: {{ block.settings.accent_color }}; font-size: 12px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+  .ai-editorial-{{ ai_gen_id }}__heading { margin: 0; font-family: {{ block.settings.heading_font.family }}, {{ block.settings.heading_font.fallback_families }}; font-size: clamp(34px, 6vw, {{ block.settings.heading_size }}px); line-height: 1.02; letter-spacing: -.04em; }
+  .ai-editorial-{{ ai_gen_id }}__intro { max-width: 660px; margin: 18px 0 34px; font-size: 17px; line-height: 1.6; }
+  .ai-editorial-{{ ai_gen_id }}__grid { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(240px, .8fr); gap: clamp(24px, 4vw, 56px); align-items: start; }
+  .ai-editorial-{{ ai_gen_id }}__feature-image, .ai-editorial-{{ ai_gen_id }}__side-image { display: block; width: 100%; height: auto; object-fit: cover; }
+  .ai-editorial-{{ ai_gen_id }}__placeholder { position: relative; display: flex; aspect-ratio: 4 / 3; align-items: center; justify-content: center; overflow: hidden; background: #f1f1ef; }
+  .ai-editorial-{{ ai_gen_id }}__placeholder svg { width: 100%; height: 100%; object-fit: cover; }
+  .ai-editorial-{{ ai_gen_id }}__placeholder-label { position: absolute; right: 12px; bottom: 12px; left: 12px; color: #333333; font-size: 13px; text-align: center; }
+  .ai-editorial-{{ ai_gen_id }}__feature-copy { padding-top: 18px; }
+  .ai-editorial-{{ ai_gen_id }}__meta { margin: 0 0 10px; color: {{ block.settings.accent_color }}; font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+  .ai-editorial-{{ ai_gen_id }}__feature-title { margin: 0 0 10px; font-family: {{ block.settings.heading_font.family }}, {{ block.settings.heading_font.fallback_families }}; font-size: clamp(24px, 3vw, 38px); line-height: 1.12; }
+  .ai-editorial-{{ ai_gen_id }}__feature-text { font-size: 15px; line-height: 1.65; }
+  .ai-editorial-{{ ai_gen_id }}__feature-link { display: inline-block; margin-top: 12px; color: {{ block.settings.text_color }}; font-size: 13px; font-weight: 700; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+  .ai-editorial-{{ ai_gen_id }}__side { padding-top: 12px; }
+  .ai-editorial-{{ ai_gen_id }}__side-image-wrap { margin-bottom: 22px; }
+  .ai-editorial-{{ ai_gen_id }}__side-heading { margin: 0 0 10px; font-family: {{ block.settings.heading_font.family }}, {{ block.settings.heading_font.fallback_families }}; font-size: 24px; line-height: 1.15; }
+  .ai-editorial-{{ ai_gen_id }}__side-text { margin: 0; font-size: 14px; line-height: 1.6; }
+  .ai-editorial-{{ ai_gen_id }}__rule { height: 1px; margin: 26px 0 20px; border: 0; background: {{ block.settings.accent_color }}; }
+  @media screen and (max-width: 749px) {
+    .ai-editorial-{{ ai_gen_id }} { width: 100%; }
+    .ai-editorial-{{ ai_gen_id }}__inner { padding: 28px 20px; }
+    .ai-editorial-{{ ai_gen_id }}__grid { grid-template-columns: 1fr; }
+    .ai-editorial-{{ ai_gen_id }}__side { padding-top: 0; }
+  }
+{% endstyle %}
+
+<div class="ai-editorial-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-editorial-{{ ai_gen_id }}__inner">
+    {% if block.settings.kicker != blank %}<p class="ai-editorial-{{ ai_gen_id }}__kicker">{{ block.settings.kicker | escape }}</p>{% endif %}
+    {% if block.settings.heading != blank %}<h2 class="ai-editorial-{{ ai_gen_id }}__heading">{{ block.settings.heading | escape }}</h2>{% endif %}
+    {% if block.settings.intro != blank %}<div class="ai-editorial-{{ ai_gen_id }}__intro">{{ block.settings.intro }}</div>{% endif %}
+    <div class="ai-editorial-{{ ai_gen_id }}__grid">
+      <article>
+        {% if block.settings.feature_image != blank %}
+          <img class="ai-editorial-{{ ai_gen_id }}__feature-image" src="{{ block.settings.feature_image | image_url: width: 1600 }}" alt="{{ block.settings.feature_image.alt | escape }}" loading="lazy" width="{{ block.settings.feature_image.width }}" height="{{ block.settings.feature_image.height }}">
+        {% else %}
+          <div class="ai-editorial-{{ ai_gen_id }}__placeholder">{{ 'image' | placeholder_svg_tag }}<span class="ai-editorial-{{ ai_gen_id }}__placeholder-label">Add a feature image in the block settings</span></div>
+        {% endif %}
+        <div class="ai-editorial-{{ ai_gen_id }}__feature-copy">
+          {% if block.settings.feature_label != blank %}<p class="ai-editorial-{{ ai_gen_id }}__meta">{{ block.settings.feature_label | escape }}</p>{% endif %}
+          {% if block.settings.feature_title != blank %}<h3 class="ai-editorial-{{ ai_gen_id }}__feature-title">{{ block.settings.feature_title | escape }}</h3>{% endif %}
+          {% if block.settings.feature_text != blank %}<div class="ai-editorial-{{ ai_gen_id }}__feature-text">{{ block.settings.feature_text }}</div>{% endif %}
+          {% if block.settings.feature_link != blank and block.settings.feature_link_label != blank %}<a class="ai-editorial-{{ ai_gen_id }}__feature-link" href="{{ block.settings.feature_link }}">{{ block.settings.feature_link_label | escape }}</a>{% endif %}
+        </div>
+      </article>
+      <aside class="ai-editorial-{{ ai_gen_id }}__side">
+        {% if block.settings.side_image != blank %}
+          <div class="ai-editorial-{{ ai_gen_id }}__side-image-wrap"><img class="ai-editorial-{{ ai_gen_id }}__side-image" src="{{ block.settings.side_image | image_url: width: 900 }}" alt="{{ block.settings.side_image.alt | escape }}" loading="lazy" width="{{ block.settings.side_image.width }}" height="{{ block.settings.side_image.height }}"></div>
+        {% else %}
+          <div class="ai-editorial-{{ ai_gen_id }}__placeholder ai-editorial-{{ ai_gen_id }}__side-image-wrap">{{ 'image' | placeholder_svg_tag }}<span class="ai-editorial-{{ ai_gen_id }}__placeholder-label">Add a supporting image</span></div>
+        {% endif %}
+        {% if block.settings.side_label != blank %}<p class="ai-editorial-{{ ai_gen_id }}__meta">{{ block.settings.side_label | escape }}</p>{% endif %}
+        {% if block.settings.side_title != blank %}<h3 class="ai-editorial-{{ ai_gen_id }}__side-heading">{{ block.settings.side_title | escape }}</h3>{% endif %}
+        {% if block.settings.side_text != blank %}<div class="ai-editorial-{{ ai_gen_id }}__side-text">{{ block.settings.side_text }}</div>{% endif %}
+        <hr class="ai-editorial-{{ ai_gen_id }}__rule">
+        {% if block.settings.note != blank %}<div class="ai-editorial-{{ ai_gen_id }}__side-text">{{ block.settings.note }}</div>{% endif %}
+      </aside>
+    </div>
+  </div>
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Editorial layout",
+  "settings": [
+    { "type": "header", "content": "Introduction" },
+    { "type": "range", "id": "desktop_width_percent", "label": "Desktop width", "min": 50, "max": 100, "step": 5, "unit": "%", "default": 100 },
+    { "type": "text", "id": "kicker", "label": "Eyebrow", "default": "From the editors" },
+    { "type": "text", "id": "heading", "label": "Main heading", "default": "Stories worth getting lost in" },
+    { "type": "richtext", "id": "intro", "label": "Introduction", "default": "<p>Discover thoughtful reads, new voices and worlds waiting to be explored.</p>" },
+    { "type": "font_picker", "id": "heading_font", "label": "Heading font", "default": "roboto_n7" },
+    { "type": "range", "id": "heading_size", "label": "Heading size", "min": 36, "max": 72, "step": 4, "unit": "px", "default": 56 },
+    { "type": "header", "content": "Lead story" },
+    { "type": "image_picker", "id": "feature_image", "label": "Image" },
+    { "type": "text", "id": "feature_label", "label": "Story label", "default": "Featured reading" },
+    { "type": "text", "id": "feature_title", "label": "Title", "default": "A new chapter begins here" },
+    { "type": "richtext", "id": "feature_text", "label": "Story text", "default": "<p>Bring readers closer to the books, authors and ideas shaping your latest collection.</p>" },
+    { "type": "text", "id": "feature_link_label", "label": "Link label", "default": "Explore the story" },
+    { "type": "url", "id": "feature_link", "label": "Link" },
+    { "type": "header", "content": "Sidebar feature" },
+    { "type": "image_picker", "id": "side_image", "label": "Image" },
+    { "type": "text", "id": "side_label", "label": "Story label", "default": "Editor's pick" },
+    { "type": "text", "id": "side_title", "label": "Title", "default": "Meet your next favourite book" },
+    { "type": "richtext", "id": "side_text", "label": "Story text", "default": "<p>A short, inviting introduction to a title, reading list or special collection.</p>" },
+    { "type": "richtext", "id": "note", "label": "Closing note", "default": "<p>Curated for curious minds and devoted readers.</p>" },
+    { "type": "header", "content": "Colors" },
+    { "type": "color", "id": "background_color", "label": "Background", "default": "#FFFFFF" },
+    { "type": "color", "id": "text_color", "label": "Text", "default": "#121212" },
+    { "type": "color", "id": "accent_color", "label": "Accent", "default": "#334FB4" }
+  ],
+  "presets": [{ "name": "Editorial layout" }],
+  "tag": null,
+  "class": "editorial-layout-block"
+}
 {% endschema %}
