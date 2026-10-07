@@ -364,7 +364,7 @@
         "text_VGk7My": {
           "type": "text",
           "settings": {
-            "text": "<p>Raul Minh'alma regressa com um romance inesquecível sobre perdas, segredos, segundas oportunidades e a dificuldade em voltar a confiar.</p><p>Um romance delicado, íntimo e profundamente humano sobre as feridas que carregamos em silêncio.</p>",
+            "text": "<p>Raul Minh'alma regressa com um romance inesquecível sobre perdas, segredos, segundas oportunidades e a dificuldade em voltar a confiar.</p><p><strong>Um romance delicado, íntimo e profundamente humano sobre as feridas que carregamos em silêncio.</strong></p>",
             "text_style": "body",
             "line_limit": 10
           }
@@ -387,7 +387,7 @@
       "settings": {
         "product": "as-flores-que-o-inverno-deixou",
         "video": "shopify://files/videos/Raul Minh'Alma As Flores que o Inverno deixou.mp4",
-        "cover_image": "shopify://shop_images/As_Flores_que_o_Inverno_Deixou_LMKT_FB_LINK_2.jpg",
+        "cover_image": "shopify://shop_images/raul_minh_alma_as_flores_que_o_inverno_deixou_2.png",
         "color_scheme": "scheme-featured-product-green",
         "secondary_background": false,
         "media_position": "left",
