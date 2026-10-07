@@ -16,8 +16,8 @@
           "type": "slide",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Campanha_fantastico_out_26_Banner_desktop.jpg",
-            "image_mobile": "shopify://shop_images/Campanha_fantastico_out_26_Banner_mobile_8c956979-9975-46d5-a44b-6d7f82e7e2ee.jpg",
+            "image": "shopify://shop_images/Campanha_Adulto_4_por_20_outono_2026_Banner_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/Campanha_Adulto_4_por_20_outono_2026_Banner_Mobile.jpg",
             "image_overlay_opacity": 0,
             "image_link": "shopify://collections/30-fantastico",
             "open_link_new_tab": false,
@@ -38,10 +38,10 @@
           "type": "slide",
           "name": "Slide",
           "settings": {
-            "image": "shopify://shop_images/20.Portugal_na_Airfryer_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/20.Portugal_na_Airfryer_Mobile.jpg",
+            "image": "shopify://shop_images/as_flores_que_o_inverno_deixou_banners_desktop_72de66ec-65b5-457d-8fde-ab738ef335ab.jpg",
+            "image_mobile": "shopify://shop_images/as_flores_que_o_inverno_deixou_banners_mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/portugal-na-air-fryer",
+            "image_link": "shopify://products/as-flores-que-o-inverno-deixou",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -59,10 +59,10 @@
         "slide_9RNWLH": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/14-Quando_o_Cafe_esta_Pronto_Desktop_cfa9c152-2329-40bf-938e-82d00922403e.jpg",
-            "image_mobile": "shopify://shop_images/14-Quando_o_Cafe_esta_Pronto_Mobile.jpg",
+            "image": "shopify://shop_images/07.mae_conta_me_tudo_sobre_ti_DESKTOP.jpg",
+            "image_mobile": "shopify://shop_images/07.mae_conta_me_tudo_sobre_ti_MOBILE.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/quando-o-cafe-esta-pronto",
+            "image_link": "shopify://products/mae-conta-me-tudo-sobre-ti",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -80,10 +80,10 @@
         "slide_NLnpqb": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/18.Avo_do_Grufalao_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/18.Avo_do_Grufalao_Mobile.jpg",
+            "image": "shopify://shop_images/o_ladrao_das_aboboras_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/o_ladrao_das_aboboras_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/a-avo-do-grufalao",
+            "image_link": "shopify://products/o-ladrao-de-aboboras",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -101,8 +101,8 @@
         "slide_P7jztK": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/13-Grand_Prix_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/13-Grand_Prix_Mobile.jpg",
+            "image": "shopify://shop_images/5.Nao_Abras_Esta_Caixa_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/5.Nao_Abras_Esta_Caixa_Mobile.jpg",
             "image_overlay_opacity": 0,
             "image_link": "shopify://products/grand-prix",
             "open_link_new_tab": false,
@@ -122,10 +122,10 @@
         "slide_xHT3bP": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/21.Rainha_Santa_Desktop_a30bfffc-c0d9-4883-8e0e-67e8c5bc28c1.jpg",
-            "image_mobile": "shopify://shop_images/21.Rainha_Santa_Mobile.jpg",
+            "image": "shopify://shop_images/novidades_nao_ficcao_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/novidades_nao_ficcao_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/a-rainha-santa-e-d-dinis",
+            "image_link": "shopify://collections/novidades",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -143,10 +143,10 @@
         "slide_PQfNNM": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/22.Senhor_do_Banco_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/22.Senhor_do_Banco_Mobile.jpg",
+            "image": "shopify://shop_images/series_juvenis_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/series_juvenis_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/o-senhor-do-banco",
+            "image_link": "shopify://collections/novidades",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -164,8 +164,8 @@
         "slide_9DGE9B": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/17-Campus_Drivers_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/17-Campus_Drivers_Mobile.jpg",
+            "image": "shopify://shop_images/classicos_para_ler_numa_noite_banners_desktop_1.jpg",
+            "image_mobile": "shopify://shop_images/classicos_para_ler_numa_noite_banners_mobile_1.jpg",
             "image_overlay_opacity": 0,
             "image_link": "shopify://collections/serie-procura-e-descobre",
             "open_link_new_tab": false,
@@ -184,6 +184,7 @@
         },
         "slide_bypDBF": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/12-Mereces_um_Abraco_Desktop.jpg",
             "image_mobile": "shopify://shop_images/12-Mereces_um_Abraco_Mobile.jpg",
@@ -205,6 +206,7 @@
         },
         "slide_3WXTYL": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/15-Roma_O_Imperio_Infinito_Desktop.jpg",
             "image_mobile": "shopify://shop_images/15-Roma_O_Imperio_Infinito_Mobile.jpg",
