@@ -472,53 +472,6 @@
         "padding_bottom": 24
       }
     },
-    "featured_article_cC3KU4": {
-      "type": "featured-article",
-      "blocks": {
-        "title_7pKrym": {
-          "type": "title",
-          "settings": {
-            "selected_title": "Carlos Tavares - Uma Autobiografia",
-            "heading_size": "h1"
-          }
-        },
-        "text_N64h6A": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Poucos ramos são tão implacáveis como o da indústria automóvel. Num mercado que vive sempre no limite, uma decisão errada pode custar milhões de euros e eliminar milhares de postos de trabalho, mas não tomar decisões pode ser igualmente fatal. Neste negócio, só os mais fortes sobrevivem. E só os verdadeiros líderes chegam ao topo. Carlos Tavares não chegou apenas lá: revolucionou para sempre o segmento automóvel. Após uma carreira notável na Renault, o empresário português assumiu a presidência do grupo PSA e liderou a sua recuperação financeira, abrindo caminho à fusão com a Fiat-Chrysler e à criação da Stellantis, atualmente um dos maiores grupos automóveis do mundo.</p>",
-            "text_style": "subtitle",
-            "line_limit": 7
-          }
-        },
-        "button_THgqmq": {
-          "type": "button",
-          "settings": {
-            "button_label": "Continuar a ler",
-            "button_link": "{{ section.settings.article.url }}",
-            "button_style_secondary": true
-          }
-        }
-      },
-      "block_order": [
-        "title_7pKrym",
-        "text_N64h6A",
-        "button_THgqmq"
-      ],
-      "disabled": true,
-      "custom_css": [],
-      "name": "t:sections.featured-article.name",
-      "settings": {
-        "article": "autores/raul-minhalma",
-        "color_scheme": "scheme-custom-teal",
-        "secondary_background": false,
-        "media_position": "left",
-        "padding_top": 0,
-        "padding_bottom": 48,
-        "article_padding": 24,
-        "max_height": 20,
-        "max_height_mobile": 10
-      }
-    },
     "featured_blog_DCcCgx": {
       "type": "featured-blog",
       "name": "Sugestões de leitura",
@@ -617,6 +570,53 @@
         "image_behavior": "none",
         "show_text_below": false,
         "accessibility_info": "Apresentação de produtos e categorias da nossa marca"
+      }
+    },
+    "featured_article_cC3KU4": {
+      "type": "featured-article",
+      "blocks": {
+        "title_7pKrym": {
+          "type": "title",
+          "settings": {
+            "selected_title": "Carlos Tavares - Uma Autobiografia",
+            "heading_size": "h1"
+          }
+        },
+        "text_N64h6A": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Poucos ramos são tão implacáveis como o da indústria automóvel. Num mercado que vive sempre no limite, uma decisão errada pode custar milhões de euros e eliminar milhares de postos de trabalho, mas não tomar decisões pode ser igualmente fatal. Neste negócio, só os mais fortes sobrevivem. E só os verdadeiros líderes chegam ao topo. Carlos Tavares não chegou apenas lá: revolucionou para sempre o segmento automóvel. Após uma carreira notável na Renault, o empresário português assumiu a presidência do grupo PSA e liderou a sua recuperação financeira, abrindo caminho à fusão com a Fiat-Chrysler e à criação da Stellantis, atualmente um dos maiores grupos automóveis do mundo.</p>",
+            "text_style": "subtitle",
+            "line_limit": 7
+          }
+        },
+        "button_THgqmq": {
+          "type": "button",
+          "settings": {
+            "button_label": "Continuar a ler",
+            "button_link": "{{ section.settings.article.url }}",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "title_7pKrym",
+        "text_N64h6A",
+        "button_THgqmq"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "name": "t:sections.featured-article.name",
+      "settings": {
+        "article": "autores/raul-minhalma",
+        "color_scheme": "scheme-custom-teal",
+        "secondary_background": false,
+        "media_position": "left",
+        "padding_top": 0,
+        "padding_bottom": 48,
+        "article_padding": 24,
+        "max_height": 20,
+        "max_height_mobile": 10
       }
     },
     "featured_collection_HPdNTU": {
@@ -786,10 +786,10 @@
     "featured_collection_N8qNYR",
     "featured_collection_HVgeey",
     "featured_blog_dnwXmG",
-    "featured_article_cC3KU4",
     "featured_blog_DCcCgx",
     "slideshow_pmwgw7",
     "slideshow_qAxrAq",
+    "featured_article_cC3KU4",
     "featured_collection_HPdNTU",
     "featured_collection_9ir9Wg",
     "featured_collection_Q7GLkz",
