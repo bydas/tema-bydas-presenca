@@ -18,7 +18,7 @@
             "image": "shopify://shop_images/Campanha_Adulto_4_por_20_outono_2026_Banner_Desktop.jpg",
             "image_mobile": "shopify://shop_images/Campanha_Adulto_4_por_20_outono_2026_Banner_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://collections/30-fantastico",
+            "image_link": "shopify://collections/campanha-4-livros-por-20",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -324,7 +324,7 @@
       "type": "featured-collection",
       "name": "Carrossel Campanha",
       "settings": {
-        "collection": "30-fantastico",
+        "collection": "campanha-4-livros-por-20",
         "products_to_show": 25,
         "title": "<a href=\"/collections/30-fantastico\" title=\"4 livros por 20€\">4 Livros por 20€</a>",
         "heading_alignment": "left",
