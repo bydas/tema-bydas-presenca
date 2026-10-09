@@ -104,6 +104,7 @@
       "email": "E-mail",
       "message": "Comentário",
       "post": "Publicar comentário",
+      "view_all_author_books": "Ver todos os livros do autor",
       "back_to_blog": "Voltar para {{ title }}",
       "share": "Compartilhar este artigo",
       "success": "O comentário foi postado. Obrigado!",

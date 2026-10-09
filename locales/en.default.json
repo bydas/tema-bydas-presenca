@@ -103,6 +103,7 @@
       "email": "Email",
       "message": "Comment",
       "post": "Post comment",
+      "view_all_author_books": "View all books by the author",
       "back_to_blog": "Back to blog",
       "share": "Share this article",
       "success": "Your comment was posted successfully! Thank you!",
