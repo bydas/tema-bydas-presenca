@@ -140,6 +140,7 @@
     {{ other_blocks_markup }}
   {%- endif -%}
 
+  {% unless is_authors_article %}
   <div class="article-template__back element-margin-top center{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
     <a href="{{ blog.url }}" class="article-template__link link animate-arrow">
       <span class="icon-wrap">
@@ -150,6 +151,7 @@
       {{ 'blogs.article.back_to_blog' | t: title: blog.title | escape }}
     </a>
   </div>
+  {% endunless %}
   {%- if blog.comments_enabled? -%}
     <div class="article-template__comment-wrapper background-secondary">
       <div
