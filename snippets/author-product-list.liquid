@@ -17,6 +17,11 @@
   {% assign first_alt_author_name_handle = 'colecao-' | append: first_author_name_handle %}
   {% assign first_alt_author_name_handle_2 = 'colecao-' | append: first_alt_author_name_handle %}
   {% assign first_alt_author_name_handle_3 = first_alt_author_name_handle | append: '-1' %}
+  {% assign author_collection = collections[first_alt_author_name_handle]
+    | default: collections[first_author_name_handle]
+    | default: collections[first_alt_author_name_handle_2]
+    | default: collections[first_alt_author_name_handle_3]
+  %}
   {% assign unfiltered_products = collections[first_alt_author_name_handle].products
     | default: collections[first_author_name_handle].products
     | default: collections[first_alt_author_name_handle_2].products
@@ -83,7 +88,7 @@
       {% endif %}
 
       <slider-component class="slider-mobile-gutter{% if section.settings.full_width %} slider-component-full-width{% endif %} slider-component-desktop{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
-        <div class="topic-section title-wrapper--self-padded-tablet-down">
+        <div class="topic-section title-wrapper--self-padded-tablet-down{% if blog.handle == 'autores' %} author-books-heading{% endif %}">
           <h1 class="title inline-richtext h1">
             {% if template.name == 'article' %}
               Livro{% if unique_products.size > 1 %}s{% endif %} de {{ article.title }}
@@ -91,6 +96,11 @@
               {% if author_list.size > 1 %}Dos mesmos autores{% else %}Do mesmo autor{% endif %}
             {% endif %}
           </h1>
+          {% if blog.handle == 'autores' and author_collection != blank %}
+            <a href="{{ author_collection.url }}" class="button button--secondary author-books-heading__link">
+              {{ 'blogs.article.view_all_author_books' | t }}
+            </a>
+          {% endif %}
         </div>
 
         <ul
