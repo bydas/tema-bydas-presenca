@@ -28,6 +28,39 @@
     margin-left: unset !important;
   }
 
+  #Section-list-products-{{ section.id }} .author-books-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  #Section-list-products-{{ section.id }} .author-books-heading__link {
+    flex-shrink: 0;
+    text-align: center;
+    color: #a9c138;
+    text-decoration: underline;
+  }
+
+  #Section-list-products-{{ section.id }} .author-books-back {
+    margin-top: 3rem;
+  }
+
+  @media screen and (max-width: 749px) {
+    #Section-list-products-{{ section.id }} .author-books-heading {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0;
+      margin-bottom: 2.5rem;
+    }
+
+    #Section-list-products-{{ section.id }} .author-books-heading__link {
+      margin-bottom: 2.5rem;
+      max-width: 100%;
+      min-width: 0;
+    }
+  }
+
   @media screen and (max-width: 989px) {
     .topic-section {
       max-width: var(--page-width) !important;
@@ -45,6 +78,19 @@
     {% else %}
       {% render 'author-product-list', author_name: author_names.first, section: section %}
     {% endif %}
+  {% endif %}
+  {% if blog.handle == 'autores' %}
+  <div class="article-template__back author-books-back center{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+    <a href="{{ blog.url }}" class="article-template__link link animate-arrow">
+      <span class="icon-wrap">
+        <span class="svg-wrapper">
+          {{- 'icon-arrow.svg' | inline_asset_content -}}
+        </span>
+      </span>
+      {{ 'blogs.article.back_to_blog' | t: title: blog.title | escape }}
+    </a>
+  </div>
+
   {% endif %}
 </section>
 
