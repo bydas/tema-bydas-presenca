@@ -97,7 +97,7 @@
       endif
 
       if tag contains 'SERIE_'
-        assign serie_tag = tag | remove_first: 'serie_' | handle
+        assign serie_tag = tag | handle | remove_first: 'serie_'
       endif
     endfor
 
