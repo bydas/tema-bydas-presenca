@@ -97,7 +97,7 @@
       endif
 
       if tag contains 'SERIE_'
-        assign serie_tag = tag | handle
+        assign serie_tag = tag | remove_first: 'serie_' | handle
       endif
     endfor
 
@@ -191,9 +191,7 @@
                             {%- assign serie_collection_url = '' -%}
 
                             {%- for collection in product.collections -%}
-                              <script>
-                                console.log('{{ collection.handle }}', '{{ serie_tag }}');
-                              </script>
+                              {%- assign collection_handle = collection.handle | remove_first: 'serie-' -%}
 
                               {%- if collection.handle == serie_tag -%}
                                 {%- assign serie_collection_url = collection.url -%}
