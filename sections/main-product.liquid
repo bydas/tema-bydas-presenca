@@ -193,7 +193,7 @@
                             {%- for collection in product.collections -%}
                               {%- assign collection_handle = collection.handle | remove_first: 'serie-' -%}
 
-                              {%- if collection.handle == serie_tag -%}
+                              {%- if collection_handle == serie_tag -%}
                                 {%- assign serie_collection_url = collection.url -%}
                                 {%- break -%}
                               {%- endif -%}
