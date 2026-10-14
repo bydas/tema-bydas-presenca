@@ -191,6 +191,8 @@
                             {%- assign serie_text = strong_match[1] | split: '</strong>' | last | strip_html | strip -%}
                             {%- assign serie_collection_url = '' -%}
 
+                            <script>console.log("{{ collection.handle }}", "{{ serie_tag }}")</script>
+
                             {%- for collection in product.collections -%}
                               {%- if collection.handle == serie_tag -%}
                                 {%- assign serie_collection_url = collection.url -%}
