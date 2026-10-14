@@ -95,10 +95,6 @@
         endif
         assign tags_product = tags_product | append: clean_tag
       endif
-
-      if tag contains 'SERIE_'
-        assign serie_tag = tag
-      endif
     endfor
 
     if pre_venda_tag != null
@@ -192,7 +188,7 @@
                             {%- assign serie_collection_url = '' -%}
 
                             {%- for collection in product.collections -%}
-                              {%- if collection.tags contains serie_tag -%}
+                              {%- if collection.title contains serie_text -%}
                                 {%- assign serie_collection_url = collection.url -%}
                                 {%- break -%}
                               {%- endif -%}
