@@ -587,7 +587,7 @@ h5.card__heading a {
 
 .product:not(.product--no-media) .product__info-wrapper .author__names-container.card__heading {
   text-align: unset !important;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .card--standard.card--media .card__inner .card__information,
