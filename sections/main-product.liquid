@@ -140,7 +140,10 @@
                     {% for tag_product in tags_product %}
                       {% unless tag_product == blank %}
                         {% assign current_tag_handle = tag_product | handleize %}
-                        {% assign current_collection = product.collections | where: 'handle', current_tag_handle | first %}
+                        {% assign current_collection = product.collections
+                          | where: 'handle', current_tag_handle
+                          | first
+                        %}
 
                         {% if current_collection %}
                           <li>
@@ -187,9 +190,11 @@
                             {%- assign serie_text = strong_match[1] | split: '</strong>' | last | strip_html | strip -%}
                             {%- assign serie_collection_url = '' -%}
 
-                            <script>console.log("{{ collection.handle }}", "{{ serie_tag }}")</script>
-
                             {%- for collection in product.collections -%}
+                              <script>
+                                console.log('{{ collection.handle }}', '{{ serie_tag }}');
+                              </script>
+
                               {%- if collection.handle == serie_tag -%}
                                 {%- assign serie_collection_url = collection.url -%}
                                 {%- break -%}
