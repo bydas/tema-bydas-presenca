@@ -33,6 +33,28 @@
             "color_scheme": ""
           }
         },
+        "slide_LniBY7": {
+          "type": "slide",
+          "name": "Slide",
+          "settings": {
+            "image": "shopify://shop_images/10.harry_potter_e_o_princioe_misterioso_ed_ilustrada_banner_DESKTOP_5fb1d0b3-febd-4011-bd70-c8011dc2a92b.jpg",
+            "image_mobile": "shopify://shop_images/10.harry_potter_e_o_princioe_misterioso_ed_ilustrada_banner_MOBILE_383fda0a-ab9a-4fc4-a0d0-10502711a85a.jpg",
+            "image_overlay_opacity": 0,
+            "image_link": "shopify://products/harry-potter-e-o-principe-misterioso-edicao-ilustrada",
+            "open_link_new_tab": false,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
         "slide_bypDBF": {
           "type": "slide",
           "settings": {
@@ -200,32 +222,11 @@
             "text_alignment_mobile": "center",
             "color_scheme": ""
           }
-        },
-        "slide_LniBY7": {
-          "type": "slide",
-          "name": "Slide",
-          "settings": {
-            "image": "shopify://shop_images/as_flores_que_o_inverno_deixou_banners_desktop_72de66ec-65b5-457d-8fde-ab738ef335ab.jpg",
-            "image_mobile": "shopify://shop_images/as_flores_que_o_inverno_deixou_banners_mobile.jpg",
-            "image_overlay_opacity": 0,
-            "image_link": "shopify://products/as-flores-que-o-inverno-deixou",
-            "open_link_new_tab": false,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
-          }
         }
       },
       "block_order": [
         "slide_icJWTn",
+        "slide_LniBY7",
         "slide_bypDBF",
         "slide_3WXTYL",
         "slide_PQfNNM",
@@ -233,8 +234,7 @@
         "slide_NLnpqb",
         "slide_P7jztK",
         "slide_xHT3bP",
-        "slide_9DGE9B",
-        "slide_LniBY7"
+        "slide_9DGE9B"
       ],
       "name": "Banner Header",
       "settings": {
@@ -464,6 +464,24 @@
         "padding_bottom": 24
       }
     },
+    "featured_blog_dnwXmG": {
+      "type": "featured-blog",
+      "name": "Agenda",
+      "settings": {
+        "blog": "agenda",
+        "post_limit": 3,
+        "heading": "<a href=\"/blogs/agenda\" title=\"Agenda\">{{ section.settings.blog.title }}</a>",
+        "heading_size": "h1",
+        "columns_desktop": 3,
+        "show_view_all": false,
+        "show_image": true,
+        "show_date": false,
+        "show_author": false,
+        "color_scheme": "",
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
     "featured_collection_HVgeey": {
       "type": "featured-collection",
       "name": "Carrossel Pré-vendas",
@@ -489,24 +507,6 @@
         "quick_add": "standard",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "padding_top": 24,
-        "padding_bottom": 24
-      }
-    },
-    "featured_blog_dnwXmG": {
-      "type": "featured-blog",
-      "name": "Agenda",
-      "settings": {
-        "blog": "agenda",
-        "post_limit": 3,
-        "heading": "<a href=\"/blogs/agenda\" title=\"Agenda\">{{ section.settings.blog.title }}</a>",
-        "heading_size": "h1",
-        "columns_desktop": 3,
-        "show_view_all": false,
-        "show_image": true,
-        "show_date": false,
-        "show_author": false,
-        "color_scheme": "",
         "padding_top": 24,
         "padding_bottom": 24
       }
