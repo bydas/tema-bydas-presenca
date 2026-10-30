@@ -35,9 +35,7 @@
         "title",
         "content"
       ],
-      "custom_css": [
-        "h2 {font-size: 32px;}"
-      ],
+      "custom_css": [],
       "settings": {}
     },
     "video_Uk8mWn": {
