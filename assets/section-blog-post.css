@@ -101,22 +101,6 @@
   padding: 2.7rem 0;
 }
 
-.article-template h2 {
-  font-size: 32px;
-}
-
-.article-template__authors-media .article-template__hero-small {
-  height: clamp(150px, 20vw, 200px);
-}
-
-.article-template__authors-media .article-template__hero-medium {
-  height: clamp(200px, 30vw, 300px);
-}
-
-.article-template__authors-media .article-template__hero-large {
-  height: clamp(250px, 40vw, 400px);
-}
-
 @media screen and (min-width: 750px) {
   /* remover a limitação "narrow" dentro da coluna direita */
   .article-template__authors-body .page-width--narrow {
