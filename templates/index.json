@@ -38,10 +38,10 @@
           "type": "slide",
           "name": "Slide",
           "settings": {
-            "image": "shopify://shop_images/10.harry_potter_e_o_princioe_misterioso_ed_ilustrada_banner_DESKTOP_5fb1d0b3-febd-4011-bd70-c8011dc2a92b.jpg",
-            "image_mobile": "shopify://shop_images/10.harry_potter_e_o_princioe_misterioso_ed_ilustrada_banner_MOBILE_383fda0a-ab9a-4fc4-a0d0-10502711a85a.jpg",
+            "image": "shopify://shop_images/8.murdle_junior3_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/8.murdle_junior3_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/harry-potter-e-o-principe-misterioso-edicao-ilustrada",
+            "image_link": "shopify://collections/serie-murdle",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -59,10 +59,10 @@
         "slide_bypDBF": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/suspeita_banners_desktop_8c310a5d-80e4-4556-b29a-7abd1db2ec4d.jpg",
-            "image_mobile": "shopify://shop_images/suspeita_banners_mobile_d7eab6f2-e919-4651-b75e-1f3643ba0146.jpg",
+            "image": "shopify://shop_images/6.Espelho_dos_Finais_Infinitos_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/6.Espelho_dos_Finais_Infinitos_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/suspeita",
+            "image_link": "shopify://products/o-espelho-dos-finais-infinitos-once-upon-a-broken-heart-4",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -80,10 +80,10 @@
         "slide_3WXTYL": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/16.Tu_Nasceste_Para_Calendario_de_Advento_Desktop_33c6898a-0291-45ea-86b5-009b70dba516.jpg",
-            "image_mobile": "shopify://shop_images/16.Tu_Nasceste_Para_Calendario_de_Advento_Mobile_27ce078d-e464-4652-b6f1-02a25619a184.jpg",
+            "image": "shopify://shop_images/9.ultimate_Football_Heroes_2027_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/9.Ultimate_Football_Heroes_2027_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/tu-nasceste-para-o-calendario-do-advento",
+            "image_link": "shopify://products/ultimate-football-heroes-2027",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -101,10 +101,10 @@
         "slide_PQfNNM": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/18.O_Que_Fica_de_Nos_Romance_do_Advento_Desktop_a559e084-436b-487e-824d-d7acee526fe7.jpg",
-            "image_mobile": "shopify://shop_images/18.O_Que_Fica_de_Nos_Romance_do_Advento_Mobile_b0a3096e-5c9c-474f-81bc-4d62770e67f6.jpg",
+            "image": "shopify://shop_images/10.harry_styles_the_stories_behind_the_songs_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/10.harry_styles_the_stories_behind_the_songs_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/o-que-fica-de-nos",
+            "image_link": "shopify://products/harry-styles-as-historias-das-cancoes",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -122,10 +122,10 @@
         "slide_9RNWLH": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/the_rolling_stones_on_tour_the_official_celebration_Desktop_1920x400_965bd23b-5fa5-488c-b8a6-9fb8cc8642ff.jpg",
-            "image_mobile": "shopify://shop_images/the_rolling_stones_on_tour_the_official_celebration_Mobile_1080x1080_4d8b83d5-1286-4da4-9070-d8ba2e4034bc.jpg",
+            "image": "shopify://shop_images/12.a_revolta_da_rainha_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/12.a_revolta_da_rainha_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/the-rolling-stones-on-tour",
+            "image_link": "shopify://products/a-revolta-da-rainha",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -143,10 +143,10 @@
         "slide_NLnpqb": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/12.o_homem_marcado_banner_DESKTOP_e725f00d-f98d-4955-b29f-70deb8d25572.jpg",
-            "image_mobile": "shopify://shop_images/12.o_homem_marcado_banner_MOBILE_155f9e4e-8ffb-408f-b8bb-e01fcc34cce6.jpg",
+            "image": "shopify://shop_images/14.receitas_para_comer_mais_vegetais_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/14.receitas_para_comer_mais_vegetais_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/o-homem-marcado",
+            "image_link": "shopify://products/receitas-para-comer-mais-vegetais",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -164,10 +164,10 @@
         "slide_P7jztK": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/o_grande_livro_do_vinho_Desktop_d2ef6162-473e-4938-b8c7-435f1c2772b4.jpg",
-            "image_mobile": "shopify://shop_images/o_grande_livro_do_vinho_Mobile_638afa39-5593-4617-8c25-c2ed9f9b878b.jpg",
+            "image": "shopify://shop_images/7.Bound_Mortal_Unbound_Imortal_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/7.Bound_Mortal_Unbound_Imortal_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://products/o-grande-livro-do-vinho",
+            "image_link": "shopify://products/bound-mortal-unbound-imortal",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -184,6 +184,7 @@
         },
         "slide_xHT3bP": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/alice_do_pais_das_maravilhas_e_tao_te_ching_Desktop_2197a4e5-c4ab-42e1-9d5a-b953bd2b88b6.jpg",
             "image_mobile": "shopify://shop_images/alice_do_pais_das_maravilhas_e_tao_te_ching_Mobile_f0161031-e25f-47a6-b78d-425fc508ceb4.jpg",
@@ -205,6 +206,7 @@
         },
         "slide_9DGE9B": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/19.Quiz_para_Malucos_da_Bola_Desktop_ea091719-7a55-4d42-a311-ee33f9486a3f.jpg",
             "image_mobile": "shopify://shop_images/19.Quiz_para_Malucos_da_Bola_Mobile_c5e6bb6a-1608-4761-9d11-2c5d70438183.jpg",
