@@ -34,14 +34,34 @@
             "color_scheme": ""
           }
         },
-        "slide_LniBY7": {
+        "slide_9DGE9B": {
           "type": "slide",
-          "name": "Slide",
           "settings": {
-            "image": "shopify://shop_images/8.murdle_junior3_Desktop.jpg",
-            "image_mobile": "shopify://shop_images/8.murdle_junior3_Mobile.jpg",
+            "image": "shopify://shop_images/11.Corte_de_Harmonias_Desfeitas_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/11.Corte_de_Harmonias_Desfeitas_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://collections/serie-murdle",
+            "image_link": "shopify://products/quiz-para-malucos-da-bola",
+            "open_link_new_tab": false,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
+        "slide_xHT3bP": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/5.Harry_Potter_Edicoes_Casas_Desktop_1_1.jpg",
+            "image_mobile": "shopify://shop_images/5.Harry_Potter_Edicoes_Casas_Mobile_1.jpg",
+            "image_overlay_opacity": 0,
+            "image_link": "shopify://collections/serie-hp-ed-casas-de-hogwarts-4",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -182,36 +202,14 @@
             "color_scheme": ""
           }
         },
-        "slide_xHT3bP": {
+        "slide_LniBY7": {
           "type": "slide",
-          "disabled": true,
+          "name": "Slide",
           "settings": {
-            "image": "shopify://shop_images/5.Harry_Potter_Edicoes_Casas_Desktop_1_1.jpg",
-            "image_mobile": "shopify://shop_images/5.Harry_Potter_Edicoes_Casas_Mobile_1.jpg",
+            "image": "shopify://shop_images/8.murdle_junior3_Desktop.jpg",
+            "image_mobile": "shopify://shop_images/8.murdle_junior3_Mobile.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://collections/serie-hp-ed-casas-de-hogwarts-4",
-            "open_link_new_tab": false,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
-          }
-        },
-        "slide_9DGE9B": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/19.Quiz_para_Malucos_da_Bola_Desktop_ea091719-7a55-4d42-a311-ee33f9486a3f.jpg",
-            "image_mobile": "shopify://shop_images/19.Quiz_para_Malucos_da_Bola_Mobile_c5e6bb6a-1608-4761-9d11-2c5d70438183.jpg",
-            "image_overlay_opacity": 0,
-            "image_link": "shopify://products/quiz-para-malucos-da-bola",
+            "image_link": "shopify://collections/serie-murdle",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
@@ -229,15 +227,15 @@
       },
       "block_order": [
         "slide_icJWTn",
-        "slide_LniBY7",
+        "slide_9DGE9B",
+        "slide_xHT3bP",
         "slide_bypDBF",
         "slide_NLnpqb",
         "slide_3WXTYL",
         "slide_PQfNNM",
         "slide_9RNWLH",
         "slide_P7jztK",
-        "slide_xHT3bP",
-        "slide_9DGE9B"
+        "slide_LniBY7"
       ],
       "name": "Banner Header",
       "settings": {
