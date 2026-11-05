@@ -186,10 +186,10 @@
           "type": "slide",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/alice_do_pais_das_maravilhas_e_tao_te_ching_Desktop_2197a4e5-c4ab-42e1-9d5a-b953bd2b88b6.jpg",
-            "image_mobile": "shopify://shop_images/alice_do_pais_das_maravilhas_e_tao_te_ching_Mobile_f0161031-e25f-47a6-b78d-425fc508ceb4.jpg",
+            "image": "shopify://shop_images/5.Harry_Potter_Edicoes_Casas_Desktop_1_1.jpg",
+            "image_mobile": "shopify://shop_images/5.Harry_Potter_Edicoes_Casas_Mobile_1.jpg",
             "image_overlay_opacity": 0,
-            "image_link": "shopify://collections/edicoes-de-luxo-marcador",
+            "image_link": "shopify://collections/serie-hp-ed-casas-de-hogwarts-4",
             "open_link_new_tab": false,
             "heading": "",
             "heading_size": "h1",
